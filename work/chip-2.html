@@ -321,7 +321,7 @@
                         <div class="space-y-4">
                             <h3 class="text-xl font-semibold text-gray-900">Primary user groups</h3>
 
-                            <div class="p-5 rounded-2xl bg-white/60 backdrop-blur border border-white/40 shadow-sm space-y-4">
+                            <div class="p-5 rounded-2xl bg-white/60 backdrop-blur border border-white/40 space-y-4">
                                 <h4 class="font-semibold text-gray-900">Frontline & Facility-Level Users</h4>
                                 <p class="text-gray-700">These users interact with the system daily and are responsible
                                     for data collection, service delivery, and on-ground execution.</p>
@@ -339,7 +339,7 @@
                                 <p class="font-semibold text-gray-900">Needs: speed, clarity, error prevention, minimal cognitive load.</p>
                             </div>
 
-                            <div class="p-5 rounded-2xl bg-white/60 backdrop-blur border border-white/40 shadow-sm space-y-4">
+                            <div class="p-5 rounded-2xl bg-white/60 backdrop-blur border border-white/40 space-y-4">
                                 <h4 class="font-semibold text-gray-900">Supervisory & Administrative Users</h4>
                                 <p class="text-gray-700">Oversight, planning, and performance monitoring across
                                     geographies and programs.</p>
@@ -636,161 +636,134 @@
                     <section id="layout-g" data-section class="space-y-8 scroll-mt-24">
 
                         <div class="space-y-3">
-                            <p class="text-sm uppercase tracking-[0.16em] text-gray-600 mb-1">Constraints &
+                            <p class="text-sm uppercase tracking-[0.16em] text-gray-600">Constraints &
                                 Tradeoffs</p>
                             <h2 class="text-3xl font-semibold">Designing within real-world limits</h2>
                         </div>
 
-                        <p class="text-gray-700">
-                            CHIP 2.0 was designed inside structural and environmental constraints—these were everyday
-                            realities, not edge cases. Each limitation shaped specific tradeoffs to keep the platform
-                            usable and reliable.
+                        <p class="text-gray-700">CHIP 2.0 was designed inside structural and environmental constraints—these were everyday realities, not edge cases. Each limitation shaped specific tradeoffs to keep the platform usable and reliable.
                         </p>
 
-                        <div class="grid lg:grid-cols-2 gap-6">
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">DL</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Low digital literacy</h3>
-                                </div>
-                                <p class="text-gray-700">Interfaces had to be immediately understandable, forgiving, and
-                                    consistent for time-sensitive field work.</p>
-                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Advanced
-                                    customization and dense controls were avoided in favor of predictable patterns and
-                                    guided workflows.</p>
+                        <div class="space-y-8">
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Low digital literacy</h3>
+                                <p class="text-gray-700">Interfaces had to be immediately understandable, forgiving, and consistent for time-sensitive field work.</p>
+                                <p class="text-gray-800"><span class="font-semibold">Tradeoff:</span> Advanced customization and dense controls were avoided in favor of predictable patterns and guided workflows.</p>
                             </div>
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">NET</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Unreliable connectivity</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Unreliable connectivity</h3>
                                 <p class="text-gray-700">Users often worked offline for long stretches.</p>
-                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Real-time
-                                    interactions and instant validations were delayed or simplified to ensure
-                                    reliability offline/low-bandwidth.</p>
+                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Real-time interactions and instant validations were delayed or simplified to ensure reliability offline/low-bandwidth.</p>
                             </div>
-                        </div>
-
-                        <div class="grid lg:grid-cols-2 gap-6">
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">HW</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Low-end Android devices</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Low-end Android devices</h3>
                                 <p class="text-gray-700">Older devices with limited memory/CPU dominated frontline use.
                                 </p>
-                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Visual
-                                    polish and micro-interactions were deprioritized for performance, clarity, and
-                                    faster load times.</p>
+                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Visual polish and micro-interactions were deprioritized for performance, clarity, and faster load times.</p>
                             </div>
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">UX</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Long, repetitive data entry</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Long, repetitive data entry</h3>
+                                
                                 <p class="text-gray-700">Extensive, multi-step forms carried fatigue and error risk.</p>
-                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span>
-                                    Structured, sometimes rigid workflows reduced errors even if they limited edge-case
-                                    flexibility.</p>
+                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Structured, sometimes rigid workflows reduced errors even if they limited edge-case flexibility.</p>
                             </div>
-                        </div>
-
-                        <div class="grid lg:grid-cols-2 gap-6">
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">Gov</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Mandated processes</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Mandated processes</h3>
                                 <p class="text-gray-700">Government and program rules dictated task structures.</p>
-                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Flows
-                                    weren’t radically restructured; instead they were clarified, made less error-prone,
-                                    and easier to resume.</p>
+                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Flows weren’t radically restructured; instead they were clarified, made less error-prone, and easier to resume.</p>
                             </div>
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">Role</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Role complexity & hierarchy</h3>
-                                </div>
-                                <p class="text-gray-700">Users switched roles/facilities and worked in layered
-                                    hierarchies.</p>
-                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Some
-                                    actions were intentionally hidden rather than explained to reduce overload and risk.
-                                </p>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Role complexity & hierarchy</h3>
+                                <p class="text-gray-700">Users switched roles/facilities and worked in layered hierarchies.</p>
+                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Some actions were intentionally hidden rather than explained to reduce overload and risk.</p>
                             </div>
-                        </div>
-
-                        <div class="grid lg:grid-cols-2 gap-6">
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">MS</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Multi-state variability</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Multi-state variability</h3>
+                                
                                 <p class="text-gray-700">Each state/partner had different operational needs.</p>
-                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span>
-                                    Prioritized configurable patterns over bespoke UI; some optimizations handled
-                                    operationally, not through divergence.</p>
+                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Prioritized configurable patterns over bespoke UI; some optimizations handled operationally, not through divergence.</p>
                             </div>
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">Ship</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Design vs delivery pressure</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Design vs delivery pressure</h3>
+                                
                                 <p class="text-gray-700">Continuous delivery alongside system improvements.</p>
-                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Accepted
-                                    some legacy constraints and non-ideal workflows to keep rollouts on time.</p>
+                                <p class="text-sm text-gray-800"><span class="font-semibold">Tradeoff:</span> Accepted some legacy constraints and non-ideal workflows to keep rollouts on time.</p>
                             </div>
                         </div>
-
-                        <div
-                            class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-3">
-                            <h3 class="text-xl font-semibold text-gray-900">Outcome</h3>
-                            <p class="text-gray-700">
-                                By acknowledging constraints upfront, CHIP 2.0 balanced usability with
-                                feasibility—favoring long-term scalability and reliability over short-term perfection.
-                            </p>
-                        </div>
+                        
+                        <p class="font-semibold text-gray-900">
+                            By acknowledging constraints upfront, CHIP 2.0 balanced usability with
+                            feasibility—favoring long-term scalability and reliability over short-term perfection.
+                        </p>
                     </section>
 
                     <!-- Divider -->
                     <div class="border-t border-gray-300"></div>
 
                     <!-- Layout H: Modules -->
-                    <section id="layout-modules" data-section
-                        class="space-y-6 border-b border-orange-200 py-10 scroll-mt-24">
-                        <div class="flex items-start gap-3">
-                            <span
-                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">H</span>
-                            <div class="space-y-1">
-                                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 mb-1">Modules</p>
-                                <h2 class="text-3xl font-semibold">What we shipped across programs</h2>
-                            </div>
+                    <section id="layout-modules" data-section class="space-y-8 scroll-mt-24">
+
+                        <div class="space-y-3">
+                            <p class="text-sm uppercase tracking-[0.16em] text-gray-600">Modules</p>
+                            <h2 class="text-3xl font-semibold">What we shipped across programs</h2>
                         </div>
+
                         <p class="text-gray-700">
                             CHIP 2.0 spans multiple healthcare programs, designed to reuse patterns while respecting
                             unique workflows, data depth, and role needs.
                         </p>
-
+                    
                         <div class="space-y-4">
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=Onboarding+%28Login,+Registration%29"
+
+                            <!-- Onboarding (Login, Registration) -->
+                            <a href="#"
+                                class="group relative block overflow-hidden rounded-2xl
+                                        bg-white/60 backdrop-blur p-5 space-y-3
+                                        transition duration-200 hover:shadow-md focus-visible:shadow-md
+                                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100">
+                            
+                                <!-- Ambient “glassy glow” blobs (no gradients, clipped inside card) -->
+                                <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
+                                          group-hover:opacity-100 group-focus-visible:opacity-100">
+                                    <span class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl"></span>
+                                    <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl"></span>
+                                    <span class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl"></span>
+                                </div>
+                            
+                                <!-- Content above glow -->
+                                <div class="relative z-10 space-y-4">
+                                    <img src="../assets/chip-2/demo-img.png" 
+                                        alt="Onboarding (Login, Registration) placeholder"
+                                        class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200"/>
+                                    
+                                    <div class="space-y-2">
+                                        <h3 class="text-xl font-semibold text-gray-900">Onboarding (Login, Registration)</h3>
+                            
+                                        <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    
+                            
+                                    <!-- Less emphasis “button” (since card is clickable) -->
+                                    <span class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black bg-gray-100 mt-2
+                                              transition-colors duration-200
+                                              group-hover:bg-gray-300 group-focus-visible:bg-gray-400">
+                                        View Details
+                                    </span>
+                                </div>
+                            </a>
+                            
+                            <div class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
+                                <img src="../assets/chip-2/demo-img.png"
                                     alt="Onboarding (Login, Registration) placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
+                                    class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
                                 <div class="flex items-center gap-3">
                                     <h3 class="text-lg font-semibold text-gray-900">Onboarding (Login, Registration)
                                     </h3>
@@ -798,185 +771,25 @@
                                 <p class="text-sm text-gray-700">Module overview and workflows.</p>
                                 <button
                                     class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
+                                    Details
+                                </button>
                             </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=Punch-In%2FPunch-Out"
+                            
+                            <!-- Punch-In/Punch-Out -->
+                            <div class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
+                                <img src="../assets/chip-2/demo-img.png"
                                     alt="Punch-In/Punch-Out placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
+                                    class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
                                 <div class="flex items-center gap-3">
                                     <h3 class="text-lg font-semibold text-gray-900">Punch-In/Punch-Out</h3>
                                 </div>
                                 <p class="text-sm text-gray-700">Module overview and workflows.</p>
                                 <button
                                     class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
+                                    Details
+                                </button>
                             </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=Homepage" alt="Homepage placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">Homepage</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=DHS" alt="DHS placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">DHS</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=Profile+%28User+%26+Facility%29"
-                                    alt="Profile (User & Facility) placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">Profile (User &amp; Facility)</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=Sickle+Cell"
-                                    alt="Sickle Cell placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">Sickle Cell</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=ABHA" alt="ABHA placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">ABHA</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=IMR%2FMMR" alt="IMR/MMR placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">IMR/MMR</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=Target+%26+Incentives"
-                                    alt="Target & Incentives placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">Target &amp; Incentives</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=Family+Planning"
-                                    alt="Family Planning placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">Family Planning</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=Maternal+Health"
-                                    alt="Maternal Health placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">Maternal Health</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=Child+Health"
-                                    alt="Child Health placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">Child Health</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=My+Team+%26+Imp.+Facilities"
-                                    alt="My Team & Imp. Facilities placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">My Team &amp; Imp. Facilities</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=Death" alt="Death placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">Death</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
-
-                            <div class="bg-transparent border border-orange-100/70 rounded-2xl p-4 space-y-3">
-                                <img src="https://via.placeholder.com/640x320?text=VHSNC+Meeting"
-                                    alt="VHSNC Meeting placeholder"
-                                    class="w-full h-40 object-cover rounded-xl border border-orange-100/70 bg-gray-200" />
-                                <div class="flex items-center gap-3">
-                                    <h3 class="text-lg font-semibold text-gray-900">VHSNC Meeting</h3>
-                                </div>
-                                <p class="text-sm text-gray-700">Module overview and workflows.</p>
-                                <button
-                                    class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gray-900 hover:bg-gray-800 transition shadow-sm">View
-                                    Details</button>
-                            </div>
+                            
                         </div>
                     </section>
 
@@ -984,29 +797,24 @@
                     <div class="border-t border-gray-300"></div>
 
                     <!-- Layout I: Impact -->
-                    <section id="layout-i" data-section class="space-y-6 border-b border-orange-200 py-10 scroll-mt-24">
-                        <div class="flex items-start gap-3">
-                            <span
-                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">H</span>
-                            <div class="space-y-1">
-                                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 mb-1">Impact</p>
-                                <h2 class="text-3xl font-semibold">Scale without added friction</h2>
-                            </div>
+                    <section id="layout-i" data-section class="space-y-8 scroll-mt-24">
+
+                        <div class="space-y-3">
+                            <p class="text-sm uppercase tracking-[0.16em] text-gray-600">Impact</p>
+                            <h2 class="text-3xl font-semibold">Scale without added friction</h2>
                         </div>
+
                         <p class="text-gray-700">
                             CHIP 2.0 is actively deployed across multiple states and partner organizations, growing in
                             users, programs, and complexity without a corresponding increase in usability issues or
                             operational overhead.
                         </p>
 
-                        <div class="space-y-4">
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-3">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">Ops</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Operational impact</h3>
-                                </div>
+                        <div class="space-y-8">
+
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Operational impact</h3>
+                                
                                 <ul class="list-disc list-inside space-y-2 text-gray-700">
                                     <li>Scaled multi-state deployments (e.g., Maharashtra, Karnataka, Rajasthan) and
                                         partners like PATH.</li>
@@ -1014,13 +822,10 @@
                                     <li>Faster rollout of new modules/programs via shared components and patterns.</li>
                                 </ul>
                             </div>
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-3">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">UX</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">User experience impact</h3>
-                                </div>
+
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">User experience impact</h3>
+                                
                                 <ul class="list-disc list-inside space-y-2 text-gray-700">
                                     <li>Reduced cognitive load for frontline workers through role-focused interfaces.
                                     </li>
@@ -1029,28 +834,19 @@
                                         completion.</li>
                                 </ul>
                             </div>
-
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-3">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">PE</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Product & engineering impact</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Product & engineering impact</h3>
+                                
                                 <ul class="list-disc list-inside space-y-2 text-gray-700">
                                     <li>Lower design/dev overhead through the design system.</li>
                                     <li>Better alignment between UI behavior and RBAC logic, reducing bugs/rework.</li>
                                     <li>More maintainable architecture that supports ongoing iteration.</li>
                                 </ul>
                             </div>
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-3">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">KPI</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Indicative metrics (portfolio-safe)
-                                    </h3>
-                                </div>
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Indicative metrics (portfolio-safe)</h3>
+                                
                                 <ul class="list-disc list-inside space-y-2 text-gray-700">
                                     <li>Reduction in role-specific UI variations across modules</li>
                                     <li>Faster onboarding of new states and programs</li>
@@ -1075,107 +871,73 @@
                     <div class="border-t border-gray-300"></div>
 
                     <!-- Layout J: What this project demonstrates -->
-                    <section id="layout-j" data-section class="space-y-6 border-b border-orange-200 py-10 scroll-mt-24">
-                        <div class="flex items-start gap-3">
-                            <span
-                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white font-semibold">I</span>
-                            <div class="space-y-1">
-                                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 mb-1">What This Project
-                                    Demonstrates</p>
-                                <h2 class="text-3xl font-semibold">Product thinking for complex, real-world systems</h2>
-                            </div>
+                    <section id="layout-j" data-section class="space-y-8 scroll-mt-24">
+
+                        <div class="space-y-3">
+                            <p class="text-sm uppercase tracking-[0.16em] text-gray-600">What This Project Demonstrates</p>
+                            <h2 class="text-3xl font-semibold">Product thinking for complex, real-world systems</h2>
                         </div>
+
                         <p class="text-gray-700">
                             CHIP 2.0 showcases the ability to design and ship complex, high-stakes systems at
                             scale—combining product thinking, system ownership, and long-term decision-making beyond
                             visual polish.
                         </p>
 
-                        <div class="space-y-4">
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-black font-semibold">S</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Systems-level product thinking</h3>
-                                </div>
+                        <div class="space-y-8">
+
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Systems-level product thinking</h3>
+                                
                                 <p class="text-gray-700">Designed for interconnected modules, roles, and workflows with
                                     scalability and maintainability in mind.</p>
                             </div>
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-white font-semibold">R</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Role-based UX & access control</h3>
-                                </div>
+
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Role-based UX & access control</h3>
+                                
                                 <p class="text-teal-800">Translated RBAC into clear, predictable interfaces—aligning
                                     access, visibility, and interactions to reduce cognitive load.</p>
                             </div>
-
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-white font-semibold">D</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Design system ownership</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Design system ownership</h3>
+                                
                                 <p class="text-teal-800">Built and maintained a cross-platform system that aligned
                                     design and development for consistency, reuse, and speed.</p>
                             </div>
-
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-white font-semibold">C</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Designing for real constraints</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Designing for real constraints</h3>
+                                
                                 <p class="text-teal-800">Optimized for low connectivity, low-end devices, and varied
                                     digital literacy—favoring reliability and clarity over excess.</p>
                             </div>
-
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-white font-semibold">X</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Cross-platform execution</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Cross-platform execution</h3>
+                                
                                 <p class="text-teal-800">Adapted interaction models for mobile and web while keeping a
                                     cohesive product experience.</p>
                             </div>
-
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-white font-semibold">L</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">End-to-end ownership & leadership
-                                    </h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">End-to-end ownership & leadership</h3>
+                                
                                 <p class="text-teal-800">Owned problem framing through rollout; mentored an intern;
                                     collaborated closely with engineering.</p>
                             </div>
-
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-white font-semibold">I</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Impact-driven mindset</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Impact-driven mindset</h3>
+                                
                                 <p class="text-teal-800">Focused on outcomes—scalability, adoption, operational
                                     efficiency—over surface-level deliverables.</p>
                             </div>
-
-                            <div
-                                class="bg-white/60 backdrop-blur border border-white/40 rounded-2xl shadow-sm p-5 space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-white font-semibold">S</span>
-                                    <h3 class="text-xl font-semibold text-gray-900">Ready for senior product roles</h3>
-                                </div>
+                        
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Ready for senior product roles</h3>
+                                
                                 <p class="text-teal-800">Comfortable with ambiguity, complexity, and long-term systems
                                     thinking in production environments.</p>
                             </div>
@@ -1183,9 +945,10 @@
                     </section>
                 </div>
 
+                <!-- Sidebar Navigation -->
                 <aside class="hidden lg:block lg:col-span-2">
                     <div
-                        class="sticky top-32 rounded-2xl border border-orange-100/70 bg-transparent pl-5 pr-4 py-5 space-y-1">
+                        class="sticky top-16 rounded-2xl border border-orange-100/70 bg-transparent pl-5 pr-4 py-5 space-y-1">
                         <a data-scroll-link href="#layout-a"
                             class="group flex items-center gap-3 text-sm text-gray-700 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg">
                             <span
