@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap');
 
 @import "tailwindcss";
+/* Use class-based dark mode so the toggle can override system preference. */
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
   body { font-family: 'Open Sans', sans-serif; }

@@ -1,21 +1,22 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
 
     <link href="./src/output.css" rel="stylesheet">
+    <script src="./src/theme.js" defer></script>
     </head>
-    <body class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6">
+    <body class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
         <!-- Top Bar -->
         <div class="flex items-center justify-between">
-            <h2 class="text-3xl font-semibold"><a class="text-gray-900 hover:text-[#9C6500] transition duration-300" href="./index.html">sumit.design</a></h2>
+            <h2 class="text-3xl font-semibold"><a class="text-gray-900 hover:text-[#9C6500] transition duration-300 dark:text-gray-100 dark:hover:text-amber-200" href="./index.html">sumit.design</a></h2>
             <div class="flex items-center gap-4">
                 <a href="./work/work.html">
                     <button
                         type="button"
-                        class="relative font-semibold text-[#B97900] hover:text-[#9C6500]
+                        class="relative font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200
                                 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current
                                 after:origin-left after:scale-x-0 hover:after:scale-x-100
                                 after:transition-transform after:duration-200"
@@ -27,7 +28,7 @@
                 <a href="./about.html">
                     <button
                         type="button"
-                        class="relative font-semibold text-[#B97900] hover:text-[#9C6500]
+                        class="relative font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200
                                 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current
                                 after:origin-left after:scale-x-0 hover:after:scale-x-100
                                 after:transition-transform after:duration-200"
@@ -46,9 +47,9 @@
                     <!-- Circular stamp -->
                     <div class="relative h-24 w-24 group">
                         <div class="absolute inset-0 grid place-items-center rounded-full">
-                        <div class="h-2 w-2 rounded-full bg-gray-900"></div>
+                        <div class="h-2 w-2 rounded-full bg-gray-900 dark:bg-gray-100"></div>
                         </div>
-                        <svg class="h-full w-full text-gray-600 animate-stamp group-hover:[animation-play-state:paused]" viewBox="0 0 200 200" aria-hidden="true">
+                        <svg class="h-full w-full text-gray-600 animate-stamp group-hover:[animation-play-state:paused] dark:text-gray-400" viewBox="0 0 200 200" aria-hidden="true">
                         <defs>
                             <path id="circlePath" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" />
                         </defs>
@@ -60,9 +61,9 @@
                         </svg>
                     </div>
 
-                    <h2 class="mt-8 text-6xl font-bold tracking-tight text-gray-900">About me</h2>
+                    <h2 class="mt-8 text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-100">About me</h2>
 
-                    <div class="mt-6 space-y-6 text-base leading-relaxed text-gray-600">
+                    <div class="mt-6 space-y-6 text-base leading-relaxed text-gray-600 dark:text-gray-300">
                         <p>
                         I’m a product designer, mentor, and growth strategist who helps mission-driven teams turn insights
                         into digital experiences that convert, retain, and scale.
@@ -90,7 +91,7 @@
                     <div class="mt-10 flex flex-wrap items-center gap-6">
                         <a
                         href="#services"
-                        class="inline-flex items-center rounded-full bg-gray-900 px-7 py-4 text-sm font-semibold text-white transition hover:bg-gray-800"
+                        class="inline-flex items-center rounded-full bg-gray-900 px-7 py-4 text-sm font-semibold text-white transition hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200"
                         >
                         View services
                         </a>
@@ -98,7 +99,7 @@
                         <a
                         href="./dump-images/resume.pdf"
                         download
-                        class="inline-flex items-center gap-2 text-sm font-semibold text-gray-900"
+                        class="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-gray-100"
                         >
                         <span>Download PDF resume</span>
                         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -114,17 +115,17 @@
                 <div class="lg:col-span-6">
                 <div class="relative mt-4 h-[520px] w-full">
                     <!-- Top image -->
-                    <div class="absolute right-0 top-0 w-[72%] overflow-hidden rounded-3xl bg-gray-200 shadow-sm">
+                    <div class="absolute right-0 top-0 w-[72%] overflow-hidden rounded-3xl bg-gray-200 shadow-sm dark:bg-gray-800">
                     <div class="aspect-[4/3] w-full"></div>
                     </div>
 
                     <!-- Middle image -->
-                    <div class="absolute right-[18%] top-[42%] w-[62%] -translate-y-1/2 overflow-hidden rounded-3xl bg-gray-200 shadow-sm">
+                    <div class="absolute right-[18%] top-[42%] w-[62%] -translate-y-1/2 overflow-hidden rounded-3xl bg-gray-200 shadow-sm dark:bg-gray-800">
                     <div class="aspect-square w-full"></div>
                     </div>
 
                     <!-- Bottom image -->
-                    <div class="absolute left-0 bottom-0 w-[78%] overflow-hidden rounded-3xl bg-gray-200 shadow-sm">
+                    <div class="absolute left-0 bottom-0 w-[78%] overflow-hidden rounded-3xl bg-gray-200 shadow-sm dark:bg-gray-800">
                     <div class="aspect-[16/10] w-full"></div>
                     </div>
                 </div>
@@ -134,7 +135,7 @@
 
         <!-- Education -->
         <section class="w-full py-12">
-            <h2 class="text-4xl font-semibold text-gray-900">Education</h2>
+            <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">Education</h2>
 
             <!-- grid: stacks on mobile, 2 columns on md+ -->
             <div class="mt-10 grid gap-14 md:grid-cols-2">
@@ -150,10 +151,10 @@
                     </div>
 
                     <div class="space-y-3">
-                        <h1 class="text-2xl font-bold text-gray-900">B.Tech in Textile Technology</h1>
-                        <p class="text-gray-600">Shri Guru Gobind Singhji Institute of Engineering and Technology, Govt. Autonomou</p>
+                        <h1 class="text-2xl font-bold text-gray-900 dark:text-gray-100">B.Tech in Textile Technology</h1>
+                        <p class="text-gray-600 dark:text-gray-300">Shri Guru Gobind Singhji Institute of Engineering and Technology, Govt. Autonomou</p>
 
-                        <p class="font-medium text-gray-800">
+                        <p class="font-medium text-gray-800 dark:text-gray-200">
                         GRADUATED <span class="tracking-normal">Jun 2015</span>
                         </p>
                     </div>
@@ -171,10 +172,10 @@
                     </div>
 
                     <div class="space-y-3">
-                        <h1 class="text-2xl font-bold text-gray-900">B.Tech in Textile Technology</h1>
-                        <p class="text-gray-600">Shri Guru Gobind Singhji Institute of Engineering and Technology, Govt. Autonomou</p>
+                        <h1 class="text-2xl font-bold text-gray-900 dark:text-gray-100">B.Tech in Textile Technology</h1>
+                        <p class="text-gray-600 dark:text-gray-300">Shri Guru Gobind Singhji Institute of Engineering and Technology, Govt. Autonomou</p>
 
-                        <p class="font-medium text-gray-800">
+                        <p class="font-medium text-gray-800 dark:text-gray-200">
                         GRADUATED <span class="tracking-normal">Jun 2015</span>
                         </p>
                     </div>
@@ -186,7 +187,7 @@
 
         <!-- Work Experience -->
         <section class="w-full py-12">
-            <h2 class="text-4xl font-semibold text-gray-900">
+            <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">
                 Work Experience
             </h2>
 
@@ -195,13 +196,13 @@
                 <div class="relative">
 
                     <!-- Base line (line 1) -->
-                    <div class="absolute left-[18px] top-[18px] h-[calc(100%-36px)] w-[4px] rounded-full bg-gray-200"></div>
+                    <div class="absolute left-[18px] top-[18px] h-[calc(100%-36px)] w-[4px] rounded-full bg-gray-200 dark:bg-gray-800"></div>
 
                     <!-- Step 1 -->
                     <div class="relative flex gap-8 pb-12">
                         <div class="relative w-12">
                             <!-- Number -->
-                            <div class="grid h-9 px-2 place-items-center rounded-full border-2 border-[#E8A6A6] font-bold text-[#E8A6A6] bg-white">
+                            <div class="grid h-9 px-2 place-items-center rounded-full border-2 border-[#E8A6A6] font-bold text-[#E8A6A6] bg-white dark:bg-gray-900">
                                 1st
                             </div>
                             <!-- Colored segment (line 2) -->
@@ -209,10 +210,10 @@
                         </div>
 
                         <div class="space-y-4">
-                            <h2 class="text-2xl font-bold text-gray-900">Khushibaby (NGO)</h2>
+                            <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Khushibaby (NGO)</h2>
                             <div class="space-y-2">
                                 <p class="text-xl font-semibold">Product Designer | Jan 2023 - present | Jaipur, IN</p>
-                                <p class="leading-relaxed text-gray-600">
+                                <p class="leading-relaxed text-gray-600 dark:text-gray-300">
                                     We start with a free 30-minute call to discuss your needs, goals, and project scope.
                                 </p>
                             </div>
@@ -222,24 +223,24 @@
                     <!-- Step 2 -->
                     <div class="relative flex gap-8 pb-12">
                         <div class="relative w-12">
-                            <div class="grid h-9 w-9 place-items-center rounded-full border-2 border-[#B8B2F0] text-sm font-bold text-[#B8B2F0] bg-white">
+                            <div class="grid h-9 w-9 place-items-center rounded-full border-2 border-[#B8B2F0] text-sm font-bold text-[#B8B2F0] bg-white dark:bg-gray-900">
                                 2
                             </div>
                             <div class="mx-auto mt-4 h-12 w-[4px] rounded-full bg-[#B8B2F0]"></div>
                         </div>
 
                         <div class="space-y-4">
-                            <h2 class="text-2xl font-bold text-gray-900">Khushibaby (NGO)</h2>
+                            <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Khushibaby (NGO)</h2>
                             <div class="space-y-2">
                                 <p class="text-xl font-semibold">Product Designer | Jan 2023 - present | Jaipur, IN</p>
                                 <div class="space-y-2">
-                                    <p class="leading-relaxed text-gray-600">
+                                    <p class="leading-relaxed text-gray-600 dark:text-gray-300">
                                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                                     </p>
-                                    <p class="leading-relaxed text-gray-600">
+                                    <p class="leading-relaxed text-gray-600 dark:text-gray-300">
                                         sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                     </p>
-                                    <p class="leading-relaxed text-gray-600">
+                                    <p class="leading-relaxed text-gray-600 dark:text-gray-300">
                                         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                                     </p>
                                 </div>
@@ -252,30 +253,30 @@
                     <!-- Step 3 -->
                     <div class="relative flex gap-8 pb-6">
                         <div class="relative w-12">
-                            <div class="grid h-9 w-9 place-items-center rounded-full border-2 border-[#9FD3A6] text-sm font-bold text-[#9FD3A6] bg-white">
+                            <div class="grid h-9 w-9 place-items-center rounded-full border-2 border-[#9FD3A6] text-sm font-bold text-[#9FD3A6] bg-white dark:bg-gray-900">
                                 3
                             </div>
                             <div class="mx-auto mt-4 h-12 w-[4px] rounded-full bg-[#9FD3A6]"></div>
                         </div>
 
                         <div class="space-y-4">
-                            <h2 class="text-2xl font-bold text-gray-900">Khushibaby (NGO)</h2>
+                            <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Khushibaby (NGO)</h2>
                             <p class="text-xl font-semibold">Product Designer | Jan 2023 - present | Jaipur, IN</p>
                             <div class="space-y-2">
-                                <p class="leading-relaxed text-gray-600">
+                                <p class="leading-relaxed text-gray-600 dark:text-gray-300">
                                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                                 </p>
-                                <p class="leading-relaxed text-gray-600">
+                                <p class="leading-relaxed text-gray-600 dark:text-gray-300">
                                     sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                 </p>
-                                <p class="leading-relaxed text-gray-600">
+                                <p class="leading-relaxed text-gray-600 dark:text-gray-300">
                                     Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                                 </p>
                             </div>
                             <button
                               type="button"
                               id="rolesModalOpen"
-                              class="relative font-semibold text-[#B97900] hover:text-[#9C6500]
+                              class="relative font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200
                                      after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current
                                      after:origin-left after:scale-x-0 hover:after:scale-x-100
                                      after:transition-transform after:duration-200"
@@ -291,14 +292,14 @@
 
         <!-- Why work with me? -->
         <section class="w-full py-16">
-            <h2 class="text-4xl font-semibold text-gray-900">
+            <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">
                 Why work with me?
             </h2>
 
             <div class="mx-auto mt-16 grid max-w-5xl gap-14 md:grid-cols-2">
                 <!-- Item -->
                 <article class="flex items-start gap-7">
-                    <div class="grid h-28 w-28 place-items-center rounded-3xl bg-[#F6DADA]">
+                    <div class="grid h-28 w-28 place-items-center rounded-3xl bg-[#F6DADA] dark:bg-rose-950/40">
                         <!-- same icon for all (placeholder target-ish) -->
                         <svg class="h-10 w-10 text-[#E57E7E]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z" stroke="currentColor" stroke-width="2"/>
@@ -308,8 +309,8 @@
                     </div>
 
                     <div class="space-y-4 max-w-md">
-                        <h3 class="text-2xl font-bold text-gray-900">Tailored, business-driven UX</h3>
-                        <p class="text-gray-600">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Tailored, business-driven UX</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
                         Not just aesthetics, real impact on engagement &amp; conversion.
                         </p>
                     </div>
@@ -317,7 +318,7 @@
 
                 <!-- Item -->
                 <article class="flex items-start gap-7">
-                    <div class="grid h-28 w-28 place-items-center rounded-3xl bg-[#E8E6FB]">
+                    <div class="grid h-28 w-28 place-items-center rounded-3xl bg-[#E8E6FB] dark:bg-violet-950/40">
                         <svg class="h-10 w-10 text-[#8B86D8]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z" stroke="currentColor" stroke-width="2"/>
                         <path d="M12 16a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z" stroke="currentColor" stroke-width="2"/>
@@ -326,8 +327,8 @@
                     </div>
 
                     <div class="space-y-4 max-w-md">
-                        <h3 class="text-2xl font-bold text-gray-900">Efficiency &amp; flexibility</h3>
-                        <p class="text-gray-600">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Efficiency &amp; flexibility</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
                         No bloated agency processes, no junior hand-offs.
                         </p>
                     </div>
@@ -343,9 +344,9 @@
 
                 <!-- Left intro -->
                 <div class="asdf">
-                    <h2 class="text-4xl font-semibold text-gray-900">My Design Principles</h2>
+                    <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">My Design Principles</h2>
 
-                    <div class="mt-5 space-y-5 text-base leading-relaxed text-gray-600">
+                    <div class="mt-5 space-y-5 text-base leading-relaxed text-gray-600 dark:text-gray-300">
                         <p>Good principles have sacrifices. They prioritize certain benefits over others, build constraints into one’s workflow, and act as a guide toward performance and efficiency.</p>
                         <p>Here are four principles that guide my product design and team leadership.</p>
                     </div>
@@ -356,14 +357,14 @@
                 <div class="grid gap-12 md:grid-cols-2">
                     <!-- Principle -->
                     <article class="space-y-4">
-                        <svg class="h-7 w-7 text-gray-700" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M7 8h10a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3H12l-4 3v-3H7a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
                             <path d="M8 12h.01M12 12h.01M16 12h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
                         </svg>
 
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900">Design is 90% Communication</h3>
-                            <p class="mt-2 text-base leading-relaxed text-gray-600">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Design is 90% Communication</h3>
+                            <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
                                 Communication is the most important skillset in product design. This includes team facilitation, persuasive storytelling, and stakeholder management.
                             </p>
                         </div>
@@ -371,14 +372,14 @@
 
                     <!-- Principle -->
                     <article class="space-y-4">
-                        <svg class="h-7 w-7 text-gray-700" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M8 8c0-2.2 1.8-4 4-4s4 1.8 4 4c0 2.3-1.6 3.6-3.2 4.6-1.7 1-3.3 2-3.3 4.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                             <path d="M16 16c0 2.2-1.8 4-4 4s-4-1.8-4-4c0-2.3 1.6-3.6 3.2-4.6 1.7-1 3.3-2 3.3-4.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
 
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900">Infinite Mindset</h3>
-                            <p class="mt-2 text-base leading-relaxed text-gray-600">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Infinite Mindset</h3>
+                            <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
                             Adopting a purpose-driven approach and playing for the long term is more effective than short-term approaches like “beating the competition”.
                             </p>
                         </div>
@@ -386,7 +387,7 @@
 
                     <!-- Principle -->
                     <article class="space-y-4">
-                        <svg class="h-7 w-7 text-gray-700" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M6 20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                             <path d="M18 20V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                             <path d="M12 20V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -396,8 +397,8 @@
                         </svg>
 
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900">Outcomes Over Output</h3>
-                            <p class="mt-2 text-base leading-relaxed text-gray-600">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Outcomes Over Output</h3>
+                            <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
                             Customer behavior is the most important metric for business success. Solving problems begins by
                             prioritizing outcomes, not features.
                             </p>
@@ -406,15 +407,15 @@
 
                     <!-- Principle -->
                     <article class="space-y-4">
-                        <svg class="h-7 w-7 text-gray-700" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M7 7h9a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
                             <path d="M9 10h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                             <path d="M9 13h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
 
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900">80% Is Good Enough</h3>
-                            <p class="mt-2 text-base leading-relaxed text-gray-600">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">80% Is Good Enough</h3>
+                            <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
                             Reaching 80% of a goal is usually enough. The time to get to 100% satisfaction is often better spent
                             making progress elsewhere.
                             </p>
@@ -425,12 +426,58 @@
             </div>
         </section>
 
+        <footer class="w-full pb-10 pt-6">
+            <div class="grid gap-3 px-4 text-sm text-gray-600 md:grid-cols-3 md:items-center dark:text-gray-300">
+                <div class="hidden md:block"></div>
+
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                    <p class="text-center">© 2025 – sumit.design</p>
+
+                    <button
+                        type="button"
+                        data-theme-toggle
+                        aria-pressed="false"
+                        class="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800"
+                    >
+                        <span class="grid h-6 w-6 place-items-center rounded-full bg-gray-900 text-white dark:bg-gray-800 dark:text-gray-300">
+                            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 3v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M12 19v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M5 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M21 12h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M6.4 6.4 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="m19 19-1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M6.4 17.6 5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="m19 5-1.4 1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <span class="grid h-6 w-6 place-items-center rounded-full bg-gray-200 text-gray-600 dark:bg-gray-100 dark:text-gray-900">
+                            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M20 15.5A8.5 8.5 0 1 1 8.5 4a7 7 0 0 0 11.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <span data-theme-label class="min-w-[2.5rem] text-left">Light</span>
+                        <span class="sr-only">Toggle color theme</span>
+                    </button>
+                </div>
+            
+                <p class="text-center md:text-right">
+                    Implementation notes &amp; source ·
+                    <a href="YOUR_REPO_URL" target="_blank" rel="noreferrer"
+                        class="font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200">
+                        GitHub
+                    </a>
+                </p>
+            </div>
+        </footer>
+
     </body>
 
 <!-- Roles & Responsibilities Modal -->
 <div id="rolesModal" class="fixed inset-0 z-50 hidden" aria-hidden="true">
   <!-- Overlay -->
-  <div id="rolesModalOverlay" class="absolute inset-0 bg-black/30"></div>
+  <div id="rolesModalOverlay" class="absolute inset-0 bg-black/30 dark:bg-black/60"></div>
 
   <!-- Dialog -->
   <div class="relative mx-4 flex min-h-screen items-center justify-center py-10 sm:mx-6">
@@ -438,19 +485,19 @@
       role="dialog"
       aria-modal="true"
       aria-labelledby="rolesModalTitle"
-      class="w-full max-w-3xl overflow-hidden rounded-4xl bg-white shadow-lg"
+      class="w-full max-w-3xl overflow-hidden rounded-4xl bg-white shadow-lg dark:bg-gray-900"
     >
       <!-- Header (non-scrollable) -->
-      <div class="flex items-start justify-between gap-4 border-b border-gray-200 px-6 py-5">
+      <div class="flex items-start justify-between gap-4 border-b border-gray-200 px-6 py-5 dark:border-gray-800">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-widest text-gray-500">Khushibaby (NGO)</p>
-          <h3 id="rolesModalTitle" class="mt-3 text-4xl font-extrabold text-gray-900">Roles & Responsibilities</h3>
+          <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400">Khushibaby (NGO)</p>
+          <h3 id="rolesModalTitle" class="mt-3 text-4xl font-extrabold text-gray-900 dark:text-gray-100">Roles & Responsibilities</h3>
         </div>
 
         <button
           type="button"
           id="rolesModalClose"
-          class="grid h-10 w-10 place-items-center rounded-xl text-gray-600 hover:bg-gray-50"
+          class="grid h-10 w-10 place-items-center rounded-xl text-gray-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
           aria-label="Close"
         >
           <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -461,14 +508,14 @@
 
       <!-- Body (scrollable) -->
       <div class="max-h-[70vh] overflow-y-auto px-6 py-6">
-        <div class="space-y-6 text-gray-700">
+        <div class="space-y-6 text-gray-700 dark:text-gray-300">
           <p>
             In my current role, I lead end-to-end product design responsibilities—from framing problems with cross-functional partners to delivering validated, implementation-ready solutions.
             I work closely with PMs, engineers, data teams, and field staff to ensure every design decision is grounded in real user needs and measurable outcomes.
           </p>
 
           <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900">Discover the Problem</h4>
+            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Discover the Problem</h4>
             <ol class="list-decimal space-y-2 pl-5">
               <li>Partner with Product to frame the problem using evidence, research, and data—not assumptions.</li>
               <li>Audit current workflows, friction points, competitors, and adjacent patterns.</li>
@@ -479,7 +526,7 @@
           </div>
 
           <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900">Define the Direction</h4>
+            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Define the Direction</h4>
             <ol class="list-decimal space-y-2 pl-5">
               <li>Synthesize research into insights, JTBD, needs, and opportunity areas.</li>
               <li>Establish experience principles and guardrails (accessibility, privacy, constraints).</li>
@@ -490,7 +537,7 @@
           </div>
 
           <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900">Design the Solution</h4>
+            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Design the Solution</h4>
             <ul class="list-disc space-y-2 pl-5">
               <li>Develop low-fidelity explorations and run quick validation checks.</li>
               <li>Create annotated high-fidelity designs using tokens and components.</li>
@@ -501,7 +548,7 @@
           </div>
 
           <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900">Validate with Users</h4>
+            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Validate with Users</h4>
             <ul class="list-disc space-y-2 pl-5">
               <li>Plan and run usability tests; gather and synthesize findings.</li>
               <li>Iterate and document decisions, rationale, and trade-offs.</li>
@@ -511,7 +558,7 @@
           </div>
 
           <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900">Partner Through Build</h4>
+            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Partner Through Build</h4>
             <ul class="list-disc space-y-2 pl-5">
               <li>Deliver complete specs—flows, redlines, tokens, assets, content matrix.</li>
               <li>Run engineering walkthroughs and maintain a shared decision log.</li>
@@ -521,7 +568,7 @@
           </div>
 
           <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900">Prepare for Launch</h4>
+            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Prepare for Launch</h4>
             <ul class="list-disc space-y-2 pl-5">
               <li>Perform final design QA on release candidates.</li>
               <li>Prepare screenshots, release notes, and help content.</li>
@@ -531,7 +578,7 @@
           </div>
 
           <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900">Measure Post Launch</h4>
+            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Measure Post Launch</h4>
             <ul class="list-disc space-y-2 pl-5">
               <li>Monitor dashboards and verify no regressions.</li>
               <li>Lead experiment readouts; propose next iteration.</li>
@@ -548,8 +595,8 @@
       </div>
 
       <!-- Footer (optional, non-scrollable) -->
-      <div class="border-t border-gray-200 px-6 py-4">
-        <p class="text-xs text-gray-500">Tip: Press <span class="font-semibold">Esc</span> to close.</p>
+      <div class="border-t border-gray-200 px-6 py-4 dark:border-gray-800">
+        <p class="text-xs text-gray-500 dark:text-gray-400">Tip: Press <span class="font-semibold">Esc</span> to close.</p>
       </div>
     </div>
   </div>

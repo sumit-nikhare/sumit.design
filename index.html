@@ -4,28 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
+  <script src="./src/theme.js" defer></script>
 </head>
-<body class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6">
+<body class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
 
     <!-- Ambient glassy glows -->
     <div class="pointer-events-none fixed inset-0 -z-10">
         <div
-            class="absolute -left-32 top-10 w-80 h-80 bg-gradient-to-br from-amber-200 via-white to-gray-100 opacity-60 blur-3xl">
+            class="absolute -left-32 top-10 w-80 h-80 bg-gradient-to-br from-amber-200 via-white to-gray-100 opacity-60 blur-3xl dark:from-amber-500/20 dark:via-gray-950 dark:to-gray-950 dark:opacity-30">
         </div>
         <div
-            class="absolute right-0 -top-24 w-96 h-96 bg-gradient-to-br from-white via-gray-100 to-orange-200 opacity-60 blur-3xl">
+            class="absolute right-0 -top-24 w-96 h-96 bg-gradient-to-br from-white via-gray-100 to-orange-200 opacity-60 blur-3xl dark:from-gray-950 dark:via-gray-950 dark:to-orange-500/20 dark:opacity-30">
         </div>
         <div
-            class="absolute left-1/3 bottom-0 w-96 h-96 bg-gradient-to-br from-orange-200 via-white to-gray-100 opacity-50 blur-3xl">
+            class="absolute left-1/3 bottom-0 w-96 h-96 bg-gradient-to-br from-orange-200 via-white to-gray-100 opacity-50 blur-3xl dark:from-orange-500/20 dark:via-gray-950 dark:to-gray-950 dark:opacity-30">
         </div>
     </div>
 
     <!-- Warning Banner -->
     <div data-alert role="alert" aria-live="polite"
-        class="w-full rounded-3xl border border-[#F2C14E] bg-[#FFF6DF] px-5 py-4">
+        class="w-full rounded-3xl border border-[#F2C14E] bg-[#FFF6DF] px-5 py-4 dark:border-amber-400/70 dark:bg-amber-950/40">
         <div class="flex items-start gap-4">
             <!-- Icon -->
-            <div class="mt-0.5 grid h-8 w-8 flex-shrink-0 place-items-center rounded-full bg-[#F2C14E]">
+            <div class="mt-0.5 grid h-8 w-8 flex-shrink-0 place-items-center rounded-full bg-[#F2C14E] dark:bg-amber-400/80">
                 <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <path d="M12 7v6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
                     <path d="M12 17h.01" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
@@ -34,16 +35,16 @@
     
             <!-- Content -->
             <div class="space-y-3">
-                <p class="text-lg font-extrabold text-gray-900">Important Notice</p>
+                <p class="text-lg font-extrabold text-gray-900 dark:text-gray-100">Important Notice</p>
     
-                <p class="mt-1 text-base text-gray-700">
+                <p class="mt-1 text-base text-gray-700 dark:text-gray-200">
                     This platform contains proprietary design assets and system workflows developed for Khushi Baby. These designs are confidential and unauthorized copying, distribution, or reuse is not permitted.
                 </p>
             </div>
     
             <!-- Close -->
             <button type="button" data-alert-close aria-label="Dismiss warning"
-                class="-mr-1 grid h-10 w-10 flex-shrink-0 place-items-center rounded-2xl text-[#6B6B6B] hover:bg-white/70 hover:text-[#c71919]">
+                class="-mr-1 grid h-10 w-10 flex-shrink-0 place-items-center rounded-2xl text-[#6B6B6B] hover:bg-white/70 hover:text-[#c71919] dark:text-gray-300 dark:hover:bg-white/10 dark:hover:text-red-300">
                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
                 </svg>
@@ -58,7 +59,7 @@
             <a href="./work/work.html">
                 <button
                     type="button"
-                    class="relative font-semibold text-[#B97900] hover:text-[#9C6500]
+                    class="relative font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200
                             after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current
                             after:origin-left after:scale-x-0 hover:after:scale-x-100
                             after:transition-transform after:duration-200"
@@ -70,7 +71,7 @@
             <a href="./about.html">
                 <button
                     type="button"
-                    class="relative font-semibold text-[#B97900] hover:text-[#9C6500]
+                    class="relative font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200
                             after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current
                             after:origin-left after:scale-x-0 hover:after:scale-x-100
                             after:transition-transform after:duration-200"
@@ -85,14 +86,14 @@
     <main class="min-h-screen py-8">
         <!-- Top row -->
         <div class="flex items-start justify-between">
-            <div class="text-sm text-gray-700">
+            <div class="text-sm text-gray-700 dark:text-gray-300">
                 <p id="js-date" class="font-semibold">Aug 27, 2024</p>
                 <p id="js-time" class="mt-0.5">09:29:08</p>
             </div>
         
-            <div class="inline-flex items-center gap-3 rounded-full bg-white px-4 py-2">
+            <div class="inline-flex items-center gap-3 rounded-full bg-white px-4 py-2 dark:bg-gray-900">
                 <span class="h-2.5 w-2.5 rounded-full bg-green-500"></span>
-                <span class="text-sm font-medium text-gray-900">Available for new Project</span>
+                <span class="text-sm font-medium text-gray-900 dark:text-gray-100">Available for new Project</span>
             </div>
         </div>
 
@@ -100,7 +101,7 @@
         <section class="mt-14 grid gap-12 lg:grid-cols-12 lg:items-start">
             <!-- Left: avatar + headline + socials -->
             <div class="lg:col-span-7">
-                <div class="h-20 w-20 rounded-3xl bg-gray-200 shadow-sm">
+                <div class="h-20 w-20 rounded-3xl bg-gray-200 shadow-sm dark:bg-gray-800">
                     <img class="h-full w-full rounded-3xl object-cover" src="./assets/common/my-photo.png" alt="Sumit Nikhare Photo">
                 </div>
 
@@ -110,12 +111,12 @@
 
                 <div class="mt-12 flex flex-wrap items-center gap-3">
                     <!-- Behance -->
-                    <a href="#" class="grid h-12 w-12 place-items-center rounded-full border border-gray-200 bg-white hover:bg-gray-50">
+                    <a href="#" class="grid h-12 w-12 place-items-center rounded-full border border-gray-200 bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800">
                     <span class="text-sm font-semibold">Be</span>
                     </a>
 
                     <!-- Instagram -->
-                    <a href="#" class="grid h-12 w-12 place-items-center rounded-full border border-gray-200 bg-white hover:bg-gray-50">
+                    <a href="#" class="grid h-12 w-12 place-items-center rounded-full border border-gray-200 bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800">
                     <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="2"/>
                         <path d="M12 16a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z" stroke="currentColor" stroke-width="2"/>
@@ -124,7 +125,7 @@
                     </a>
 
                     <!-- LinkedIn -->
-                    <a href="#" class="grid h-12 w-12 place-items-center rounded-full border border-gray-200 bg-white hover:bg-gray-50">
+                    <a href="#" class="grid h-12 w-12 place-items-center rounded-full border border-gray-200 bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800">
                     <span class="text-sm font-semibold">in</span>
                     </a>
                 </div>
@@ -133,8 +134,8 @@
             <!-- Right: bio + discover -->
             <aside class="lg:col-span-5">
                 <div class="flex h-full flex-col justify-between gap-10 lg:min-h-[420px]">
-                    <div class="text-base leading-relaxed text-gray-600">
-                        <p class="text-gray-900">I’m Sumit, a Product Designer focused on building clear, scalable digital systems.
+                    <div class="text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                        <p class="text-gray-900 dark:text-gray-100">I’m Sumit, a Product Designer focused on building clear, scalable digital systems.
                         </p>
                         <p class="mt-4">
                             I work on complex problem spaces like public health, enterprise tools, and operational platforms,
@@ -142,7 +143,7 @@
                         </p>
                     </div>
             
-                    <a href="#discover" class="inline-flex items-center gap-3 text-base font-medium text-gray-900">
+                    <a href="#discover" class="inline-flex items-center gap-3 text-base font-medium text-gray-900 dark:text-gray-100">
                         <span>Discover</span>
                         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -163,7 +164,7 @@
             <h2 id="discover" class="text-4xl font-semibold">Recent Work</h2>
             <p>
                 Recent work across product design, UX, and system-driven platforms.
-                <a href="./work/work.html" class="pl-1 text-[#B97900] hover:text-[#9C6500]">
+                <a href="./work/work.html" class="pl-1 text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200">
                     Explore more projects.
                 </a>
             </p>
@@ -176,16 +177,16 @@
             <div>
                 <a href="./work/chip-2.html"
                     class="group relative block overflow-hidden rounded-2xl
-                        bg-white/60 backdrop-blur p-5 space-y-3
+                        bg-white/60 backdrop-blur p-5 space-y-3 dark:bg-gray-900/60
                         transition duration-200 hover:shadow-md focus-visible:shadow-md
-                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100">
+                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
                 
                     <!-- Ambient “glassy glow” blobs (no gradients, clipped inside card) -->
-                    <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
+                        <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
                         group-hover:opacity-100 group-focus-visible:opacity-100">
-                        <span class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl"></span>
-                        <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl"></span>
-                        <span class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl"></span>
+                        <span class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
+                        <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
+                        <span class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
                     </div>
                 
                     <!-- Content above glow -->
@@ -194,41 +195,41 @@
                           <img
                             src="../assets/chip-2/demo-img-1080.png"
                             alt="Onboarding (Login, Registration) placeholder"
-                            class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200"
+                            class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800"
                           />
                         </div>
                         
                         <div class="md:flex-1 space-y-4">
                             <div class="space-y-4">
                                 <div>
-                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
+                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-200">
                                         Public Health Platform
                                     </span>
-                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
+                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-200">
                                         Digital Health Systems
                                     </span>
-                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
+                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-200">
                                         UX Case Study
                                     </span>
                                 </div>
 
                                 <div class="space-y-2">
-                                    <h3 class="text-2xl font-bold text-gray-900">Community Health Integrated Platform 2.0</h3>
-                                    <p class="font-semibold text-gray-600">Designing a unified platform for public health program operations</p>
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Community Health Integrated Platform 2.0</h3>
+                                    <p class="font-semibold text-gray-600 dark:text-gray-300">Designing a unified platform for public health program operations</p>
                                 </div>
                                 
-                                <p class="text-gray-700">CHIP 2.0 is built to strengthen public health operations by digitizing workflows across programs and facilities. The platform supports field-level execution, real-time monitoring, and program-level oversight, helping health systems operate more efficiently and consistently.</p>
+                                <p class="text-gray-700 dark:text-gray-300">CHIP 2.0 is built to strengthen public health operations by digitizing workflows across programs and facilities. The platform supports field-level execution, real-time monitoring, and program-level oversight, helping health systems operate more efficiently and consistently.</p>
                             </div>
                         
                         
                             <!-- Button + Read Time -->
                             <div class="space-x-4">
-                                <span class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg font-semibold text-gray-700 bg-gray-100 mt-2
+                                <span class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg font-semibold text-gray-700 bg-gray-100 mt-2 dark:text-gray-200 dark:bg-gray-800
                                     transition-colors duration-200
-                                    group-hover:bg-gray-300 group-focus-visible:bg-gray-400">
+                                    group-hover:bg-gray-300 group-focus-visible:bg-gray-400 dark:group-hover:bg-gray-700 dark:group-focus-visible:bg-gray-700">
                                     View Details
                                 </span>
-                                <span class="text-gray-600">9 min read</span>
+                                <span class="text-gray-600 dark:text-gray-400">9 min read</span>
                             </div>
                             
                         </div>
@@ -241,16 +242,16 @@
             <div>
                 <a href="./work/samasta.html"
                     class="group relative block overflow-hidden rounded-2xl
-                        bg-white/60 backdrop-blur p-5 space-y-3
+                        bg-white/60 backdrop-blur p-5 space-y-3 dark:bg-gray-900/60
                         transition duration-200 hover:shadow-md focus-visible:shadow-md
-                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100">
+                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
                 
                     <!-- Ambient “glassy glow” blobs (no gradients, clipped inside card) -->
-                    <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
+                        <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
                         group-hover:opacity-100 group-focus-visible:opacity-100">
-                        <span class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl"></span>
-                        <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl"></span>
-                        <span class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl"></span>
+                        <span class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
+                        <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
+                        <span class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
                     </div>
                 
                     <!-- Content above glow -->
@@ -259,41 +260,41 @@
                           <img
                             src="../assets/chip-2/demo-img-1080.png"
                             alt="Onboarding (Login, Registration) placeholder"
-                            class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200"
+                            class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800"
                           />
                         </div>
                         
                         <div class="md:flex-1 space-y-4">
                             <div class="space-y-4">
                                 <div>
-                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
+                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-200">
                                         Public Health Platform
                                     </span>
-                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
+                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-200">
                                         Digital Health Systems
                                     </span>
-                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
+                                    <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-200">
                                         UX Case Study
                                     </span>
                                 </div>
 
                                 <div class="space-y-2">
-                                    <h3 class="text-2xl font-bold text-gray-900">Community Health Integrated Platform 2.0</h3>
-                                    <p class="font-semibold text-gray-600">Designing a unified platform for public health program operations</p>
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Community Health Integrated Platform 2.0</h3>
+                                    <p class="font-semibold text-gray-600 dark:text-gray-300">Designing a unified platform for public health program operations</p>
                                 </div>
                                 
-                                <p class="text-gray-700">CHIP 2.0 is built to strengthen public health operations by digitizing workflows across programs and facilities. The platform supports field-level execution, real-time monitoring, and program-level oversight, helping health systems operate more efficiently and consistently.</p>
+                                <p class="text-gray-700 dark:text-gray-300">CHIP 2.0 is built to strengthen public health operations by digitizing workflows across programs and facilities. The platform supports field-level execution, real-time monitoring, and program-level oversight, helping health systems operate more efficiently and consistently.</p>
                             </div>
                         
                         
                             <!-- Button + Read Time -->
                             <div class="space-x-4">
-                                <span class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg font-semibold text-gray-700 bg-gray-100 mt-2
+                                <span class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg font-semibold text-gray-700 bg-gray-100 mt-2 dark:text-gray-200 dark:bg-gray-800
                                     transition-colors duration-200
-                                    group-hover:bg-gray-300 group-focus-visible:bg-gray-400">
+                                    group-hover:bg-gray-300 group-focus-visible:bg-gray-400 dark:group-hover:bg-gray-700 dark:group-focus-visible:bg-gray-700">
                                     View Details
                                 </span>
-                                <span class="text-gray-600">9 min read</span>
+                                <span class="text-gray-600 dark:text-gray-400">9 min read</span>
                             </div>
                             
                         </div>
@@ -311,14 +312,14 @@
         <h2 class="text-4xl font-semibold">About Me</h2>
     
         <!-- Mint wrapper -->
-        <div class="mt-8 rounded-3xl bg-[#DCE9E2] p-2 md:p-6">
+        <div class="mt-8 rounded-3xl bg-[#DCE9E2] p-2 md:p-6 dark:bg-[#17231e]">
             <div class="grid gap-6 lg:grid-cols-12">
 
                 <!-- Left: Photo card -->
                 <div class="lg:col-span-6">
                     <div class="overflow-hidden rounded-3xl">
                         <!-- Image placeholder -->
-                        <div class="aspect-[4/5] w-full bg-gray-200">
+                        <div class="aspect-[4/5] w-full bg-gray-200 dark:bg-gray-800">
                             <img class="h-full w-full rounded-3xl object-cover" src="./assets/common/my-photo.png" alt="Sumit Nikhare Photo">
                         </div>
     
@@ -327,7 +328,7 @@
                             <div class="flex items-center gap-3">
                                 <!-- Mail -->
                                 <a href="mailto:sumit.v.nikhare@gmail.com"
-                                    class="grid h-10 w-10 place-items-center rounded-full bg-gray-900 text-white hover:bg-gray-800"
+                                    class="grid h-10 w-10 place-items-center rounded-full bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200"
                                     aria-label="Email">
                                     <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                         <path d="M4 7h16v10H4V7Z" stroke="currentColor" stroke-width="2" />
@@ -338,14 +339,14 @@
     
                                 <!-- LinkedIn -->
                                 <a href="#"
-                                    class="grid h-10 w-10 place-items-center rounded-full border border-gray-200 bg-white text-gray-900 hover:bg-gray-50"
+                                    class="grid h-10 w-10 place-items-center rounded-full border border-gray-200 bg-white text-gray-900 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 dark:hover:bg-gray-800"
                                     aria-label="LinkedIn">
                                     <span class="text-sm font-semibold">in</span>
                                 </a>
     
                                 <!-- Dribbble -->
                                 <a href="#"
-                                    class="grid h-10 w-10 place-items-center rounded-full border border-gray-200 bg-white text-gray-900 hover:bg-gray-50"
+                                    class="grid h-10 w-10 place-items-center rounded-full border border-gray-200 bg-white text-gray-900 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 dark:hover:bg-gray-800"
                                     aria-label="Dribbble">
                                     <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                         <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z" stroke="currentColor"
@@ -359,7 +360,7 @@
     
                                 <!-- Link -->
                                 <a href="#"
-                                    class="grid h-10 w-10 place-items-center rounded-full border border-gray-200 bg-white text-gray-900 hover:bg-gray-50"
+                                    class="grid h-10 w-10 place-items-center rounded-full border border-gray-200 bg-white text-gray-900 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 dark:hover:bg-gray-800"
                                     aria-label="Website">
                                     <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                         <path d="M10 13a5 5 0 0 1 0-7l1-1a5 5 0 0 1 7 7l-1 1" stroke="currentColor"
@@ -378,34 +379,34 @@
     
                 <!-- Right: Text card -->
                 <div class="lg:col-span-6">
-                    <div class="h-full rounded-3xl bg-white p-6 md:p-10">
-                        <h3 class="text-4xl font-extrabold tracking-tight text-gray-900">Hi, I'm Sumit 👋</h3>
+                    <div class="h-full rounded-3xl bg-white p-6 md:p-10 dark:bg-gray-900">
+                        <h3 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">Hi, I'm Sumit 👋</h3>
     
-                        <p class="mt-6 leading-relaxed text-gray-600">
+                        <p class="mt-6 leading-relaxed text-gray-600 dark:text-gray-300">
                             I’m the designer who pauses to ask,
                         </p>
 
-                        <p class="mt-4 text-xl leading-relaxed font-semibold italic text-gray-900">“What problem are we actually solving?”</p>
+                        <p class="mt-4 text-xl leading-relaxed font-semibold italic text-gray-900 dark:text-gray-100">“What problem are we actually solving?”</p>
 
-                        <p class="mt-4 leading-relaxed text-gray-600">
+                        <p class="mt-4 leading-relaxed text-gray-600 dark:text-gray-300">
                             I design digital products by balancing user needs, business goals, and technical constraints. My work spans research, problem definition, user flows, interaction design, and visual systems.
                         </p>
-                        <p class="mt-4 leading-relaxed text-gray-600">
+                        <p class="mt-4 leading-relaxed text-gray-600 dark:text-gray-300">
                             I collaborate closely with engineers and stakeholders to turn complex requirements into intuitive, scalable experiences that work reliably in real-world conditions, not just in prototypes.
                         </p>
     
-                        <p class="mt-10 font-signature text-4xl text-gray-900">Sumit Nikhare</p>
+                        <p class="mt-10 font-signature text-4xl text-gray-900 dark:text-gray-100">Sumit Nikhare</p>
                     </div>
                 </div>
     
                 <!-- Bottom CTA bar (under right card on desktop, stacks on mobile) -->
                 <div class="lg:col-start-7 lg:col-span-6">
                     <a href="./about.html"
-                        class="group flex items-center justify-between rounded-full bg-gray-900 pl-6 pr-4 py-4 text-white hover:bg-gray-800">
+                        class="group flex items-center justify-between rounded-full bg-gray-900 pl-6 pr-4 py-4 text-white hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200">
                         <span class="text-lg font-semibold">More About Me</span>
     
                         <span
-                            class="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition group-hover:bg-white/15">
+                            class="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition group-hover:bg-white/15 dark:bg-gray-900/20 dark:group-hover:bg-gray-900/30">
                             <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                 <path d="M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                                 <path d="M13 7l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -420,17 +421,17 @@
 
     <!-- Footer -->
     <footer class="w-full pb-10 space-y-8">
-        <div class="rounded-[40px] border border-gray-200 bg-white p-10 md:p-14">
+        <div class="rounded-[40px] border border-gray-200 bg-white p-10 md:p-14 dark:border-gray-800 dark:bg-gray-900">
             <!-- Top row -->
             <div class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
                 <div>
-                    <h2 class="text-4xl font-semibold text-gray-900">Let’s connect</h2>
-                    <p class="mt-3 text-sm text-gray-600">
+                    <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">Let’s connect</h2>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
                         Open to new projects, collaborations, and conversations.
                     </p>
     
                     <a href="#contact"
-                        class="mt-6 inline-flex items-center rounded-full border-2 border-gray-900 bg-white px-7 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition duration-300">
+                        class="mt-6 inline-flex items-center rounded-full border-2 border-gray-900 bg-white px-7 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition duration-300 dark:border-gray-100 dark:bg-gray-900 dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900">
                         Contact me
                     </a>
                 </div>
@@ -446,65 +447,65 @@
     
                 <!-- Navigation -->
                 <div>
-                    <p class="text-sm font-semibold text-gray-900">Navigation</p>
-                    <ul class="mt-5 space-y-3 text-sm text-gray-700">
+                    <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Navigation</p>
+                    <ul class="mt-5 space-y-3 text-sm text-gray-700 dark:text-gray-300">
                         <li><a class="underline underline-offset-4">Home</a></li>
-                        <li><a href="#about" class="hover:text-[#9C6500]">About</a></li>
-                        <li><a href="#resume" class="hover:text-[#9C6500]">Resume</a></li>
+                        <li><a href="#about" class="hover:text-[#9C6500] dark:hover:text-amber-200">About</a></li>
+                        <li><a href="#resume" class="hover:text-[#9C6500] dark:hover:text-amber-200">Resume</a></li>
                     </ul>
                 </div>
     
                 <!-- Case studies -->
                 <div>
-                    <p class="text-sm font-semibold text-gray-900">Case studies</p>
-                    <ul class="mt-5 space-y-3 text-sm text-gray-700">
-                        <li><a href="./work/chip-2.html" class="hover:text-[#9C6500]">CHIP 2.0</a></li>
-                        <li><a href="./work/samasta.html" class="hover:text-[#9C6500]">Samasta</a></li>
-                        <li><a href="./work/cho-soft.html" class="hover:text-[#9C6500]">CHO Soft</a></li>
-                        <li><a href="./work/therabody-plp.html" class="hover:text-[#9C6500]">Therabody PLP</a></li>
+                    <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Case studies</p>
+                    <ul class="mt-5 space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                        <li><a href="./work/chip-2.html" class="hover:text-[#9C6500] dark:hover:text-amber-200">CHIP 2.0</a></li>
+                        <li><a href="./work/samasta.html" class="hover:text-[#9C6500] dark:hover:text-amber-200">Samasta</a></li>
+                        <li><a href="./work/cho-soft.html" class="hover:text-[#9C6500] dark:hover:text-amber-200">CHO Soft</a></li>
+                        <li><a href="./work/therabody-plp.html" class="hover:text-[#9C6500] dark:hover:text-amber-200">Therabody PLP</a></li>
                     </ul>
                 </div>
     
                 <!-- Elsewhere -->
                 <div>
-                    <p class="text-sm font-semibold text-gray-900">Elsewhere</p>
+                    <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Elsewhere</p>
     
                     <div class="mt-5 space-y-2">
     
                         <!-- Card -->
                         <a href="#"
-                            class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-violet-100 py-2 pl-2 pr-4">
+                            class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-violet-100 py-2 pl-2 pr-4 dark:bg-violet-900/30">
                             <div class="flex items-center gap-4">
-                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70">
+                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
                                     <span class="text-sm font-semibold">in</span>
                                 </div>
-                                <p class="text-sm font-semibold text-gray-900">LinkedIn</p>
+                                <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">LinkedIn</p>
                             </div>
-                            <span class="text-gray-700">↗</span>
+                            <span class="text-gray-700 dark:text-gray-300">↗</span>
                         </a>
     
                         <!-- Card -->
                         <a href="#"
-                            class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-emerald-100 py-2 pl-2 pr-4">
+                            class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-emerald-100 py-2 pl-2 pr-4 dark:bg-emerald-900/30">
                             <div class="flex items-center gap-4">
-                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70">
+                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
                                     <span class="text-sm font-semibold">G</span>
                                 </div>
-                                <p class="text-sm font-semibold text-gray-900">Email</p>
+                                <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Email</p>
                             </div>
-                            <span class="text-gray-700">↗</span>
+                            <span class="text-gray-700 dark:text-gray-300">↗</span>
                         </a>
     
                         <!-- Card -->
                         <a href="#"
-                            class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-rose-100 py-2 pl-2 pr-4">
+                            class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-rose-100 py-2 pl-2 pr-4 dark:bg-rose-900/30">
                             <div class="flex items-center gap-4">
-                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70">
+                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
                                     <span class="text-sm font-semibold">in</span>
                                 </div>
-                                <p class="text-sm font-semibold text-gray-900">Instagram</p>
+                                <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Instagram</p>
                             </div>
-                            <span class="text-gray-700">↗</span>
+                            <span class="text-gray-700 dark:text-gray-300">↗</span>
                         </a>
     
                     </div>
@@ -513,13 +514,45 @@
             </div>
         </div>
 
-        <div class="flex flex-col items-center gap-2 text-sm text-gray-600 md:flex-row md:justify-between px-4">
-            <p class="text-center md:text-left">© 2025 – sumit.design</p>
+        <div class="grid gap-3 px-4 text-sm text-gray-600 md:grid-cols-3 md:items-center dark:text-gray-300">
+            <div class="hidden md:block"></div>
+
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <p class="text-center">© 2025 – sumit.design</p>
+
+                <button
+                    type="button"
+                    data-theme-toggle
+                    aria-pressed="false"
+                    class="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800"
+                >
+                    <span class="grid h-6 w-6 place-items-center rounded-full bg-gray-900 text-white dark:bg-gray-800 dark:text-gray-300">
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M12 3v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 19v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M5 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M21 12h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M6.4 6.4 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="m19 19-1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M6.4 17.6 5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="m19 5-1.4 1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </span>
+                    <span class="grid h-6 w-6 place-items-center rounded-full bg-gray-200 text-gray-600 dark:bg-gray-100 dark:text-gray-900">
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M20 15.5A8.5 8.5 0 1 1 8.5 4a7 7 0 0 0 11.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <span data-theme-label class="min-w-[2.5rem] text-left">Light</span>
+                    <span class="sr-only">Toggle color theme</span>
+                </button>
+            </div>
         
             <p class="text-center md:text-right">
                 Implementation notes &amp; source ·
                 <a href="YOUR_REPO_URL" target="_blank" rel="noreferrer"
-                    class="font-semibold text-[#B97900] hover:text-[#9C6500]">
+                    class="font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200">
                     GitHub
                 </a>
             </p>
