@@ -1,14 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap');
-
 @import "tailwindcss";
 /* Use class-based dark mode so the toggle can override system preference. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
+  :root {
+    --brand-700: #9C6500;
+    --brand-800: #7A4D00;
+  }
+  .dark {
+    --brand-700: #FCD34D;
+    --brand-800: #FDE68A;
+  }
   body { font-family: 'Open Sans', sans-serif; }
   h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }
+}
+
+@layer components {
+  .link-brand {
+    color: var(--brand-700);
+    font-weight: 600;
+  }
+  .link-brand:hover {
+    color: var(--brand-800);
+  }
+  .link-brand:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+
+  .nav-link {
+    position: relative;
+    font-weight: 600;
+    color: var(--brand-700);
+  }
+  .nav-link:hover {
+    color: var(--brand-800);
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms ease;
+  }
+  .nav-link:hover::after,
+  .nav-link:focus-visible::after,
+  .nav-link[aria-current="page"]::after {
+    transform: scaleX(1);
+  }
+  .nav-link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+  .nav-link[aria-current="page"] {
+    color: var(--brand-800);
+  }
 }
 
 @layer utilities {

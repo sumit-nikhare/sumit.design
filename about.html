@@ -5,39 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
     <link href="./src/output.css" rel="stylesheet">
     <script src="./src/theme.js" defer></script>
     </head>
     <body class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
+        <div id="pageContent">
         <!-- Top Bar -->
-        <div class="flex items-center justify-between">
-            <h2 class="text-3xl font-semibold"><a class="text-gray-900 hover:text-[#9C6500] transition duration-300 dark:text-gray-100 dark:hover:text-amber-200" href="./index.html">sumit.design</a></h2>
-            <div class="flex items-center gap-4">
-                <a href="./work/work.html">
-                    <button
-                        type="button"
-                        class="relative font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200
-                                after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current
-                                after:origin-left after:scale-x-0 hover:after:scale-x-100
-                                after:transition-transform after:duration-200"
-                        >
-                        Work
-                    </button>
-                </a>
-
-                <a href="./about.html">
-                    <button
-                        type="button"
-                        class="relative font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200
-                                after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current
-                                after:origin-left after:scale-x-0 hover:after:scale-x-100
-                                after:transition-transform after:duration-200"
-                        >
-                        About
-                    </button>
-                </a>
-            </div>
-        </div>
+        <header class="flex items-center justify-between">
+            <a class="text-3xl font-semibold text-gray-900 dark:text-gray-100" href="./index.html">sumit.design</a>
+            <nav class="flex items-center gap-4">
+                <a href="./work/work.html" class="nav-link">Work</a>
+                <a href="./about.html" class="nav-link" aria-current="page">About</a>
+            </nav>
+        </header>
 
         <!-- Hero -->
         <section id="about" class="w-full py-12">
@@ -129,6 +112,30 @@
                     <div class="aspect-[16/10] w-full"></div>
                     </div>
                 </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="w-full py-12">
+            <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">Services</h2>
+            <p class="mt-3 text-base text-gray-600 dark:text-gray-300">
+                Flexible engagement models depending on scope, team setup, and delivery goals.
+            </p>
+
+            <div class="mt-8 grid gap-6 md:grid-cols-2">
+                <div class="rounded-3xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
+                    <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Product Strategy</h3>
+                    <p class="mt-3 text-gray-600 dark:text-gray-300">
+                        Research synthesis, problem framing, and roadmap alignment for early-stage or scaling teams.
+                    </p>
+                </div>
+
+                <div class="rounded-3xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
+                    <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">UX & UI Design</h3>
+                    <p class="mt-3 text-gray-600 dark:text-gray-300">
+                        End-to-end product design for web and mobile, including flows, IA, and visual systems.
+                    </p>
                 </div>
             </div>
         </section>
@@ -276,7 +283,9 @@
                             <button
                               type="button"
                               id="rolesModalOpen"
-                              class="relative font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200
+                              aria-controls="rolesModal"
+                              aria-expanded="false"
+                              class="relative link-brand
                                      after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current
                                      after:origin-left after:scale-x-0 hover:after:scale-x-100
                                      after:transition-transform after:duration-200"
@@ -464,18 +473,16 @@
             
                 <p class="text-center md:text-right">
                     Implementation notes &amp; source ·
-                    <a href="YOUR_REPO_URL" target="_blank" rel="noreferrer"
-                        class="font-semibold text-[#B97900] hover:text-[#9C6500] dark:text-amber-300 dark:hover:text-amber-200">
+                    <a href="https://github.com/" target="_blank" rel="noreferrer" class="link-brand">
                         GitHub
                     </a>
                 </p>
             </div>
         </footer>
+        </div>
 
-    </body>
-
-<!-- Roles & Responsibilities Modal -->
-<div id="rolesModal" class="fixed inset-0 z-50 hidden" aria-hidden="true">
+        <!-- Roles & Responsibilities Modal -->
+        <div id="rolesModal" class="fixed inset-0 z-50 hidden" aria-hidden="true">
   <!-- Overlay -->
   <div id="rolesModalOverlay" class="absolute inset-0 bg-black/30 dark:bg-black/60"></div>
 
@@ -608,23 +615,64 @@
     const modal = document.getElementById('rolesModal');
     const overlay = document.getElementById('rolesModalOverlay');
     const closeBtn = document.getElementById('rolesModalClose');
+    const pageContent = document.getElementById('pageContent');
 
-    if (!openBtn || !modal || !overlay || !closeBtn) return;
+    if (!openBtn || !modal || !overlay || !closeBtn || !pageContent) return;
 
     let lastFocused = null;
+    let trapHandler = null;
+
+    const getFocusable = () =>
+      Array.from(
+        modal.querySelectorAll(
+          'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'
+        )
+      );
 
     function openModal() {
       lastFocused = document.activeElement;
       modal.classList.remove('hidden');
       modal.setAttribute('aria-hidden', 'false');
+      openBtn.setAttribute('aria-expanded', 'true');
       document.body.classList.add('overflow-hidden');
-      closeBtn.focus();
+      pageContent.setAttribute('aria-hidden', 'true');
+      if ('inert' in pageContent) pageContent.inert = true;
+
+      const focusables = getFocusable();
+      if (focusables.length) focusables[0].focus();
+
+      trapHandler = (e) => {
+        if (e.key === 'Escape') {
+          closeModal();
+          return;
+        }
+
+        if (e.key !== 'Tab') return;
+        const items = getFocusable();
+        if (!items.length) return;
+        const first = items[0];
+        const last = items[items.length - 1];
+
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      };
+
+      document.addEventListener('keydown', trapHandler);
     }
 
     function closeModal() {
       modal.classList.add('hidden');
       modal.setAttribute('aria-hidden', 'true');
+      openBtn.setAttribute('aria-expanded', 'false');
       document.body.classList.remove('overflow-hidden');
+      pageContent.removeAttribute('aria-hidden');
+      if ('inert' in pageContent) pageContent.inert = false;
+      if (trapHandler) document.removeEventListener('keydown', trapHandler);
       if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
     }
 
@@ -633,13 +681,7 @@
 
     // Click outside
     overlay.addEventListener('click', closeModal);
-
-    // ESC to close
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-        closeModal();
-      }
-    });
   })();
 </script>
+</body>
 </html>
