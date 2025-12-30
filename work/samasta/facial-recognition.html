@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facial Recognition | Samasta | sumit.design</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link href="../../src/output.css" rel="stylesheet" />
+  <script src="../../src/theme.js" defer></script>
+</head>
+
+<body
+    class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
+    <!-- Header -->
+    <header class="flex items-center justify-between">
+        <a href="../../index.html" class="text-3xl font-semibold text-gray-900 dark:text-gray-100">sumit.design</a>
+        <nav class="flex items-center gap-4">
+            <a href="../work.html" class="nav-link" aria-current="page">Work</a>
+            <a href="../../about.html" class="nav-link">About</a>
+        </nav>
+    </header>
+
+    <main class="min-h-[70vh] py-12 space-y-12">
+        <!-- Hero -->
+        <section class="space-y-5">
+            <div class="flex flex-wrap items-center gap-3">
+                <a href="../samasta.html"
+                    class="inline-flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-800">
+                    ← Samasta case study
+                </a>
+
+                <a href="./opd.html"
+                    class="inline-flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-800">
+                    OPD Services
+                </a>
+
+                <a href="./inventory.html"
+                    class="inline-flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-800">
+                    Inventory
+                </a>
+            </div>
+
+            <p class="text-sm uppercase tracking-[0.35em] text-gray-500 dark:text-gray-400">Samasta · Focus module</p>
+
+            <div class="space-y-3">
+                <h1 class="text-5xl font-semibold leading-tight">Facial Recognition</h1>
+                <p class="text-lg text-gray-700 dark:text-gray-300">
+                    A front-door identity flow that reduces friction at the facility entry point while keeping consent,
+                    fallbacks,
+                    and handoffs explicit. The module supports three paths:
+                    <span class="font-semibold">search by identifiers</span>, <span class="font-semibold">face scan +
+                        online search</span>,
+                    and <span class="font-semibold">new registration with optional biometric enrollment</span>.
+                </p>
+            </div>
+
+            <div class="grid gap-3 sm:grid-cols-4">
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Entry modes</p>
+                    <p class="mt-1 font-semibold">Search + Face scan</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Mobile / Name / ABHA ID + biometric</p>
+                </div>
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Consent</p>
+                    <p class="mt-1 font-semibold">Required gating</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Clear “Give consent” step</p>
+                </div>
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Fallback</p>
+                    <p class="mt-1 font-semibold">Never dead-ends</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">No result → online search → register</p>
+                </div>
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Handoff</p>
+                    <p class="mt-1 font-semibold">Purpose of visit</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">OPD / Follow-up flows</p>
+                </div>
+            </div>
+
+            <!-- TOC -->
+            <section class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">On this page</p>
+                        <h2 class="mt-1 text-xl font-semibold">Facial Recognition deep dive</h2>
+                    </div>
+                    <span
+                        class="rounded-full border border-gray-200 dark:border-gray-800 px-3 py-1 text-xs text-gray-600 dark:text-gray-300">
+                        CHIP 2 structure
+                    </span>
+                </div>
+
+                <div class="mt-5 grid gap-3 sm:grid-cols-2">
+                    <a href="#scope"
+                        class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                        <p class="font-semibold">Scope</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">What the module covers</p>
+                    </a>
+                    <a href="#problem"
+                        class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                        <p class="font-semibold">Problem framing</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Why identity slows facilities</p>
+                    </a>
+                    <a href="#rbac"
+                        class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                        <p class="font-semibold">Users & RBAC</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Who can search, enroll, and proceed</p>
+                    </a>
+                    <a href="#flows"
+                        class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                        <p class="font-semibold">Primary flows</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Search, scan, consent, register,
+                            handoff</p>
+                    </a>
+                    <a href="#decisions"
+                        class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                        <p class="font-semibold">Key decisions</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">What I chose and why</p>
+                    </a>
+                    <a href="#edge-cases"
+                        class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                        <p class="font-semibold">Edge cases</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-600 dark:text-gray-300">Failures, ambiguity,
+                            and safety controls</p>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Scope -->
+        <section id="scope" class="space-y-4">
+            <h2 class="text-2xl font-semibold">Module scope</h2>
+
+            <div
+                class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-6">
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">What this module covers</p>
+                        <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-gray-700 dark:text-gray-300">
+                            <li>Search people by Mobile Number, Name, or ABHA ID</li>
+                            <li>Face scan workflow with guidance (lighting, background, distance)</li>
+                            <li>Global/online search fallback when local search fails</li>
+                            <li>Consent gating for face scan / biometric registration</li>
+                            <li>Result selection → Purpose of Visit (OPD / New follow-up)</li>
+                            <li>No-result → registration path with OCR-assisted form fill</li>
+                            <li>Optional biometric enrollment (“Add facial biometric” vs “Don’t add”)</li>
+                            <li>ABHA link/create prompts where relevant</li>
+                        </ul>
+                    </div>
+
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">What this module intentionally does not solve</p>
+                        <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-gray-700 dark:text-gray-300">
+                            <li>Clinical workflow itself (that begins after Purpose of Visit)</li>
+                            <li>Identity governance policy (consent language exists; policy sits above UX)</li>
+                            <li>“Perfect match” guarantees (the UX supports verification and fallbacks)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                    <p class="font-semibold">Why this module is a platform concern</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                        Identity sits upstream of OPD, follow-ups, outreach, and reporting. If identity is slow or
+                        inconsistent, every downstream module pays
+                        the cost through duplicates, rework, and mistrust in records. This flow was designed as a stable
+                        entry primitive:
+                        <span class="font-semibold">Find</span> → <span class="font-semibold">Confirm</span> → <span
+                            class="font-semibold">Proceed</span>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem -->
+        <section id="problem" class="space-y-4">
+            <h2 class="text-2xl font-semibold">Problem framing</h2>
+
+            <div
+                class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-5">
+                <p class="text-gray-700 dark:text-gray-300">
+                    At facility entry points, identity is a throughput problem. Staff need to locate a beneficiary
+                    quickly,
+                    avoid duplicates, and transition into service flows without losing time. A biometric option helps,
+                    but only if consent is clear, failures are handled, and fallbacks remain available.
+                </p>
+
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Searching needs multiple keys</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                            Mobile, name, and ABHA ID reduce dependence on a single identifier and support partial
+                            recall in real-world interactions.
+                        </p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Biometrics require explicit consent</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                            Consent is treated as a gating step (not a tooltip), with a “Don’t add” branch that still
+                            lets the user proceed.
+                        </p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Capture quality is a UX problem</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                            Lighting, background, and distance guidance reduces “silent failure” and supports consistent
+                            capture across facilities.
+                        </p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">No-result must still continue</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                            When scan/search fails, the system offers online search and registration, avoiding dead ends
+                            that create duplicates later.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RBAC -->
+        <section id="rbac" class="space-y-4">
+            <h2 class="text-2xl font-semibold">Users and RBAC</h2>
+
+            <div
+                class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-5">
+                <p class="text-gray-700 dark:text-gray-300">
+                    This flow sits on a responsibility boundary: searching and confirming identity is not the same as
+                    registering a new person
+                    or enrolling a biometric. The UI design keeps those actions separate so facilities can enforce
+                    governance without breaking throughput.
+                </p>
+
+                <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-800">
+                    <table class="min-w-[980px] w-full text-left text-sm">
+                        <thead class="bg-gray-50 dark:bg-gray-800">
+                            <tr>
+                                <th class="px-4 py-3 font-semibold">Role</th>
+                                <th class="px-4 py-3 font-semibold">Search people</th>
+                                <th class="px-4 py-3 font-semibold">Face scan search</th>
+                                <th class="px-4 py-3 font-semibold">Online/global search</th>
+                                <th class="px-4 py-3 font-semibold">Register new person</th>
+                                <th class="px-4 py-3 font-semibold">Enroll face biometric</th>
+                                <th class="px-4 py-3 font-semibold">Start visit</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 dark:divide-gray-800">
+                            <tr class="bg-white dark:bg-gray-900">
+                                <td class="px-4 py-3 font-semibold">MO / Facility operator</td>
+                                <td class="px-4 py-3">✔</td>
+                                <td class="px-4 py-3">✔</td>
+                                <td class="px-4 py-3">✔</td>
+                                <td class="px-4 py-3">✔</td>
+                                <td class="px-4 py-3">✔ (with consent)</td>
+                                <td class="px-4 py-3">✔</td>
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-900">
+                                <td class="px-4 py-3 font-semibold">Registration / Frontdesk</td>
+                                <td class="px-4 py-3">✔</td>
+                                <td class="px-4 py-3">✔ (policy-dependent)</td>
+                                <td class="px-4 py-3">✔</td>
+                                <td class="px-4 py-3">✔</td>
+                                <td class="px-4 py-3">✔ (policy-dependent)</td>
+                                <td class="px-4 py-3">✔ (handoff)</td>
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-900">
+                                <td class="px-4 py-3 font-semibold">Read-only roles</td>
+                                <td class="px-4 py-3">View/limited</td>
+                                <td class="px-4 py-3">—</td>
+                                <td class="px-4 py-3">—</td>
+                                <td class="px-4 py-3">—</td>
+                                <td class="px-4 py-3">—</td>
+                                <td class="px-4 py-3">—</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-xs text-gray-500 dark:text-gray-400">
+                    Note: The screens show this flow initiated from an MO context (“Search or Add People”). Governance
+                    typically defines which staff can enroll biometrics vs only search/verify.
+                </p>
+            </div>
+        </section>
+
+        <!-- Flows -->
+        <section id="flows" class="space-y-4">
+            <h2 class="text-2xl font-semibold">Primary workflows</h2>
+
+            <div
+                class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-6">
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5 space-y-2">
+                        <p class="font-semibold">1) Search by identifiers</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">
+                            Search supports Mobile Number, Name, and ABHA ID. Results show demographics and location
+                            details to help resolve ambiguity when multiple matches exist.
+                        </p>
+                        <ul class="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-2">
+                            <li>Search bar + results list with multiple candidates</li>
+                            <li>Clear “No result found” state</li>
+                            <li>Fallback to “Try online search” when local results fail</li>
+                        </ul>
+                    </div>
+
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5 space-y-2">
+                        <p class="font-semibold">2) Face scan search (with online lookup)</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">
+                            Face scan includes capture guidance and online searching states. When successful, users can
+                            “View results” and proceed.
+                        </p>
+                        <ul class="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-2">
+                            <li>Capture checklist: no masks/glasses, single face, centered, clear background, adequate
+                                lighting</li>
+                            <li>Real-time guidance: “Light good”, “Background not good”, “Move further”</li>
+                            <li>System state: “Searching online…”</li>
+                            <li>Outcomes: results list OR “No people found”</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5 space-y-2">
+                        <p class="font-semibold">3) Consent gating</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">
+                            Consent is surfaced as a dedicated step with a clear acceptance action (“Give consent”) and
+                            an explicit opt-out path (“Don’t add”).
+                            This prevents biometric enrollment from becoming an implicit requirement to receive care.
+                        </p>
+                        <ul class="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-2">
+                            <li>Consent form appears before biometric actions</li>
+                            <li>Users can proceed without enrolling biometrics</li>
+                            <li>Consent supports ABHA-related context (link/create prompts)</li>
+                        </ul>
+                    </div>
+
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5 space-y-2">
+                        <p class="font-semibold">4) No-result → registration (OCR-assisted)</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">
+                            When scan/search fails, the flow supports registering a new person. OCR scan helps prefill
+                            structured fields to reduce typing burden.
+                        </p>
+                        <ul class="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-2">
+                            <li>OCR scan → registration form fields (name, DOB/age, gender, mobile, address, geography)
+                            </li>
+                            <li>Save and Next continues into downstream flows</li>
+                            <li>Optional “Add facial biometric” after registration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5 space-y-2">
+                    <p class="font-semibold">5) Identity confirmed → Purpose of Visit</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">
+                        Once a beneficiary is selected, the next decision is operational: why are they here. The module
+                        hands off into visit flows
+                        via “Purpose of Visit” (OPD / New Follow-up), and surfaces ABHA status (Not created / Not
+                        linked) with link/create actions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decisions -->
+        <section id="decisions" class="space-y-4">
+            <h2 class="text-2xl font-semibold">Key design decisions</h2>
+
+            <div class="grid gap-4 md:grid-cols-2">
+                <div
+                    class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-2">
+                    <p class="font-semibold">Design for ambiguity (multiple matches)</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">
+                        Results lists include demographic and household context so staff can disambiguate candidates
+                        without opening multiple profiles.
+                    </p>
+                </div>
+
+                <div
+                    class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-2">
+                    <p class="font-semibold">Treat consent as a gate, not decoration</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">
+                        The module explicitly supports opting out (“Don’t add”) while still allowing care workflows to
+                        proceed.
+                    </p>
+                </div>
+
+                <div
+                    class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-2">
+                    <p class="font-semibold">Make capture quality visible in the UI</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">
+                        Real-time hints (lighting/background/distance) reduce repeated failures and normalize capture
+                        conditions across sites.
+                    </p>
+                </div>
+
+                <div
+                    class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-2">
+                    <p class="font-semibold">Always provide a “continue” path</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">
+                        No-result states route users to online search or registration rather than forcing them to
+                        restart or abandon the process.
+                    </p>
+                </div>
+
+                <div
+                    class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-2">
+                    <p class="font-semibold">Handoff into work, not into more identity</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">
+                        After identity confirmation, the next screen is operational (“Purpose of Visit”). This prevents
+                        identity steps from expanding into a maze.
+                    </p>
+                </div>
+
+                <div
+                    class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-2">
+                    <p class="font-semibold">Keep ABHA status visible at the decision point</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">
+                        ABHA not linked/created is surfaced alongside the beneficiary card so linking can happen
+                        intentionally, not buried later.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Edge cases -->
+        <section id="edge-cases" class="space-y-4">
+            <h2 class="text-2xl font-semibold">Edge cases and controls</h2>
+
+            <div class="grid gap-4 md:grid-cols-2">
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+                    <p class="font-semibold">Scan success, search fail</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                        The flow distinguishes capture from match (“scan/search fail”), prompting online search or
+                        registration rather than repeating capture endlessly.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+                    <p class="font-semibold">No people found (online)</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                        “No people found” is a valid outcome with a clear next step. This prevents staff from creating
+                        duplicates through guesswork.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+                    <p class="font-semibold">Multiple similar candidates</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                        When multiple results share family/spouse fields and location, the UI relies on demographic
+                        context and structured identifiers to avoid wrong selection.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+                    <p class="font-semibold">Consent refused</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                        The flow supports continuing without biometric enrollment. This protects access and keeps the
+                        module compliant with real-world opt-out behavior.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Next</p>
+                        <p class="mt-1 text-lg font-semibold">Move to Beneficiary Registration</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                            When identity can’t be confirmed via search or face scan, registration becomes the
+                            controlled fallback.
+                        </p>
+                    </div>
+                    <a href="./beneficiary-registration.html"
+                        class="inline-flex items-center justify-center rounded-full bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 px-5 py-2.5 text-sm font-semibold hover:opacity-90">
+                        Open Registration
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full pb-10 pt-6">
+        <div class="grid gap-3 px-4 text-sm text-gray-600 dark:text-gray-300 md:grid-cols-3 md:items-center">
+            <div class="hidden md:block"></div>
+
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <p class="text-center">© 2025 – sumit.design</p>
+
+                <button type="button" data-theme-toggle aria-pressed="false"
+                    class="inline-flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-1.5 text-xs font-semibold text-gray-700 dark:text-gray-200 shadow-sm transition hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <span
+                        class="grid h-6 w-6 place-items-center rounded-full bg-gray-900 dark:bg-gray-800 text-white dark:text-gray-300">
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M12 3v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M12 19v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M5 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M21 12h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M6.4 6.4 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="m19 19-1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M6.4 17.6 5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="m19 5-1.4 1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </span>
+                    <span
+                        class="grid h-6 w-6 place-items-center rounded-full bg-gray-200 dark:bg-gray-100 text-gray-600 dark:text-gray-900">
+                        <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M20 15.5A8.5 8.5 0 1 1 8.5 4a7 7 0 0 0 11.5 11.5Z" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                    <span data-theme-label class="min-w-[2.5rem] text-left">Light</span>
+                    <span class="sr-only">Toggle color theme</span>
+                </button>
+            </div>
+
+            <p class="text-center md:text-right">
+                Implementation notes &amp; source ·
+                <a href="https://github.com/" target="_blank" rel="noreferrer" class="link-brand">GitHub</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -3,66 +3,488 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samasta</title>
+  <title>Samasta | sumit.design</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   <link href="../src/output.css" rel="stylesheet">
   <script src="../src/theme.js" defer></script>
 </head>
-<body class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
-  <header class="flex items-center justify-between">
-    <a href="../index.html" class="text-3xl font-semibold text-gray-900 dark:text-gray-100">sumit.design</a>
-    <nav class="flex items-center gap-4">
-      <a href="./work.html" class="nav-link" aria-current="page">Work</a>
-      <a href="../about.html" class="nav-link">About</a>
-    </nav>
-  </header>
 
-  <main class="min-h-[70vh] py-12 space-y-6">
-    <p class="text-sm uppercase tracking-[0.35em] text-gray-500 dark:text-gray-400">Case study</p>
-    <h1 class="text-5xl font-semibold">Samasta</h1>
-    <p class="text-gray-700 dark:text-gray-300">This case study page is being prepared.</p>
-    
-    <a href="mailto:sumit.v.nikhare@gmail.com" class="inline-flex items-center gap-2 link-brand">Request details</a>
-  </main>
+<body
+    class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
+    <header class="flex items-center justify-between">
+        <a href="../index.html" class="text-3xl font-semibold text-gray-900 dark:text-gray-100">sumit.design</a>
+        <nav class="flex items-center gap-4">
+            <a href="./work.html" class="nav-link" aria-current="page">Work</a>
+            <a href="../about.html" class="nav-link">About</a>
+        </nav>
+    </header>
 
-  <footer class="w-full pb-10 pt-6">
+    <main class="min-h-[70vh] py-12 space-y-12">
+        <!-- Header / intro -->
+        <section class="space-y-4">
+            <p class="text-sm uppercase tracking-[0.35em] text-gray-500 dark:text-gray-400">Case study</p>
+
+            <div class="space-y-3">
+                <h1 class="text-5xl font-semibold leading-tight">Samasta</h1>
+                <p class="text-lg text-gray-700 dark:text-gray-300">
+                    A role-based application and operations dashboard suite designed to support service delivery,
+                    supervision, and governance across large, multi-level programs.
+                </p>
+            </div>
+
+            <div class="grid gap-3 pt-2 sm:grid-cols-3">
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Surface</p>
+                    <p class="mt-1 font-semibold">Field application</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Work-queue first, low-connectivity friendly
+                    </p>
+                </div>
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Surface</p>
+                    <p class="mt-1 font-semibold">Operations dashboard</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Backlogs, quality, oversight, and
+                        drill-down</p>
+                </div>
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Constraint</p>
+                    <p class="mt-1 font-semibold">RBAC + scale</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Geography-scoped access with consistent
+                        patterns</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 pt-4">
+                <a href="#overview"
+                    class="inline-flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-800">
+                    Jump to overview
+                </a>
+                <a href="#modules"
+                    class="inline-flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-800">
+                    View modules
+                </a>
+                <a href="mailto:sumit.v.nikhare@gmail.com" class="inline-flex items-center gap-2 link-brand">
+                    Request details
+                </a>
+            </div>
+        </section>
+
+        <!-- TOC -->
+        <section class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">On this page</p>
+                    <h2 class="mt-1 text-xl font-semibold">Samasta case study structure</h2>
+                </div>
+                <span
+                    class="rounded-full border border-gray-200 dark:border-gray-800 px-3 py-1 text-xs text-gray-600 dark:text-gray-300">Like
+                    CHIP 2.0</span>
+            </div>
+
+            <div class="mt-5 grid gap-3 sm:grid-cols-2">
+                <a href="#overview"
+                    class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="font-semibold">Overview</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">What this platform is and why it exists</p>
+                </a>
+                <a href="#problem"
+                    class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="font-semibold">Problem</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Where scale, roles, and reality broke the
+                        UX</p>
+                </a>
+                <a href="#approach"
+                    class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="font-semibold">Approach</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">System decisions, not screen polishing</p>
+                </a>
+                <a href="#rbac"
+                    class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="font-semibold">RBAC foundations</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Role and geography as first-class
+                        constraints</p>
+                </a>
+                <a href="#modules"
+                    class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="font-semibold">Modules</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Separate deep-dive pages per module</p>
+                </a>
+                <a href="#outcomes"
+                    class="rounded-xl border border-gray-200 dark:border-gray-800 p-4 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="font-semibold">Outcomes</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Operational impact and what changed</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section id="overview" class="space-y-4">
+            <h2 class="text-2xl font-semibold">Overview</h2>
+            <div
+                class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-4">
+                <p class="text-gray-700 dark:text-gray-300">
+                    Samasta is a two-surface platform: a field application built for task execution under real-world
+                    constraints,
+                    and an operations dashboard built for supervision, backlog management, and governance across
+                    administrative levels.
+                </p>
+
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Field application
+                        </p>
+                        <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-gray-700 dark:text-gray-300">
+                            <li>Work-queue based navigation (today, overdue, high-priority)</li>
+                            <li>Offline-tolerant capture with explicit sync states</li>
+                            <li>Consistent entity headers for people/households/records</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Operations
+                            dashboard</p>
+                        <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-gray-700 dark:text-gray-300">
+                            <li>Backlogs, exceptions, and assignment controls</li>
+                            <li>Geographic drill-down from state to facility/worker</li>
+                            <li>Data quality and timeliness visibility (not just charts)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                    This page acts as the Samasta case study index. Each module is documented separately to keep the
+                    system narrative readable.
+                </p>
+            </div>
+        </section>
+
+        <!-- Problem -->
+        <section id="problem" class="space-y-4">
+            <h2 class="text-2xl font-semibold">Problem</h2>
+            <div
+                class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-4">
+                <p class="text-gray-700 dark:text-gray-300">
+                    As the platform expanded across programs, geographies, and partner organizations, the UX began to
+                    fail in predictable ways:
+                    role overload for frontline users, inconsistent patterns across modules, and RBAC implemented as
+                    backend logic rather than a UI constraint.
+                </p>
+
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">UI and RBAC didn’t scale</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Permissions existed, but screens were
+                            not designed around them.</p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Inconsistent behaviors across modules</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Same task, different flows, higher
+                            errors and retraining burden.</p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">High cognitive load in the field</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Frontline roles saw too many options
+                            and too much information.</p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Low-connectivity realities</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Offline states were unclear, sync
+                            failures were opaque, and trust suffered.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach -->
+        <section id="approach" class="space-y-4">
+            <h2 class="text-2xl font-semibold">Approach</h2>
+            <div
+                class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-5">
+                <p class="text-gray-700 dark:text-gray-300">
+                    I treated Samasta as a modular platform rather than a set of screens. The work focused on shared
+                    patterns,
+                    permission-aware navigation, and operational flows that survive real constraints.
+                </p>
+
+                <div class="grid gap-4 md:grid-cols-3">
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">1</p>
+                        <p class="mt-2 font-semibold">Define platform primitives</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Entity headers, worklists, status
+                            language, drill-down patterns.</p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">2</p>
+                        <p class="mt-2 font-semibold">Bake RBAC into UI structure</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Visibility, action affordances,
+                            geography scoping, auditability.</p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">3</p>
+                        <p class="mt-2 font-semibold">Design for operations</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Backlogs, exceptions, assignment, and
+                            data quality as tasks.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                    <p class="font-semibold">Core constraints</p>
+                    <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-gray-700 dark:text-gray-300">
+                        <li>Multi-role usage across administrative levels</li>
+                        <li>Training and adoption in distributed teams</li>
+                        <li>Low-end devices and unstable connectivity</li>
+                        <li>Governance requirements: audit trails, approval flows, and controlled access</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- RBAC -->
+        <section id="rbac" class="space-y-4">
+            <h2 class="text-2xl font-semibold">RBAC foundations</h2>
+            <div
+                class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-5">
+                <p class="text-gray-700 dark:text-gray-300">
+                    RBAC was treated as a navigation and interaction problem, not a backend filter.
+                    Role and geography drive: what appears, what is actionable, and how drill-down works.
+                </p>
+
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Visibility rules</p>
+                        <ul class="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-2">
+                            <li>Hide entire modules that are irrelevant to a role</li>
+                            <li>Show read-only views when oversight is required</li>
+                            <li>Explain disabled actions with the “why” (reduces support churn)</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Geography scoping</p>
+                        <ul class="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-2">
+                            <li>Every list, chart, and export is scope-aware</li>
+                            <li>Drill-down respects assigned administrative boundary</li>
+                            <li>Assignment actions are constrained to jurisdiction</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                    <p class="font-semibold">Role families (illustrative)</p>
+                    <div class="mt-3 grid gap-3 sm:grid-cols-2">
+                        <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-4">
+                            <p class="font-semibold">Field worker</p>
+                            <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Execute tasks, capture visits,
+                                handle offline/sync</p>
+                        </div>
+                        <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-4">
+                            <p class="font-semibold">Supervisor</p>
+                            <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Assign, verify, resolve exceptions,
+                                monitor sync gaps</p>
+                        </div>
+                        <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-4">
+                            <p class="font-semibold">Facility / program ops</p>
+                            <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Referrals, readiness, follow-ups,
+                                compliance</p>
+                        </div>
+                        <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-4">
+                            <p class="font-semibold">District / state admin</p>
+                            <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Coverage, quality, governance,
+                                escalations</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-xs text-gray-500 dark:text-gray-400">
+                        Replace these with the real role names in your implementation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modules -->
+        <section id="modules" class="space-y-4">
+            <div class="flex items-end justify-between gap-4">
+                <h2 class="text-2xl font-semibold">Modules</h2>
+                <p class="text-sm text-gray-600 dark:text-gray-300">Each module links to a separate page</p>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-2">
+                <a href="./samasta/application.html"
+                    class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Surface</p>
+                            <h3 class="mt-1 text-xl font-semibold">Field Application</h3>
+                        </div>
+                        <span
+                            class="rounded-full border border-gray-200 dark:border-gray-800 px-3 py-1 text-xs text-gray-600 dark:text-gray-300">Mobile</span>
+                    </div>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Worklists, offline states, capture
+                        patterns, and sync trust.</p>
+                    <p class="mt-4 text-sm font-semibold link-brand">Open module →</p>
+                </a>
+
+                <a href="./samasta/dashboard.html"
+                    class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Surface</p>
+                            <h3 class="mt-1 text-xl font-semibold">Operations Dashboard</h3>
+                        </div>
+                        <span
+                            class="rounded-full border border-gray-200 dark:border-gray-800 px-3 py-1 text-xs text-gray-600 dark:text-gray-300">Web</span>
+                    </div>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Backlogs, exceptions, drill-down, quality,
+                        and assignments.</p>
+                    <p class="mt-4 text-sm font-semibold link-brand">Open module →</p>
+                </a>
+
+                <a href="./samasta/modules/beneficiary-household.html"
+                    class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Module</p>
+                    <h3 class="mt-1 text-xl font-semibold">Beneficiary &amp; Household</h3>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Entity model, identity, enrollment, and
+                        profile patterns.</p>
+                    <p class="mt-4 text-sm font-semibold link-brand">Open module →</p>
+                </a>
+
+                <a href="./samasta/modules/visits-services.html"
+                    class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Module</p>
+                    <h3 class="mt-1 text-xl font-semibold">Visits &amp; Service Delivery</h3>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Form scaffolding, validations, and
+                        role-specific capture.</p>
+                    <p class="mt-4 text-sm font-semibold link-brand">Open module →</p>
+                </a>
+
+                <a href="./samasta/modules/tasks-followups.html"
+                    class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Module</p>
+                    <h3 class="mt-1 text-xl font-semibold">Tasks &amp; Follow-ups</h3>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Work queues, overdue logic, prioritization,
+                        and assignment.</p>
+                    <p class="mt-4 text-sm font-semibold link-brand">Open module →</p>
+                </a>
+
+                <a href="./samasta/modules/referrals.html"
+                    class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Module</p>
+                    <h3 class="mt-1 text-xl font-semibold">Referrals</h3>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Create, accept, track completion, and
+                        exception handling.</p>
+                    <p class="mt-4 text-sm font-semibold link-brand">Open module →</p>
+                </a>
+
+                <a href="./samasta/modules/admin-config.html"
+                    class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Module</p>
+                    <h3 class="mt-1 text-xl font-semibold">Admin &amp; Configuration</h3>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Users/roles, master data, audit trails,
+                        governance controls.</p>
+                    <p class="mt-4 text-sm font-semibold link-brand">Open module →</p>
+                </a>
+            </div>
+
+            <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+                <p class="font-semibold">Folder structure expected</p>
+                <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                    <span class="font-mono">/work/samasta/</span> for surface pages and
+                    <span class="font-mono">/work/samasta/modules/</span> for module pages.
+                </p>
+            </div>
+        </section>
+
+        <!-- Outcomes -->
+        <section id="outcomes" class="space-y-4">
+            <h2 class="text-2xl font-semibold">Outcomes</h2>
+            <div
+                class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 space-y-4">
+                <p class="text-gray-700 dark:text-gray-300">
+                    The work improved consistency across modules, reduced role overload by aligning UI to permissions,
+                    and made operational workflows explicit in the dashboard (backlogs, exceptions, assignment),
+                    instead of burying them behind summary-only reporting.
+                </p>
+
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Consistency</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Shared patterns for lists, headers,
+                            statuses, drill-down.</p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Role clarity</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Less noise for field roles, clearer
+                            read-only oversight.</p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Operational control</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Supervisors can act on exceptions
+                            without exports.</p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+                        <p class="font-semibold">Trust under low connectivity</p>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Explicit offline/sync states reduce
+                            ambiguity and rework.</p>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <a href="mailto:sumit.v.nikhare@gmail.com" class="inline-flex items-center gap-2 link-brand">Request
+                        detailed flows and screens</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next -->
+        <section class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Next</p>
+                    <p class="mt-1 text-lg font-semibold">Start with the Field Application module</p>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">Work queues, offline patterns, and capture
+                        scaffolding.</p>
+                </div>
+                <a href="./samasta/application.html"
+                    class="inline-flex items-center justify-center rounded-full bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 px-5 py-2.5 text-sm font-semibold hover:opacity-90">
+                    Open module
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full pb-10 pt-6">
         <div class="grid gap-3 px-4 text-sm text-gray-600 dark:text-gray-300 md:grid-cols-3 md:items-center">
             <div class="hidden md:block"></div>
 
             <div class="flex flex-wrap items-center justify-center gap-3">
                 <p class="text-center">© 2025 – sumit.design</p>
 
-                <button
-                    type="button"
-                    data-theme-toggle
-                    aria-pressed="false"
-                    class="inline-flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-1.5 text-xs font-semibold text-gray-700 dark:text-gray-200 shadow-sm transition hover:bg-gray-50 dark:hover:bg-gray-800"
-                >
-                    <span class="grid h-6 w-6 place-items-center rounded-full bg-gray-900 dark:bg-gray-800 text-white dark:text-gray-300">
+                <button type="button" data-theme-toggle aria-pressed="false"
+                    class="inline-flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-1.5 text-xs font-semibold text-gray-700 dark:text-gray-200 shadow-sm transition hover:bg-gray-50 dark:hover:bg-gray-800">
+                    <span
+                        class="grid h-6 w-6 place-items-center rounded-full bg-gray-900 dark:bg-gray-800 text-white dark:text-gray-300">
                         <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M12 3v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M12 19v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M5 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M21 12h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M6.4 6.4 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="m19 19-1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M6.4 17.6 5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="m19 5-1.4 1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 3v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M12 19v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M5 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M21 12h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M6.4 6.4 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="m19 19-1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M6.4 17.6 5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="m19 5-1.4 1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
                         </svg>
                     </span>
-                    <span class="grid h-6 w-6 place-items-center rounded-full bg-gray-200 dark:bg-gray-100 text-gray-600 dark:text-gray-900">
+                    <span
+                        class="grid h-6 w-6 place-items-center rounded-full bg-gray-200 dark:bg-gray-100 text-gray-600 dark:text-gray-900">
                         <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M20 15.5A8.5 8.5 0 1 1 8.5 4a7 7 0 0 0 11.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 15.5A8.5 8.5 0 1 1 8.5 4a7 7 0 0 0 11.5 11.5Z" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </span>
                     <span data-theme-label class="min-w-[2.5rem] text-left">Light</span>
                     <span class="sr-only">Toggle color theme</span>
                 </button>
             </div>
-        
+
             <p class="text-center md:text-right">
                 Implementation notes &amp; source ·
                 <a href="https://github.com/" target="_blank" rel="noreferrer" class="link-brand">
