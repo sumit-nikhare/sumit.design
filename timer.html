@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IST Countdown + Bell</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0b0f14;
+            color: #f2f4f8;
+        }
+
+        .wrap {
+            text-align: center;
+            padding: 24px;
+        }
+
+        .now {
+            font-size: clamp(16px, 2.2vw, 22px);
+            opacity: 0.75;
+            margin-bottom: 18px;
+            letter-spacing: 0.02em;
+        }
+
+        .timer {
+            font-size: clamp(56px, 10vw, 140px);
+            font-weight: 800;
+            letter-spacing: 0.03em;
+            line-height: 1;
+        }
+
+        .sub {
+            margin-top: 18px;
+            font-size: clamp(14px, 2vw, 18px);
+            opacity: 0.65;
+        }
+
+        .btn {
+            margin-top: 18px;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 12px 18px;
+            border-radius: 12px;
+            border: 1px solid #2b3440;
+            background: #121925;
+            color: #f2f4f8;
+            cursor: pointer;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .status {
+            margin-top: 10px;
+            opacity: 0.7;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="now" id="nowIst">Loading…</div>
+        <div class="timer" id="countdown">--h --m --s</div>
+        <div class="sub">Target (Asia/Kolkata): 2026-01-04 23:59:59</div>
+
+        <button class="btn" id="enableBell">Enable Bell</button>
+        <div class="status" id="bellStatus">Bell: off (needs click)</div>
+    </div>
+
+    <script>
+        const TZ = "Asia/Kolkata";
+
+        // 2026-01-04 23:59:59 IST = 2026-01-04 18:29:59 UTC
+        const targetUtcMs = Date.UTC(2026, 0, 4, 18, 29, 59);
+
+        const nowIstEl = document.getElementById("nowIst");
+        const countdownEl = document.getElementById("countdown");
+
+        const enableBtn = document.getElementById("enableBell");
+        const bellStatus = document.getElementById("bellStatus");
+
+        function pad(n) { return String(n).padStart(2, "0"); }
+
+        // Format IST time reliably
+        const fmtIst = new Intl.DateTimeFormat("en-GB", {
+            timeZone: TZ,
+            year: "numeric",
+            month: "2-digit",
+            day: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hour12: false
+        });
+
+        // ---------- Bell (Web Audio) ----------
+        let audioCtx = null;
+        let bellEnabled = false;
+
+        function ringBell() {
+            if (!audioCtx || audioCtx.state !== "running") return;
+
+            // Simple "bell-ish" chime: two tones with quick decay
+            const now = audioCtx.currentTime;
+
+            const gain = audioCtx.createGain();
+            gain.gain.setValueAtTime(0.0001, now);
+            gain.gain.exponentialRampToValueAtTime(0.3, now + 0.02);
+            gain.gain.exponentialRampToValueAtTime(0.0001, now + 1.2);
+            gain.connect(audioCtx.destination);
+
+            const o1 = audioCtx.createOscillator();
+            const o2 = audioCtx.createOscillator();
+
+            o1.type = "sine";
+            o2.type = "sine";
+
+            o1.frequency.setValueAtTime(880, now);   // A5
+            o2.frequency.setValueAtTime(1320, now);  // E6-ish
+
+            o1.connect(gain);
+            o2.connect(gain);
+
+            o1.start(now);
+            o2.start(now);
+
+            o1.stop(now + 1.25);
+            o2.stop(now + 1.0);
+        }
+
+        // Get IST parts (hour, minute, second) without guessing timezone math
+        function getIstParts(date) {
+            const parts = new Intl.DateTimeFormat("en-GB", {
+                timeZone: TZ,
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false
+            }).formatToParts(date);
+
+            const obj = Object.fromEntries(parts.map(p => [p.type, p.value]));
+            return { h: Number(obj.hour), m: Number(obj.minute), s: Number(obj.second) };
+        }
+
+        let lastBellKey = null; // prevents double-rings if interval drifts
+
+        function maybeRingOnHalfHour(nowDate) {
+            if (!bellEnabled) return;
+
+            const { m, s } = getIstParts(nowDate);
+
+            // Ring exactly at IST minute 00 or 30, second 00
+            if ((m === 0 || m === 30) && s === 0) {
+                // Create a unique key for this half-hour moment (HH:MM)
+                const { h } = getIstParts(nowDate);
+                const key = `${h}:${pad(m)}`;
+                if (key !== lastBellKey) {
+                    lastBellKey = key;
+                    ringBell();
+                }
+            }
+        }
+
+        enableBtn.addEventListener("click", async () => {
+            try {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                await audioCtx.resume();
+                bellEnabled = true;
+
+                enableBtn.disabled = true;
+                bellStatus.textContent = "Bell: on (rings at :00 and :30 IST)";
+                ringBell(); // little confirmation chime
+            } catch (e) {
+                bellStatus.textContent = "Bell: blocked by browser";
+            }
+        });
+
+        // ---------- Main Tick ----------
+        function tick() {
+            const now = new Date();
+
+            // Current IST time display
+            nowIstEl.textContent = `Now (IST): ${fmtIst.format(now).replace(",", "")}`;
+
+            // Countdown
+            const diffMs = targetUtcMs - now.getTime();
+            if (diffMs <= 0) {
+                countdownEl.textContent = "00h 00m 00s";
+            } else {
+                const totalSeconds = Math.floor(diffMs / 1000);
+                const hours = Math.floor(totalSeconds / 3600);
+                const minutes = Math.floor((totalSeconds % 3600) / 60);
+                const seconds = totalSeconds % 60;
+                countdownEl.textContent = `${hours}h ${pad(minutes)}m ${pad(seconds)}s`;
+            }
+
+            // Half-hour bell in IST
+            maybeRingOnHalfHour(now);
+        }
+
+        tick();
+        const loop = setInterval(tick, 1000);
+    </script>
+</body>
+
+</html>
