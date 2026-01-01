@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
     <link href="./src/output.css" rel="stylesheet">
     <script src="./src/theme.js" defer></script>
-    </head>
-    <body class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
-        <div id="pageContent">
+</head>
+
+<body
+    class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
+    <div id="pageContent">
+
+        <!-- Ambient glassy glows -->
+        <div class="pointer-events-none fixed inset-0 -z-10">
+            <div
+                class="absolute -left-32 top-10 w-80 h-80 bg-gradient-to-br from-amber-200 via-white to-gray-100 opacity-60 blur-3xl dark:from-amber-400/60 dark:via-orange-400/15 dark:to-transparent dark:opacity-60">
+            </div>
+            <div
+                class="absolute right-0 -top-24 w-96 h-96 bg-gradient-to-br from-white via-gray-100 to-orange-200 opacity-60 blur-3xl dark:from-gray-900/80 dark:via-orange-400/15 dark:to-orange-400/45 dark:opacity-60">
+            </div>
+            <div
+                class="absolute left-1/3 bottom-0 w-96 h-96 bg-gradient-to-br from-orange-200 via-white to-gray-100 opacity-50 blur-3xl dark:from-orange-400/55 dark:via-amber-400/15 dark:to-transparent dark:opacity-60">
+            </div>
+        </div>
+
         <!-- Top Bar -->
         <header class="flex items-center justify-between">
             <a class="text-3xl font-semibold text-gray-900 dark:text-gray-100" href="./index.html">sumit.design</a>
@@ -30,17 +49,19 @@
                     <!-- Circular stamp -->
                     <div class="relative h-24 w-24 group">
                         <div class="absolute inset-0 grid place-items-center rounded-full">
-                        <div class="h-2 w-2 rounded-full"></div>
+                            <div class="h-2 w-2 rounded-full"></div>
                         </div>
-                        <svg class="h-full w-full text-gray-600 animate-stamp group-hover:[animation-play-state:paused] dark:text-gray-400" viewBox="0 0 200 200" aria-hidden="true">
-                        <defs>
-                            <path id="circlePath" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" />
-                        </defs>
-                        <text font-size="17" font-family="ui-sans-serif, system-ui" letter-spacing="3">
-                            <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
-                            UX DESIGN ★ GROWTH ★ STRATEGY ★
-                            </textPath>
-                        </text>
+                        <svg
+                            class="h-full w-full fill-current text-gray-600 animate-stamp group-hover:[animation-play-state:paused] dark:text-gray-400"
+                            viewBox="0 0 200 200" aria-hidden="true">
+                            <defs>
+                                <path id="circlePath" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" />
+                            </defs>
+                            <text font-size="17" font-family="ui-sans-serif, system-ui" letter-spacing="3">
+                                <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+                                    UX DESIGN ★ GROWTH ★ STRATEGY ★
+                                </textPath>
+                            </text>
                         </svg>
                     </div>
 
@@ -48,70 +69,78 @@
 
                     <div class="mt-6 space-y-6 text-base leading-relaxed text-gray-600 dark:text-gray-300">
                         <p>
-                        I’m a product designer, mentor, and growth strategist who helps mission-driven teams turn insights
-                        into digital experiences that convert, retain, and scale.
+                            I’m a Product Designer with <span class="font-semibold text-gray-900 dark:text-gray-100">3.8+ years of
+                                experience</span>
+                            shaping end-to-end digital experiences across healthtech, public sector platforms, and B2B ecosystems.
+                            My work blends <span class="font-semibold text-gray-900 dark:text-gray-100">user research</span>,
+                            <span class="font-semibold text-gray-900 dark:text-gray-100">systems thinking</span>, and
+                            <span class="font-semibold text-gray-900 dark:text-gray-100">clean visual design</span> to build products
+                            that are not only intuitive but meaningful at scale.
                         </p>
 
                         <p>
-                        I studied PR and advertising (yes, in the film school), then launched my career in boutique marketing
-                        and event agencies working on custom campaigns for brands. I wore many hats: copywriter, graphic
-                        designer, social media strategist, deck builder, and even event producer.
+                            I’ve designed solutions for <span class="font-semibold text-gray-900 dark:text-gray-100">large government
+                                programs</span>,
+                            <span class="font-semibold text-gray-900 dark:text-gray-100">community healthcare workers</span>, and
+                            <span class="font-semibold text-gray-900 dark:text-gray-100">enterprise stakeholders</span>, giving me
+                            strong experience working with complex workflows, technical constraints, and diverse user groups.
+                            Whether it’s simplifying a multi-step medical workflow or designing tools for channel partners and field
+                            teams, I focus on creating clarity, reducing effort, and driving measurable impact.
                         </p>
 
                         <p>
-                        Eventually the grind wore thin, and I pivoted into UX. These days, I work independently with startups
-                        and small businesses, bringing a mix of craft, strategy, and growth thinking to each project.
-                        </p>
-
-                        <p>
-                        Outside of work, I’m a certified arts & crafts nerd. You’ll often find me deep in a coloring book.
-                        I also take my playlist curation very seriously. If you work with me, expect thoughtful questions,
-                        intentional design, and the occasional surprise cameo.
+                            My approach is grounded in <span class="font-semibold text-gray-900 dark:text-gray-100">evidence over
+                                assumptions</span>—I rely on
+                            field observations, user interviews, and data to inform decisions. I enjoy collaborating closely with
+                            PMs, engineers, content designers, and data teams to ensure every design holds up through implementation
+                            and delivers value in the real world.
                         </p>
                     </div>
 
                     <!-- CTAs -->
                     <div class="mt-10 flex flex-wrap items-center gap-6">
-                        <a
-                        href="#services"
-                        class="inline-flex items-center rounded-full bg-gray-900 px-7 py-4 text-sm font-semibold text-white transition hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200"
-                        >
-                        View services
+                        <a href="#services"
+                            class="inline-flex items-center rounded-full bg-gray-900 px-7 py-4 text-sm font-semibold text-white transition hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200">
+                            View services
                         </a>
 
-                        <a
-                        href="./dump-images/resume.pdf"
-                        download
-                        class="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-gray-100"
-                        >
-                        <span>Download PDF resume</span>
-                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M12 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M8 11l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                        <a href="./dump-images/resume.pdf" download
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-gray-100">
+                            <span>Download PDF resume</span>
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M8 11l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
                         </a>
                     </div>
                 </div>
 
                 <!-- Right: Collage (3 images) -->
                 <div class="lg:col-span-6">
-                <div class="relative mt-4 h-[520px] w-full">
-                    <!-- Top image -->
-                    <div class="absolute right-0 top-0 w-[72%] overflow-hidden rounded-3xl bg-gray-200 shadow-sm dark:bg-gray-800">
-                    <div class="aspect-[4/3] w-full"></div>
-                    </div>
+                    <div class="relative mt-4 h-[520px] w-full">
+                        <!-- Top image -->
+                        <div
+                            class="absolute right-0 top-0 w-[72%] overflow-hidden rounded-3xl bg-gray-200 shadow-sm dark:bg-gray-800">
+                            <div class="aspect-[4/3] w-full"></div>
+                        </div>
 
-                    <!-- Middle image -->
-                    <div class="absolute right-[18%] top-[42%] w-[62%] -translate-y-1/2 overflow-hidden rounded-3xl bg-gray-200 shadow-sm dark:bg-gray-800">
-                    <div class="aspect-square w-full"></div>
-                    </div>
+                        <!-- Middle image -->
+                        <div
+                            class="absolute right-[18%] top-[42%] w-[62%] -translate-y-1/2 overflow-hidden rounded-3xl bg-gray-200 shadow-sm dark:bg-gray-800">
+                            <div class="aspect-square w-full">
+                                <img loading="eager" decoding="async" src="./assets/common/my-photo.png" alt="Portrait of Sumit Nikhare"
+                                    class="h-full w-full object-cover" />
+                            </div>
+                        </div>
 
-                    <!-- Bottom image -->
-                    <div class="absolute left-0 bottom-0 w-[78%] overflow-hidden rounded-3xl bg-gray-200 shadow-sm dark:bg-gray-800">
-                    <div class="aspect-[16/10] w-full"></div>
+                        <!-- Bottom image -->
+                        <div
+                            class="absolute left-0 bottom-0 w-[78%] overflow-hidden rounded-3xl bg-gray-200 shadow-sm dark:bg-gray-800">
+                            <div class="aspect-[16/10] w-full"></div>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -151,18 +180,19 @@
                     <!-- Icon (pink) -->
                     <div class="mt-1 flex h-14 w-14 items-center justify-center">
                         <svg class="h-12 w-12 text-[#E8A6A6]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                        <path d="M3 8l9-4 9 4-9 4-9-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                        <path d="M21 10v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M3 8l9-4 9 4-9 4-9-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                            <path d="M21 10v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
 
                     <div class="space-y-3">
                         <h1 class="text-2xl font-bold text-gray-900 dark:text-gray-100">B.Tech in Textile Technology</h1>
-                        <p class="text-gray-600 dark:text-gray-300">Shri Guru Gobind Singhji Institute of Engineering and Technology, Govt. Autonomou</p>
+                        <p class="text-gray-600 dark:text-gray-300">Shri Guru Gobind Singhji Institute of Engineering and
+                            Technology, Govt. Autonomou</p>
 
                         <p class="font-medium text-gray-800 dark:text-gray-200">
-                        GRADUATED <span class="tracking-normal">Jun 2015</span>
+                            GRADUATED <span class="tracking-normal">Jun 2015</span>
                         </p>
                     </div>
                 </article>
@@ -172,18 +202,19 @@
                     <!-- Icon (purple) -->
                     <div class="mt-1 flex h-14 w-14 items-center justify-center">
                         <svg class="h-12 w-12 text-[#B8B2F0]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                        <path d="M7 4h10a2 2 0 0 1 2 2v5H5V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M5 11h14v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M9 8h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 4h10a2 2 0 0 1 2 2v5H5V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" />
+                            <path d="M5 11h14v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7Z" stroke="currentColor" stroke-width="2" />
+                            <path d="M9 8h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
 
                     <div class="space-y-3">
                         <h1 class="text-2xl font-bold text-gray-900 dark:text-gray-100">B.Tech in Textile Technology</h1>
-                        <p class="text-gray-600 dark:text-gray-300">Shri Guru Gobind Singhji Institute of Engineering and Technology, Govt. Autonomou</p>
+                        <p class="text-gray-600 dark:text-gray-300">Shri Guru Gobind Singhji Institute of Engineering and
+                            Technology, Govt. Autonomou</p>
 
                         <p class="font-medium text-gray-800 dark:text-gray-200">
-                        GRADUATED <span class="tracking-normal">Jun 2015</span>
+                            GRADUATED <span class="tracking-normal">Jun 2015</span>
                         </p>
                     </div>
                 </article>
@@ -200,16 +231,19 @@
 
             <div class="mt-14 max-w-3xl">
                 <!-- Stepper wrapper -->
-                <div class="relative">
+                <div class="relative" data-work-accordion>
 
                     <!-- Base line (line 1) -->
-                    <div class="absolute left-[18px] top-[18px] h-[calc(100%-36px)] w-[4px] rounded-full bg-gray-200 dark:bg-gray-800"></div>
+                    <div
+                        class="absolute left-[18px] top-[18px] h-[calc(100%-36px)] w-[4px] rounded-full bg-gray-200 dark:bg-gray-800">
+                    </div>
 
                     <!-- Step 1 -->
-                    <div class="relative flex gap-8 pb-12">
+                    <div class="relative flex gap-8 pb-12" data-work-item>
                         <div class="relative w-12">
                             <!-- Number -->
-                            <div class="grid h-9 px-2 place-items-center rounded-full border-2 border-[#E8A6A6] font-bold text-[#E8A6A6] bg-white dark:bg-gray-900">
+                            <div
+                                class="grid h-9 w-10 place-items-center rounded-full border-2 border-[#E8A6A6] text-sm font-bold text-[#E8A6A6] bg-white dark:bg-gray-900">
                                 1st
                             </div>
                             <!-- Colored segment (line 2) -->
@@ -217,87 +251,358 @@
                         </div>
 
                         <div class="space-y-4">
-                            <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Khushibaby (NGO)</h2>
-                            <div class="space-y-2">
-                                <p class="text-xl font-semibold">Product Designer | Jan 2023 - present | Jaipur, IN</p>
-                                <p class="leading-relaxed text-gray-600 dark:text-gray-300">
-                                    We start with a free 30-minute call to discuss your needs, goals, and project scope.
-                                </p>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Reddway.in</h3>
+                            <p class="text-xl font-semibold">UI/UX Design Intern | Jan 2022 - Nov 2022 | WFH</p>
+                            <div class="space-y-3">
+                                <button type="button" data-work-toggle aria-expanded="false"
+                                    class="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-white px-3 py-1.5 text-xs font-semibold text-gray-900 shadow-sm transition hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-100 dark:hover:bg-gray-900/30">
+                                    <span data-work-label>View details</span>
+                                    <svg data-work-icon class="h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none"
+                                        aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+
+                                <div class="overflow-hidden transition-[height] duration-300 ease-in-out" data-work-content
+                                    aria-hidden="true" style="height: 0px;">
+                                    <div class="pt-2 space-y-3 opacity-0 transition-opacity duration-200" data-work-content-inner>
+                                        <p class="leading-relaxed text-gray-600 dark:text-gray-300">
+                                            Supported <span class="font-semibold text-gray-900 dark:text-gray-100">UI/UX design</span> across
+                                            product and marketing surfaces, translating briefs into
+                                            <span class="font-semibold text-gray-900 dark:text-gray-100">wireframes</span> and clear interaction
+                                            flows.
+                                        </p>
+                                        <p class="leading-relaxed text-gray-600 dark:text-gray-300">
+                                            Collaborated with founders on
+                                            <span class="font-semibold text-gray-900 dark:text-gray-100">prototypes</span> and visual polish to
+                                            improve clarity and conversion.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Step 2 -->
-                    <div class="relative flex gap-8 pb-12">
+                    <div class="relative flex gap-8 pb-12" data-work-item>
                         <div class="relative w-12">
-                            <div class="grid h-9 w-9 place-items-center rounded-full border-2 border-[#B8B2F0] text-sm font-bold text-[#B8B2F0] bg-white dark:bg-gray-900">
-                                2
+                            <!-- Number -->
+                            <div
+                                class="grid h-9 w-10 place-items-center rounded-full border-2 border-[#B8B2F0] text-sm font-bold text-[#B8B2F0] bg-white dark:bg-gray-900">
+                                2nd
                             </div>
+                            <!-- Colored segment (line 2) -->
                             <div class="mx-auto mt-4 h-12 w-[4px] rounded-full bg-[#B8B2F0]"></div>
                         </div>
 
                         <div class="space-y-4">
-                            <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Khushibaby (NGO)</h2>
-                            <div class="space-y-2">
-                                <p class="text-xl font-semibold">Product Designer | Jan 2023 - present | Jaipur, IN</p>
-                                <div class="space-y-2">
-                                    <p class="leading-relaxed text-gray-600 dark:text-gray-300">
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                    </p>
-                                    <p class="leading-relaxed text-gray-600 dark:text-gray-300">
-                                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                                    </p>
-                                    <p class="leading-relaxed text-gray-600 dark:text-gray-300">
-                                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                                    </p>
-                                </div>
-                                
-                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Permute Solution Pvt. Ltd.</h3>
+                            <p class="text-xl font-semibold">Associate UI/UX Designer | Jan 2022 - Nov 2022 | Gurugram</p>
+                            <div class="space-y-3">
+                                <button type="button" data-work-toggle aria-expanded="false"
+                                    class="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-white px-3 py-1.5 text-xs font-semibold text-gray-900 shadow-sm transition hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-100 dark:hover:bg-gray-900/30">
+                                    <span data-work-label>View details</span>
+                                    <svg data-work-icon class="h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none"
+                                        aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
 
+                                <div class="overflow-hidden transition-[height] duration-300 ease-in-out" data-work-content
+                                    aria-hidden="true" style="height: 0px;">
+                                    <div class="pt-2 space-y-3 opacity-0 transition-opacity duration-200" data-work-content-inner>
+                                        <p class="leading-relaxed text-gray-600 dark:text-gray-300">
+                                            Designed <span class="font-semibold text-gray-900 dark:text-gray-100">client-facing web modules</span>
+                                            and streamlined journeys for business stakeholders.
+                                        </p>
+                                        <p class="leading-relaxed text-gray-600 dark:text-gray-300">
+                                            Delivered <span class="font-semibold text-gray-900 dark:text-gray-100">design specs</span>, reusable
+                                            components, and handoff notes to keep builds consistent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Step 3 -->
-                    <div class="relative flex gap-8 pb-6">
+                    <div class="relative flex gap-8 pb-6" data-work-item>
                         <div class="relative w-12">
-                            <div class="grid h-9 w-9 place-items-center rounded-full border-2 border-[#9FD3A6] text-sm font-bold text-[#9FD3A6] bg-white dark:bg-gray-900">
-                                3
+                            <!-- Number -->
+                            <div
+                                class="grid h-9 w-10 place-items-center rounded-full border-2 border-[#9FD3A6] text-sm font-bold text-[#9FD3A6] bg-white dark:bg-gray-900">
+                                3rd
                             </div>
+                            <!-- Colored segment (line 2) -->
                             <div class="mx-auto mt-4 h-12 w-[4px] rounded-full bg-[#9FD3A6]"></div>
                         </div>
 
                         <div class="space-y-4">
-                            <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Khushibaby (NGO)</h2>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Khushi Baby Association (NGO)</h3>
                             <p class="text-xl font-semibold">Product Designer | Jan 2023 - present | Jaipur, IN</p>
-                            <div class="space-y-2">
-                                <p class="leading-relaxed text-gray-600 dark:text-gray-300">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                </p>
-                                <p class="leading-relaxed text-gray-600 dark:text-gray-300">
-                                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                                </p>
-                                <p class="leading-relaxed text-gray-600 dark:text-gray-300">
-                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                                </p>
+                            <div class="space-y-3">
+                                <button type="button" data-work-toggle aria-expanded="false"
+                                    class="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-white px-3 py-1.5 text-xs font-semibold text-gray-900 shadow-sm transition hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-100 dark:hover:bg-gray-900/30">
+                                    <span data-work-label>View details</span>
+                                    <svg data-work-icon class="h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none"
+                                        aria-hidden="true">
+                                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+
+                                <div class="overflow-hidden transition-[height] duration-300 ease-in-out" data-work-content
+                                    aria-hidden="true" style="height: 0px;">
+                                    <div class="pt-2 space-y-3 opacity-0 transition-opacity duration-200" data-work-content-inner>
+                                        <p class="leading-relaxed text-gray-600 dark:text-gray-300">
+                                            Led product design across public health platforms including
+                                            <span class="font-semibold text-gray-900 dark:text-gray-100">CHIP 2.0</span>,
+                                            <span class="font-semibold text-gray-900 dark:text-gray-100">Samasta</span>,
+                                            <span class="font-semibold text-gray-900 dark:text-gray-100">CHO Soft</span>, and
+                                            <span class="font-semibold text-gray-900 dark:text-gray-100">CHIP 1 modules</span>, focusing on
+                                            role-based workflows and offline-first states.
+                                        </p>
+                                        <p class="leading-relaxed text-gray-600 dark:text-gray-300">
+                                            Built <span class="font-semibold text-gray-900 dark:text-gray-100">design system foundations</span>,
+                                            cross-module IA, and communication assets like
+                                            <span class="font-semibold text-gray-900 dark:text-gray-100">summit presentation graphics</span> and
+                                            <span class="font-semibold text-gray-900 dark:text-gray-100">animated videos</span> to showcase impact.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <button
-                              type="button"
-                              id="rolesModalOpen"
-                              aria-controls="rolesModal"
-                              aria-expanded="false"
-                              class="relative link-brand
-                                     after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current
-                                     after:origin-left after:scale-x-0 hover:after:scale-x-100
-                                     after:transition-transform after:duration-200"
-                            >
-                              Current Roles & Responsibilities
-                            </button>
                         </div>
                     </div>
 
                 </div>
+
+                <div class="mt-8 rounded-2xl border border-gray-200 bg-white/80 p-4 text-gray-700 dark:border-gray-800 dark:bg-gray-900/60 dark:text-gray-300">
+                    <p class="text-lg font-semibold text-gray-900 dark:text-gray-100">Freelance / Independent</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Details coming soon.</p>
+                </div>
             </div>
         </section>
+
+        <!-- Current Role & Responsibilities -->
+        <section class="w-full py-12">
+            <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">
+                Current Role & Responsibilities
+            </h2>
+
+            <p class="mt-6 max-w-3xl text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                In my current role, I lead end-to-end product design responsibilities—from framing problems with cross-functional partners to delivering validated, implementation-ready solutions. I work closely with PMs, engineers, data teams, and field staff to ensure every design decision is grounded in real user needs and measurable outcomes.
+            </p>
+
+            <div class="mt-10 max-w-3xl space-y-4" data-role-accordion>
+
+                <div class="rounded-2xl border border-gray-200 bg-white/80 p-5 dark:border-gray-800 dark:bg-gray-900/60" data-role-item>
+                    <button type="button" data-role-toggle aria-expanded="false"
+                        class="group flex w-full items-center justify-between gap-4 text-left">
+                        <span class="text-lg font-semibold text-gray-900 dark:text-gray-100">Discover the Problem</span>
+                        <span
+                            class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-900/30">
+                            <svg data-role-icon class="h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="overflow-hidden transition-[height] duration-300 ease-in-out" data-role-content aria-hidden="true"
+                        style="height: 0px;">
+                        <div class="pt-4 opacity-0 transition-opacity duration-200 text-gray-600 dark:text-gray-300"
+                            data-role-content-inner>
+                            <ol class="list-decimal space-y-2 pl-5">
+                                <li>Partner with Product to frame the problem using evidence, research, and data—not assumptions.</li>
+                                <li>Audit current workflows, friction points, competitors, and adjacent patterns.</li>
+                                <li>Define research questions, methods, and participant criteria.</li>
+                                <li>Collaborate on metric definitions to ensure measurable success.</li>
+                                <li>Document assumptions, risks, and a validation plan.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-gray-200 bg-white/80 p-5 dark:border-gray-800 dark:bg-gray-900/60" data-role-item>
+                    <button type="button" data-role-toggle aria-expanded="false"
+                        class="group flex w-full items-center justify-between gap-4 text-left">
+                        <span class="text-lg font-semibold text-gray-900 dark:text-gray-100">Define the Direction</span>
+                        <span
+                            class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-900/30">
+                            <svg data-role-icon class="h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="overflow-hidden transition-[height] duration-300 ease-in-out" data-role-content aria-hidden="true"
+                        style="height: 0px;">
+                        <div class="pt-4 opacity-0 transition-opacity duration-200 text-gray-600 dark:text-gray-300"
+                            data-role-content-inner>
+                            <ol class="list-decimal space-y-2 pl-5">
+                                <li>Synthesize research into insights, JTBD, needs, and opportunity areas.</li>
+                                <li>Establish experience principles and guardrails (accessibility, privacy, constraints).</li>
+                                <li>Draft high-level flows and IA; align on MVP vs. future scopes.</li>
+                                <li>Co-author user stories and acceptance criteria with PM/Engineering.</li>
+                                <li>Create instrumentation plans with Data teams.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-gray-200 bg-white/80 p-5 dark:border-gray-800 dark:bg-gray-900/60" data-role-item>
+                    <button type="button" data-role-toggle aria-expanded="false"
+                        class="group flex w-full items-center justify-between gap-4 text-left">
+                        <span class="text-lg font-semibold text-gray-900 dark:text-gray-100">Design the Solution</span>
+                        <span
+                            class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-900/30">
+                            <svg data-role-icon class="h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="overflow-hidden transition-[height] duration-300 ease-in-out" data-role-content aria-hidden="true"
+                        style="height: 0px;">
+                        <div class="pt-4 opacity-0 transition-opacity duration-200 text-gray-600 dark:text-gray-300"
+                            data-role-content-inner>
+                            <ul class="list-disc space-y-2 pl-5">
+                                <li>Develop low-fidelity explorations and run quick validation checks.</li>
+                                <li>Create annotated high-fidelity designs using tokens and components.</li>
+                                <li>Define micro-interactions, edge cases, errors, and empty states.</li>
+                                <li>Collaborate with Content Design on UI text and tone.</li>
+                                <li>Ensure WCAG 2.2 AA compliance with test notes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-gray-200 bg-white/80 p-5 dark:border-gray-800 dark:bg-gray-900/60" data-role-item>
+                    <button type="button" data-role-toggle aria-expanded="false"
+                        class="group flex w-full items-center justify-between gap-4 text-left">
+                        <span class="text-lg font-semibold text-gray-900 dark:text-gray-100">Validate with Users</span>
+                        <span
+                            class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-900/30">
+                            <svg data-role-icon class="h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="overflow-hidden transition-[height] duration-300 ease-in-out" data-role-content aria-hidden="true"
+                        style="height: 0px;">
+                        <div class="pt-4 opacity-0 transition-opacity duration-200 text-gray-600 dark:text-gray-300"
+                            data-role-content-inner>
+                            <ul class="list-disc space-y-2 pl-5">
+                                <li>Plan and run usability tests; gather and synthesize findings.</li>
+                                <li>Iterate and document decisions, rationale, and trade-offs.</li>
+                                <li>Conduct pre-mortem to assess risks and adjust scope.</li>
+                                <li>Complete accessibility, security, and privacy reviews.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-gray-200 bg-white/80 p-5 dark:border-gray-800 dark:bg-gray-900/60" data-role-item>
+                    <button type="button" data-role-toggle aria-expanded="false"
+                        class="group flex w-full items-center justify-between gap-4 text-left">
+                        <span class="text-lg font-semibold text-gray-900 dark:text-gray-100">Partner Through Build</span>
+                        <span
+                            class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-900/30">
+                            <svg data-role-icon class="h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="overflow-hidden transition-[height] duration-300 ease-in-out" data-role-content aria-hidden="true"
+                        style="height: 0px;">
+                        <div class="pt-4 opacity-0 transition-opacity duration-200 text-gray-600 dark:text-gray-300"
+                            data-role-content-inner>
+                            <ul class="list-disc space-y-2 pl-5">
+                                <li>Deliver complete specs—flows, redlines, tokens, assets, content matrix.</li>
+                                <li>Run engineering walkthroughs and maintain a shared decision log.</li>
+                                <li>Review dev/staging builds; file actionable issues.</li>
+                                <li>Validate analytics events and data contracts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-gray-200 bg-white/80 p-5 dark:border-gray-800 dark:bg-gray-900/60" data-role-item>
+                    <button type="button" data-role-toggle aria-expanded="false"
+                        class="group flex w-full items-center justify-between gap-4 text-left">
+                        <span class="text-lg font-semibold text-gray-900 dark:text-gray-100">Prepare for Launch</span>
+                        <span
+                            class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-900/30">
+                            <svg data-role-icon class="h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="overflow-hidden transition-[height] duration-300 ease-in-out" data-role-content aria-hidden="true"
+                        style="height: 0px;">
+                        <div class="pt-4 opacity-0 transition-opacity duration-200 text-gray-600 dark:text-gray-300"
+                            data-role-content-inner>
+                            <ul class="list-disc space-y-2 pl-5">
+                                <li>Perform final design QA on release candidates.</li>
+                                <li>Prepare screenshots, release notes, and help content.</li>
+                                <li>Align on experiment parameters and guardrails.</li>
+                                <li>Provide go/no-go input during release reviews.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-gray-200 bg-white/80 p-5 dark:border-gray-800 dark:bg-gray-900/60" data-role-item>
+                    <button type="button" data-role-toggle aria-expanded="false"
+                        class="group flex w-full items-center justify-between gap-4 text-left">
+                        <span class="text-lg font-semibold text-gray-900 dark:text-gray-100">Measure Post Launch</span>
+                        <span
+                            class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-900/30">
+                            <svg data-role-icon class="h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="overflow-hidden transition-[height] duration-300 ease-in-out" data-role-content aria-hidden="true"
+                        style="height: 0px;">
+                        <div class="pt-4 opacity-0 transition-opacity duration-200 text-gray-600 dark:text-gray-300"
+                            data-role-content-inner>
+                            <ul class="list-disc space-y-2 pl-5">
+                                <li>Monitor dashboards and verify no regressions.</li>
+                                <li>Lead experiment readouts; propose next iteration.</li>
+                                <li>Capture learnings and update the design system when needed.</li>
+                                <li>Close the loop with support and marketing on outcomes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-8 max-w-3xl text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                Beyond delivery, I continuously collaborate with teams to monitor impact, refine workflows, and evolve our design system. My goal is to ensure the product not only ships smoothly but continues to improve through evidence, feedback, and iteration.
+            </p>
+        </section>
+
+
 
         <!-- Why work with me? -->
         <section class="w-full py-16">
@@ -311,16 +616,16 @@
                     <div class="grid h-28 w-28 place-items-center rounded-3xl bg-[#F6DADA] dark:bg-rose-950/40">
                         <!-- same icon for all (placeholder target-ish) -->
                         <svg class="h-10 w-10 text-[#E57E7E]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                        <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M12 16a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M12 12h.01" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 16a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 12h.01" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
                         </svg>
                     </div>
 
                     <div class="space-y-4 max-w-md">
                         <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Tailored, business-driven UX</h3>
                         <p class="text-gray-600 dark:text-gray-300">
-                        Not just aesthetics, real impact on engagement &amp; conversion.
+                            Not just aesthetics, real impact on engagement &amp; conversion.
                         </p>
                     </div>
                 </article>
@@ -329,21 +634,21 @@
                 <article class="flex items-start gap-7">
                     <div class="grid h-28 w-28 place-items-center rounded-3xl bg-[#E8E6FB] dark:bg-violet-950/40">
                         <svg class="h-10 w-10 text-[#8B86D8]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                        <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M12 16a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M12 12h.01" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 16a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 12h.01" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
                         </svg>
                     </div>
 
                     <div class="space-y-4 max-w-md">
                         <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Efficiency &amp; flexibility</h3>
                         <p class="text-gray-600 dark:text-gray-300">
-                        No bloated agency processes, no junior hand-offs.
+                            No bloated agency processes, no junior hand-offs.
                         </p>
                     </div>
                 </article>
 
-                
+
             </div>
         </section>
 
@@ -356,116 +661,227 @@
                     <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">My Design Principles</h2>
 
                     <div class="mt-5 space-y-5 text-base leading-relaxed text-gray-600 dark:text-gray-300">
-                        <p>Good principles have sacrifices. They prioritize certain benefits over others, build constraints into one’s workflow, and act as a guide toward performance and efficiency.</p>
+                        <p>Good principles have sacrifices. They prioritize certain benefits over others, build constraints into
+                            one’s workflow, and act as a guide toward performance and efficiency.</p>
                         <p>Here are four principles that guide my product design and team leadership.</p>
                     </div>
                 </div>
 
                 <!-- Right grid -->
                 <div class="lg:col-span-7">
-                <div class="grid gap-12 md:grid-cols-2">
-                    <!-- Principle -->
-                    <article class="space-y-4">
-                        <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M7 8h10a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3H12l-4 3v-3H7a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                            <path d="M8 12h.01M12 12h.01M16 12h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                        </svg>
+                    <div class="grid gap-12 md:grid-cols-2">
+                        <!-- Principle -->
+                        <article class="space-y-4">
+                            <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M7 8h10a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3H12l-4 3v-3H7a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                                <path d="M8 12h.01M12 12h.01M16 12h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            </svg>
 
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Design is 90% Communication</h3>
-                            <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
-                                Communication is the most important skillset in product design. This includes team facilitation, persuasive storytelling, and stakeholder management.
-                            </p>
-                        </div>
-                    </article>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Design is 90% Communication</h3>
+                                <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                                    Communication is the most important skillset in product design. This includes team facilitation,
+                                    persuasive storytelling, and stakeholder management.
+                                </p>
+                            </div>
+                        </article>
 
-                    <!-- Principle -->
-                    <article class="space-y-4">
-                        <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M8 8c0-2.2 1.8-4 4-4s4 1.8 4 4c0 2.3-1.6 3.6-3.2 4.6-1.7 1-3.3 2-3.3 4.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M16 16c0 2.2-1.8 4-4 4s-4-1.8-4-4c0-2.3 1.6-3.6 3.2-4.6 1.7-1 3.3-2 3.3-4.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                        <!-- Principle -->
+                        <article class="space-y-4">
+                            <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M8 8c0-2.2 1.8-4 4-4s4 1.8 4 4c0 2.3-1.6 3.6-3.2 4.6-1.7 1-3.3 2-3.3 4.4" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <path d="M16 16c0 2.2-1.8 4-4 4s-4-1.8-4-4c0-2.3 1.6-3.6 3.2-4.6 1.7-1 3.3-2 3.3-4.4"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
 
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Infinite Mindset</h3>
-                            <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
-                            Adopting a purpose-driven approach and playing for the long term is more effective than short-term approaches like “beating the competition”.
-                            </p>
-                        </div>
-                    </article>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Infinite Mindset</h3>
+                                <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                                    Adopting a purpose-driven approach and playing for the long term is more effective than short-term
+                                    approaches like “beating the competition”.
+                                </p>
+                            </div>
+                        </article>
 
-                    <!-- Principle -->
-                    <article class="space-y-4">
-                        <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M6 20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M18 20V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M12 20V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M5 10h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M11 14h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M17 6h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                        <!-- Principle -->
+                        <article class="space-y-4">
+                            <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M6 20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M18 20V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M12 20V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M5 10h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M11 14h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M17 6h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
 
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Outcomes Over Output</h3>
-                            <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
-                            Customer behavior is the most important metric for business success. Solving problems begins by
-                            prioritizing outcomes, not features.
-                            </p>
-                        </div>
-                    </article>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Outcomes Over Output</h3>
+                                <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                                    Customer behavior is the most important metric for business success. Solving problems begins by
+                                    prioritizing outcomes, not features.
+                                </p>
+                            </div>
+                        </article>
 
-                    <!-- Principle -->
-                    <article class="space-y-4">
-                        <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M7 7h9a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2"/>
-                            <path d="M9 10h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M9 13h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                        <!-- Principle -->
+                        <article class="space-y-4">
+                            <svg class="h-7 w-7 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M7 7h9a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M9 10h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M9 13h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
 
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">80% Is Good Enough</h3>
-                            <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
-                            Reaching 80% of a goal is usually enough. The time to get to 100% satisfaction is often better spent
-                            making progress elsewhere.
-                            </p>
-                        </div>
-                    </article>
-                </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">80% Is Good Enough</h3>
+                                <p class="mt-2 text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                                    Reaching 80% of a goal is usually enough. The time to get to 100% satisfaction is often better spent
+                                    making progress elsewhere.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <footer class="w-full pb-10 pt-6">
-            <div class="grid gap-3 px-4 text-sm text-gray-600 md:grid-cols-3 md:items-center dark:text-gray-300">
-                <div class="hidden md:block"></div>
+        <!-- divider -->
+        <hr class="border-t border-gray-300 dark:border-gray-700 my-12">
 
-                <div class="flex flex-wrap items-center justify-center gap-3">
+        <!-- Footer -->
+        <footer class="w-full pb-10 space-y-8">
+            <div class="rounded-4xl border border-gray-200 bg-white p-6 md:p-10 dark:border-gray-800 dark:bg-gray-900">
+
+                <!-- Top row -->
+                <div class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+                    <div>
+                        <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">Let’s connect</h2>
+                        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+                            Open to product roles, freelance projects, and collaborations. If you want a walkthrough of any case
+                            study, I’m happy to share details live.
+                        </p>
+
+                        <a href="mailto:sumit.v.nikhare@gmail.com"
+                            class="mt-6 inline-flex items-center rounded-full border-2 border-gray-900 bg-white px-7 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition duration-300 dark:border-gray-100 dark:bg-gray-900 dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900">
+                            Let's Talk
+                        </a>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="flex justify-start md:justify-end">
+                        <span class="font-heading text-3xl font-semibold">sumit.design</span>
+                    </div>
+                </div>
+
+                <!-- Bottom grid -->
+                <div class="mt-14 grid gap-12 md:grid-cols-3">
+
+                    <!-- Navigation -->
+                    <div>
+                        <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Navigation</p>
+                        <ul class="mt-5 space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                            <li><a href="../index.html" class="link-brand">Home</a></li>
+                            <li><a href="../about.html" class="link-brand">About</a></li>
+                            <li><a href="../work.html" class="link-brand">Work</a></li>
+                            <li><a href="../resume.html" class="link-brand">Resume</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Case studies -->
+                    <div>
+                        <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Case studies</p>
+                        <ul class="mt-5 space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                            <li><a href="./work/chip-2.html" class="link-brand">CHIP 2.0</a></li>
+                            <li><a class="underline underline-offset-4">Samasta</a></li>
+                            <li><a href="./work/cho-soft.html" class="link-brand">CHO Soft</a></li>
+                            <li><a href="./work.html" class="link-brand">View All</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Elsewhere -->
+                    <div>
+                        <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Elsewhere</p>
+
+                        <div class="mt-5 space-y-2">
+
+                            <!-- Card -->
+                            <a href="https://www.linkedin.com/in/sumit-nikhare-482058215/" target="_blank" rel="noreferrer"
+                                class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-violet-100 py-2 pl-2 pr-4 dark:bg-violet-900/30">
+                                <div class="flex items-center gap-4">
+                                    <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
+                                        <span class="text-sm font-semibold">in</span>
+                                    </div>
+                                    <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">LinkedIn</p>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">↗</span>
+                            </a>
+
+                            <!-- Card -->
+                            <!-- <a href="mailto:sumit.v.nikhare@gmail.com"
+                                                                class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-emerald-100 py-2 pl-2 pr-4 dark:bg-emerald-900/30">
+                                                                <div class="flex items-center gap-4">
+                                                                        <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
+                                                                                <span class="text-sm font-semibold">G</span>
+                                                                        </div>
+                                                                        <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Email</p>
+                                                                </div>
+                                                                <span class="text-gray-700 dark:text-gray-300">↗</span>
+                                                        </a> -->
+
+                            <!-- Card -->
+                            <!-- <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"
+                                                                class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-rose-100 py-2 pl-2 pr-4 dark:bg-rose-900/30">
+                                                                <div class="flex items-center gap-4">
+                                                                        <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
+                                                                                <span class="text-sm font-semibold">in</span>
+                                                                        </div>
+                                                                        <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Instagram</p>
+                                                                </div>
+                                                                <span class="text-gray-700 dark:text-gray-300">↗</span>
+                                                        </a> -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col space-y-4 items-center">
+
+
+                <div class="flex flex-col items-center gap-3">
                     <p class="text-center">© 2025 – sumit.design</p>
 
-                    <button
-                      type="button"
-                      data-theme-toggle
-                      aria-pressed="false"
-                      class="group inline-flex items-center gap-3 rounded-full border border-slate-200 bg-white/80 px-3 py-2 text-xs font-semibold text-slate-600 shadow-sm transition hover:bg-white dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-400"
-                    >
-                      <span class="text-xs font-semibold text-slate-800/90 dark:text-slate-500">Light</span>
-                      <span class="relative inline-flex h-7 w-14 items-center rounded-full bg-gradient-to-r from-sky-200 via-sky-300 to-sky-500 shadow-inner ring-1 ring-inset ring-white/40 transition-colors duration-300 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 dark:ring-white/10">
-                        <span class="absolute left-1 top-1 h-5 w-5 rounded-full bg-white shadow transition-transform duration-300 dark:translate-x-7 dark:bg-slate-100">
-                          <span class="absolute -right-0.5 top-1 h-3 w-3 rounded-full bg-slate-900 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
+                    <button type="button" data-theme-toggle aria-pressed="false"
+                        class="group inline-flex items-center gap-3 rounded-full border border-slate-200 bg-white/80 px-4 py-1 text-xs font-semibold text-slate-600 shadow-sm transition hover:bg-white dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-400">
+                        <span class="text-xs font-semibold text-slate-800/90 dark:text-slate-500">Light</span>
+                        <span
+                            class="relative inline-flex h-7 w-14 items-center rounded-full bg-gradient-to-r from-sky-200 via-sky-300 to-sky-500 shadow-inner ring-1 ring-inset ring-white/40 transition-colors duration-300 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 dark:ring-white/10">
+                            <span
+                                class="absolute left-1 top-1 h-5 w-5 rounded-full bg-white shadow transition-transform duration-300 dark:translate-x-7 dark:bg-slate-100">
+                                <span
+                                    class="absolute -right-0.5 top-1 h-3 w-3 rounded-full bg-slate-900 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
+                            </span>
+                            <span
+                                class="absolute right-4 top-2 h-1.5 w-1.5 rounded-full bg-white/90 transition-opacity duration-300 dark:opacity-0"></span>
+                            <span
+                                class="absolute right-2 top-4 h-1 w-1 rounded-full bg-white/80 transition-opacity duration-300 dark:opacity-0"></span>
+                            <span
+                                class="absolute left-3 top-2 h-1 w-1 rounded-full bg-white/80 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
+                            <span
+                                class="absolute left-6 top-4 h-1.5 w-1.5 rounded-full bg-white/70 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
+                            <span
+                                class="absolute left-8 top-1 h-1 w-1 rounded-full bg-white/60 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
                         </span>
-                        <span class="absolute right-4 top-2 h-1.5 w-1.5 rounded-full bg-white/90 transition-opacity duration-300 dark:opacity-0"></span>
-                        <span class="absolute right-2 top-4 h-1 w-1 rounded-full bg-white/80 transition-opacity duration-300 dark:opacity-0"></span>
-                        <span class="absolute left-3 top-2 h-1 w-1 rounded-full bg-white/80 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
-                        <span class="absolute left-6 top-4 h-1.5 w-1.5 rounded-full bg-white/70 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
-                        <span class="absolute left-8 top-1 h-1 w-1 rounded-full bg-white/60 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
-                      </span>
-                      <span class="text-xs font-semibold text-slate-400 dark:text-slate-100">Dark</span>
-                      <span data-theme-label class="sr-only">Light</span>
-                      <span class="sr-only">Toggle color theme</span>
+                        <span class="text-xs font-semibold text-slate-400 dark:text-slate-100">Dark</span>
+                        <span data-theme-label class="sr-only">Light</span>
+                        <span class="sr-only">Toggle color theme</span>
                     </button>
                 </div>
-            
-                <p class="text-center md:text-right">
+
+                <p class="text-sm text-center md:text-right">
                     Implementation notes &amp; source ·
                     <a href="https://github.com/" target="_blank" rel="noreferrer" class="link-brand">
                         GitHub
@@ -473,209 +889,267 @@
                 </p>
             </div>
         </footer>
-        </div>
-
-        <!-- Roles & Responsibilities Modal -->
-        <div id="rolesModal" class="fixed inset-0 z-50 hidden" aria-hidden="true">
-  <!-- Overlay -->
-  <div id="rolesModalOverlay" class="absolute inset-0 bg-black/30 dark:bg-black/60"></div>
-
-  <!-- Dialog -->
-  <div class="relative mx-4 flex min-h-screen items-center justify-center py-10 sm:mx-6">
-    <div
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="rolesModalTitle"
-      class="w-full max-w-3xl overflow-hidden rounded-4xl bg-white shadow-lg dark:bg-gray-900"
-    >
-      <!-- Header (non-scrollable) -->
-      <div class="flex items-start justify-between gap-4 border-b border-gray-200 px-6 py-5 dark:border-gray-800">
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400">Khushibaby (NGO)</p>
-          <h3 id="rolesModalTitle" class="mt-3 text-4xl font-extrabold text-gray-900 dark:text-gray-100">Roles & Responsibilities</h3>
-        </div>
-
-        <button
-          type="button"
-          id="rolesModalClose"
-          class="grid h-10 w-10 place-items-center rounded-xl text-gray-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800"
-          aria-label="Close"
-        >
-          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Body (scrollable) -->
-      <div class="max-h-[70vh] overflow-y-auto px-6 py-6">
-        <div class="space-y-6 text-gray-700 dark:text-gray-300">
-          <p>
-            In my current role, I lead end-to-end product design responsibilities—from framing problems with cross-functional partners to delivering validated, implementation-ready solutions.
-            I work closely with PMs, engineers, data teams, and field staff to ensure every design decision is grounded in real user needs and measurable outcomes.
-          </p>
-
-          <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Discover the Problem</h4>
-            <ol class="list-decimal space-y-2 pl-5">
-              <li>Partner with Product to frame the problem using evidence, research, and data—not assumptions.</li>
-              <li>Audit current workflows, friction points, competitors, and adjacent patterns.</li>
-              <li>Define research questions, methods, and participant criteria.</li>
-              <li>Collaborate on metric definitions to ensure measurable success.</li>
-              <li>Document assumptions, risks, and a validation plan.</li>
-            </ol>
-          </div>
-
-          <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Define the Direction</h4>
-            <ol class="list-decimal space-y-2 pl-5">
-              <li>Synthesize research into insights, JTBD, needs, and opportunity areas.</li>
-              <li>Establish experience principles and guardrails (accessibility, privacy, constraints).</li>
-              <li>Draft high-level flows and IA; align on MVP vs. future scopes.</li>
-              <li>Co-author user stories and acceptance criteria with PM/Engineering.</li>
-              <li>Create instrumentation plans with Data teams.</li>
-            </ol>
-          </div>
-
-          <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Design the Solution</h4>
-            <ul class="list-disc space-y-2 pl-5">
-              <li>Develop low-fidelity explorations and run quick validation checks.</li>
-              <li>Create annotated high-fidelity designs using tokens and components.</li>
-              <li>Define micro-interactions, edge cases, errors, and empty states.</li>
-              <li>Collaborate with Content Design on UI text and tone.</li>
-              <li>Ensure WCAG 2.2 AA compliance with test notes.</li>
-            </ul>
-          </div>
-
-          <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Validate with Users</h4>
-            <ul class="list-disc space-y-2 pl-5">
-              <li>Plan and run usability tests; gather and synthesize findings.</li>
-              <li>Iterate and document decisions, rationale, and trade-offs.</li>
-              <li>Conduct pre-mortem to assess risks and adjust scope.</li>
-              <li>Complete accessibility, security, and privacy reviews.</li>
-            </ul>
-          </div>
-
-          <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Partner Through Build</h4>
-            <ul class="list-disc space-y-2 pl-5">
-              <li>Deliver complete specs—flows, redlines, tokens, assets, content matrix.</li>
-              <li>Run engineering walkthroughs and maintain a shared decision log.</li>
-              <li>Review dev/staging builds; file actionable issues.</li>
-              <li>Validate analytics events and data contracts.</li>
-            </ul>
-          </div>
-
-          <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Prepare for Launch</h4>
-            <ul class="list-disc space-y-2 pl-5">
-              <li>Perform final design QA on release candidates.</li>
-              <li>Prepare screenshots, release notes, and help content.</li>
-              <li>Align on experiment parameters and guardrails.</li>
-              <li>Provide go/no-go input during release reviews.</li>
-            </ul>
-          </div>
-
-          <div class="space-y-3">
-            <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Measure Post Launch</h4>
-            <ul class="list-disc space-y-2 pl-5">
-              <li>Monitor dashboards and verify no regressions.</li>
-              <li>Lead experiment readouts; propose next iteration.</li>
-              <li>Capture learnings and update the design system when needed.</li>
-              <li>Close the loop with support and marketing on outcomes.</li>
-            </ul>
-          </div>
-
-          <p>
-            Beyond delivery, I continuously collaborate with teams to monitor impact, refine workflows, and evolve our design system.
-            My goal is to ensure the product not only ships smoothly but continues to improve through evidence, feedback, and iteration.
-          </p>
-        </div>
-      </div>
-
-      <!-- Footer (optional, non-scrollable) -->
-      <div class="border-t border-gray-200 px-6 py-4 dark:border-gray-800">
-        <p class="text-xs text-gray-500 dark:text-gray-400">Tip: Press <span class="font-semibold">Esc</span> to close.</p>
-      </div>
     </div>
-  </div>
-</div>
 
-<script>
-  (function () {
-    const openBtn = document.getElementById('rolesModalOpen');
-    const modal = document.getElementById('rolesModal');
-    const overlay = document.getElementById('rolesModalOverlay');
-    const closeBtn = document.getElementById('rolesModalClose');
-    const pageContent = document.getElementById('pageContent');
+                <!-- Footer (optional, non-scrollable) -->
+                <div class="border-t border-gray-200 px-6 py-4 dark:border-gray-800">
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Tip: Press <span class="font-semibold">Esc</span> to
+                        close.</p>
+                </div>
 
-    if (!openBtn || !modal || !overlay || !closeBtn || !pageContent) return;
+            </div>
+        </div>
+    </div>
+    <script>
+        (() => {
+            const accordion = document.querySelector('[data-work-accordion]');
+            if (!accordion) return;
 
-    let lastFocused = null;
-    let trapHandler = null;
+            const items = Array.from(accordion.querySelectorAll('[data-work-item]'));
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const duration = prefersReducedMotion ? 0 : 240;
+            const animations = new WeakMap();
 
-    const getFocusable = () =>
-      Array.from(
-        modal.querySelectorAll(
-          'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'
-        )
-      );
+            const stopAnimation = (content) => {
+                const animation = animations.get(content);
+                if (animation) animation.cancel();
+            };
 
-    function openModal() {
-      lastFocused = document.activeElement;
-      modal.classList.remove('hidden');
-      modal.setAttribute('aria-hidden', 'false');
-      openBtn.setAttribute('aria-expanded', 'true');
-      document.body.classList.add('overflow-hidden');
-      pageContent.setAttribute('aria-hidden', 'true');
-      if ('inert' in pageContent) pageContent.inert = true;
+            const setButtonState = (item, expanded) => {
+                const button = item.querySelector('[data-work-toggle]');
+                const label = item.querySelector('[data-work-label]');
+                const icon = item.querySelector('[data-work-icon]');
+                const content = item.querySelector('[data-work-content]');
 
-      const focusables = getFocusable();
-      if (focusables.length) focusables[0].focus();
+                if (button) button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                if (label) label.textContent = expanded ? 'Hide details' : 'View details';
+                if (icon) icon.classList.toggle('rotate-180', expanded);
+                if (content) content.setAttribute('aria-hidden', expanded ? 'false' : 'true');
+            };
 
-      trapHandler = (e) => {
-        if (e.key === 'Escape') {
-          closeModal();
-          return;
-        }
+            const expandItem = (item) => {
+                const content = item.querySelector('[data-work-content]');
+                const inner = item.querySelector('[data-work-content-inner]');
+                if (!content || !inner) return;
 
-        if (e.key !== 'Tab') return;
-        const items = getFocusable();
-        if (!items.length) return;
-        const first = items[0];
-        const last = items[items.length - 1];
+                stopAnimation(content);
+                setButtonState(item, true);
 
-        if (e.shiftKey && document.activeElement === first) {
-          e.preventDefault();
-          last.focus();
-        } else if (!e.shiftKey && document.activeElement === last) {
-          e.preventDefault();
-          first.focus();
-        }
-      };
+                content.style.overflow = 'hidden';
+                const startHeight = content.offsetHeight;
+                const endHeight = inner.scrollHeight;
+                content.style.height = `${startHeight}px`;
+                inner.classList.remove('opacity-0');
+                inner.classList.add('opacity-100');
 
-      document.addEventListener('keydown', trapHandler);
-    }
+                if (duration === 0) {
+                    content.style.height = 'auto';
+                    content.style.overflow = '';
+                    return;
+                }
 
-    function closeModal() {
-      modal.classList.add('hidden');
-      modal.setAttribute('aria-hidden', 'true');
-      openBtn.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('overflow-hidden');
-      pageContent.removeAttribute('aria-hidden');
-      if ('inert' in pageContent) pageContent.inert = false;
-      if (trapHandler) document.removeEventListener('keydown', trapHandler);
-      if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
-    }
+                const animation = content.animate(
+                    { height: [`${startHeight}px`, `${endHeight}px`] },
+                    { duration, easing: 'ease-in-out' }
+                );
+                animations.set(content, animation);
+                animation.onfinish = () => {
+                    content.style.height = 'auto';
+                    content.style.overflow = '';
+                    animations.delete(content);
+                };
+                animation.oncancel = () => {
+                    content.style.height = '';
+                    content.style.overflow = '';
+                    animations.delete(content);
+                };
+            };
 
-    openBtn.addEventListener('click', openModal);
-    closeBtn.addEventListener('click', closeModal);
+            const collapseItem = (item) =>
+                new Promise((resolve) => {
+                    const content = item.querySelector('[data-work-content]');
+                    const inner = item.querySelector('[data-work-content-inner]');
+                    if (!content || !inner) return resolve();
 
-    // Click outside
-    overlay.addEventListener('click', closeModal);
-  })();
-</script>
+                    stopAnimation(content);
+                    setButtonState(item, false);
+
+                    const startHeight = content.offsetHeight;
+                    content.style.overflow = 'hidden';
+                    content.style.height = `${startHeight}px`;
+                    inner.classList.remove('opacity-100');
+                    inner.classList.add('opacity-0');
+
+                    if (duration === 0) {
+                        content.style.height = '0px';
+                        content.style.overflow = 'hidden';
+                        return resolve();
+                    }
+
+                    const animation = content.animate(
+                        { height: [`${startHeight}px`, '0px'] },
+                        { duration, easing: 'ease-in-out' }
+                    );
+                    animations.set(content, animation);
+                    animation.onfinish = () => {
+                        content.style.height = '0px';
+                        content.style.overflow = 'hidden';
+                        animations.delete(content);
+                        resolve();
+                    };
+                    animation.oncancel = () => {
+                        content.style.height = '0px';
+                        content.style.overflow = 'hidden';
+                        animations.delete(content);
+                        resolve();
+                    };
+                });
+
+            items.forEach((item) => {
+                const button = item.querySelector('[data-work-toggle]');
+                if (!button) return;
+
+                button.addEventListener('click', () => {
+                    const isOpen = button.getAttribute('aria-expanded') === 'true';
+                    if (isOpen) {
+                        collapseItem(item);
+                        return;
+                    }
+
+                    const openItems = items.filter((other) =>
+                        other !== item &&
+                        other.querySelector('[data-work-toggle]')?.getAttribute('aria-expanded') === 'true'
+                    );
+
+                    Promise.all(openItems.map(collapseItem)).then(() => expandItem(item));
+                });
+            });
+        })();
+    </script>
+    <script>
+        (() => {
+            const accordion = document.querySelector('[data-role-accordion]');
+            if (!accordion) return;
+
+            const items = Array.from(accordion.querySelectorAll('[data-role-item]'));
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const duration = prefersReducedMotion ? 0 : 240;
+            const animations = new WeakMap();
+
+            const stopAnimation = (content) => {
+                const animation = animations.get(content);
+                if (animation) animation.cancel();
+            };
+
+            const setButtonState = (item, expanded) => {
+                const button = item.querySelector('[data-role-toggle]');
+                const icon = item.querySelector('[data-role-icon]');
+                const content = item.querySelector('[data-role-content]');
+
+                if (button) button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                if (icon) icon.classList.toggle('rotate-180', expanded);
+                if (content) content.setAttribute('aria-hidden', expanded ? 'false' : 'true');
+            };
+
+            const expandItem = (item) => {
+                const content = item.querySelector('[data-role-content]');
+                const inner = item.querySelector('[data-role-content-inner]');
+                if (!content || !inner) return;
+
+                stopAnimation(content);
+                setButtonState(item, true);
+
+                content.style.overflow = 'hidden';
+                const startHeight = content.offsetHeight;
+                const endHeight = inner.scrollHeight;
+                content.style.height = `${startHeight}px`;
+                inner.classList.remove('opacity-0');
+                inner.classList.add('opacity-100');
+
+                if (duration == 0) {
+                    content.style.height = 'auto';
+                    content.style.overflow = '';
+                    return;
+                }
+
+                const animation = content.animate(
+                    { height: [`${startHeight}px`, `${endHeight}px`] },
+                    { duration, easing: 'ease-in-out' }
+                );
+                animations.set(content, animation);
+                animation.onfinish = () => {
+                    content.style.height = 'auto';
+                    content.style.overflow = '';
+                    animations.delete(content);
+                };
+                animation.oncancel = () => {
+                    content.style.height = '';
+                    content.style.overflow = '';
+                    animations.delete(content);
+                };
+            };
+
+            const collapseItem = (item) =>
+                new Promise((resolve) => {
+                    const content = item.querySelector('[data-role-content]');
+                    const inner = item.querySelector('[data-role-content-inner]');
+                    if (!content || !inner) return resolve();
+
+                    stopAnimation(content);
+                    setButtonState(item, false);
+
+                    const startHeight = content.offsetHeight;
+                    content.style.overflow = 'hidden';
+                    content.style.height = `${startHeight}px`;
+                    inner.classList.remove('opacity-100');
+                    inner.classList.add('opacity-0');
+
+                    if (duration == 0) {
+                        content.style.height = '0px';
+                        content.style.overflow = 'hidden';
+                        return resolve();
+                    }
+
+                    const animation = content.animate(
+                        { height: [`${startHeight}px`, '0px'] },
+                        { duration, easing: 'ease-in-out' }
+                    );
+                    animations.set(content, animation);
+                    animation.onfinish = () => {
+                        content.style.height = '0px';
+                        content.style.overflow = 'hidden';
+                        animations.delete(content);
+                        resolve();
+                    };
+                    animation.oncancel = () => {
+                        content.style.height = '0px';
+                        content.style.overflow = 'hidden';
+                        animations.delete(content);
+                        resolve();
+                    };
+                });
+
+            items.forEach((item) => {
+                const button = item.querySelector('[data-role-toggle]');
+                if (!button) return;
+
+                button.addEventListener('click', () => {
+                    const isOpen = button.getAttribute('aria-expanded') === 'true';
+                    if (isOpen) {
+                        collapseItem(item);
+                        return;
+                    }
+
+                    const openItems = items.filter((other) =>
+                        other !== item &&
+                        other.querySelector('[data-role-toggle]')?.getAttribute('aria-expanded') === 'true'
+                    );
+
+                    Promise.all(openItems.map(collapseItem)).then(() => expandItem(item));
+                });
+            });
+        })();
+    </script>
+
 </body>
 </html>

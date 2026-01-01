@@ -19,13 +19,13 @@
     <!-- Ambient glassy glows -->
     <div class="pointer-events-none fixed inset-0 -z-10">
         <div
-            class="absolute -left-32 top-10 w-80 h-80 bg-gradient-to-br from-amber-200 via-white to-gray-100 opacity-60 blur-3xl dark:from-amber-500/20 dark:via-gray-950 dark:to-gray-950 dark:opacity-30">
+            class="absolute -left-32 top-10 w-80 h-80 bg-gradient-to-br from-amber-200 via-white to-gray-100 opacity-60 blur-3xl dark:from-amber-400/60 dark:via-orange-400/15 dark:to-transparent dark:opacity-60">
         </div>
         <div
-            class="absolute right-0 -top-24 w-96 h-96 bg-gradient-to-br from-white via-gray-100 to-orange-200 opacity-60 blur-3xl dark:from-gray-950 dark:via-gray-950 dark:to-orange-500/20 dark:opacity-30">
+            class="absolute right-0 -top-24 w-96 h-96 bg-gradient-to-br from-white via-gray-100 to-orange-200 opacity-60 blur-3xl dark:from-gray-900/80 dark:via-orange-400/15 dark:to-orange-400/45 dark:opacity-60">
         </div>
         <div
-            class="absolute left-1/3 bottom-0 w-96 h-96 bg-gradient-to-br from-orange-200 via-white to-gray-100 opacity-50 blur-3xl dark:from-orange-500/20 dark:via-gray-950 dark:to-gray-950 dark:opacity-30">
+            class="absolute left-1/3 bottom-0 w-96 h-96 bg-gradient-to-br from-orange-200 via-white to-gray-100 opacity-50 blur-3xl dark:from-orange-400/55 dark:via-amber-400/15 dark:to-transparent dark:opacity-60">
         </div>
     </div>
 
@@ -179,13 +179,13 @@
                 <!-- Tags -->
                 <div class="mt-8 flex flex-wrap gap-2">
                     <span
-                        class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Public Health Platform</span>
+                        class="rounded-full bg-white/70 dark:bg-gray-900/40 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Public Health Platform</span>
                     <span
-                        class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Digital Health Systems</span>
+                        class="rounded-full bg-white/70 dark:bg-gray-900/40 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Digital Health Systems</span>
                     <span
-                        class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Role-Based Access</span>
+                        class="rounded-full bg-white/70 dark:bg-gray-900/40 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Role-Based Access</span>
                     <span
-                        class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Operational UX</span>
+                        class="rounded-full bg-white/70 dark:bg-gray-900/40 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Operational UX</span>
                 </div>
 
             </div>
@@ -193,7 +193,7 @@
             <!-- Right: Meta card (below on mobile) -->
             <aside class="lg:col-span-5">
 
-                <div class="rounded-3xl bg-gray-200 dark:bg-gray-800 p-8">
+                <div class="rounded-3xl bg-white/70 dark:bg-gray-900/40 p-8">
                     <dl class="grid gap-6">
                         <div class="grid grid-cols-12 items-baseline gap-4">
                             <dt class="col-span-4 text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">MY ROLE</dt>
@@ -770,257 +770,608 @@
                     
                         <div class="space-y-4">
 
-                            <!-- Onboarding (Login, Registration) -->
-                            <a href="./chip-2/onboarding.html"
-                                class="group relative block overflow-hidden rounded-2xl
-                                                                    bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur p-5 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60
-                                                                    transition duration-200 hover:shadow-md focus-visible:shadow-md
-                                                                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
-                            
-                                <!-- Ambient “glassy glow” blobs (no gradients, clipped inside card) -->
-                                <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
-                                                                      group-hover:opacity-100 group-focus-visible:opacity-100">
-                                    <span
-                                        class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
-                                    <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
-                                    <span
-                                        class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
-                                </div>
-                            
-                                <!-- Content above glow -->
-                                <div class="relative z-10 space-y-4">
-                                    <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
-                                        alt="Onboarding (Login, Registration) placeholder"
-                                        class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800" />
-                            
-                                    <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Onboarding (Login, Registration)</h3>
-                            
-                                        <p class="text-gray-700 dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                            
-                            
-                                    <!-- Less emphasis “button” (since card is clickable) -->
-                                    <span
-                                        class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-900 mt-2
-                                                                          transition-colors duration-200
-                                                                          group-hover:bg-gray-300 group-focus-visible:bg-gray-400 dark:group-hover:bg-gray-700 dark:group-focus-visible:bg-gray-700">
-                                        View Details
-                                    </span>
-                                </div>
-                            </a>
-                            
-                            <!-- Punch-In/Punch-Out/Homepage -->
-                            <a href="./chip-2/homepage.html"
-                                class="group relative block overflow-hidden rounded-2xl
-                                    bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur p-5 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60
-                                    transition duration-200 hover:shadow-md focus-visible:shadow-md
-                                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
-                            
-                                <!-- Ambient “glassy glow” blobs (no gradients, clipped inside card) -->
-                                <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
-                                    group-hover:opacity-100 group-focus-visible:opacity-100">
-                                    <span
-                                        class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
-                                    <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
-                                    <span
-                                        class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
-                                </div>
-                            
-                                <!-- Content above glow -->
-                                <div class="relative z-10 space-y-4">
-                                    <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
-                                        alt="Onboarding (Login, Registration) placeholder"
-                                        class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800" />
-                            
-                                    <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">User Attendance & Homepages</h3>
-                            
-                                        <p class="text-gray-700 dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                            
-                            
-                                    <!-- Less emphasis “button” (since card is clickable) -->
-                                    <span
-                                        class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-900 mt-2
-                                            transition-colors duration-200
-                                            group-hover:bg-gray-300 group-focus-visible:bg-gray-400 dark:group-hover:bg-gray-700 dark:group-focus-visible:bg-gray-700">
-                                        View Details
-                                    </span>
-                                </div>
-                            </a>
+                            <!-- Accordion -->
+                            <div
+                                data-accordion="chip-2-modules"
+                                class="overflow-hidden rounded-3xl border border-gray-200 bg-white/70 dark:bg-gray-900/40 shadow-sm dark:border-gray-800">
 
-                            <!-- Profile (User & Facility) -->
-                            <a href="./chip-2/profile.html"
-                                class="group relative block overflow-hidden rounded-2xl
-                                    bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur p-5 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60
-                                    transition duration-200 hover:shadow-md focus-visible:shadow-md
-                                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
-                            
-                                <!-- Ambient “glassy glow” blobs (no gradients, clipped inside card) -->
-                                <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
-                                        group-hover:opacity-100 group-focus-visible:opacity-100">
-                                    <span
-                                        class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
-                                    <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
-                                    <span
-                                        class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
-                                </div>
-                            
-                                <!-- Content above glow -->
-                                <div class="relative z-10 space-y-4">
-                                    <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
-                                        alt="Onboarding (Login, Registration) placeholder"
-                                        class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800" />
-                            
-                                    <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Profile (User + Facility)</h3>
-                            
-                                        <p class="text-gray-700 dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                            
-                            
-                                    <!-- Less emphasis “button” (since card is clickable) -->
-                                    <span
-                                        class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-900 mt-2
-                                                                          transition-colors duration-200
-                                                                          group-hover:bg-gray-300 group-focus-visible:bg-gray-400 dark:group-hover:bg-gray-700 dark:group-focus-visible:bg-gray-700">
-                                        View Details
-                                    </span>
-                                </div>
-                            </a>
+                                <!-- Onboarding (Login, Registration) -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10"
+                                    open>
 
-                            <!-- ABHA -->
-                            <a href="./chip-2/abha.html"
-                                class="group relative block overflow-hidden rounded-2xl
-                                    bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur p-5 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60
-                                    transition duration-200 hover:shadow-md focus-visible:shadow-md
-                                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
-                            
-                                <!-- Ambient “glassy glow” blobs (no gradients, clipped inside card) -->
-                                <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
-                                        group-hover:opacity-100 group-focus-visible:opacity-100">
-                                    <span
-                                        class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
-                                    <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
-                                    <span
-                                        class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
-                                </div>
-                            
-                                <!-- Content above glow -->
-                                <div class="relative z-10 space-y-4">
-                                    <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
-                                        alt="Onboarding (Login, Registration) placeholder"
-                                        class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800" />
-                            
-                                    <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">ABHA</h3>
-                            
-                                        <p class="text-gray-700 dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                            
-                            
-                                    <!-- Less emphasis “button” (since card is clickable) -->
-                                    <span
-                                        class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-900 mt-2
-                                            transition-colors duration-200
-                                            group-hover:bg-gray-300 group-focus-visible:bg-gray-400 dark:group-hover:bg-gray-700 dark:group-focus-visible:bg-gray-700">
-                                        View Details
-                                    </span>
-                                </div>
-                            </a>
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">Onboarding (Login, Registration)</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                Onboarding that treats identity + posting as governance.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <!-- plus -->
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <!-- minus -->
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
 
-                            <!-- Family Register + DHS -->
-                            <a href="./chip-2/family-register.html"
-                                class="group relative block overflow-hidden rounded-2xl
-                                    bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur p-5 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60
-                                    transition duration-200 hover:shadow-md focus-visible:shadow-md
-                                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
-                            
-                                <!-- Ambient “glassy glow” blobs (no gradients, clipped inside card) -->
-                                <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
-                                        group-hover:opacity-100 group-focus-visible:opacity-100">
-                                    <span
-                                        class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
-                                    <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
-                                    <span
-                                        class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
-                                </div>
-                            
-                                <!-- Content above glow -->
-                                <div class="relative z-10 space-y-4">
-                                    <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
-                                        alt="Onboarding (Login, Registration) placeholder"
-                                        class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800" />
-                            
-                                    <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Family Register & DHS</h3>
-                            
-                                        <p class="text-gray-700 dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                            
-                            
-                                    <!-- Less emphasis “button” (since card is clickable) -->
-                                    <span
-                                        class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-900 mt-2
-                                            transition-colors duration-200
-                                            group-hover:bg-gray-300 group-focus-visible:bg-gray-400 dark:group-hover:bg-gray-700 dark:group-focus-visible:bg-gray-700">
-                                        View Details
-                                    </span>
-                                </div>
-                            </a>
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
 
-                            <!-- mDash - DHS Overview -->
-                            <a href="./chip-2/dhs-overview.html"
-                                class="group relative block overflow-hidden rounded-2xl
-                                    bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur p-5 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60
-                                    transition duration-200 hover:shadow-md focus-visible:shadow-md
-                                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
-                            
-                                <!-- Ambient “glassy glow” blobs (no gradients, clipped inside card) -->
-                                <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
-                                        group-hover:opacity-100 group-focus-visible:opacity-100">
-                                    <span
-                                        class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
-                                    <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
-                                    <span
-                                        class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
-                                </div>
-                            
-                                <!-- Content above glow -->
-                                <div class="relative z-10 space-y-4">
-                                    <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
-                                        alt="Onboarding (Login, Registration) placeholder"
-                                        class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800" />
-                            
-                                    <div class="space-y-2">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">mDash - DHS Overview</h3>
-                            
-                                        <p class="text-gray-700 dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="Onboarding (Login, Registration) preview" class="h-full w-full object-cover" />
+
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A role-aware login and registration flow that establishes identity, posting location, and approval state upfront. The UI prevents duplicate registrations, makes “pending approval” a first-class state, and routes approved users into a day-start surface so work begins without hunting through menus.
+                                                        </p>
+                                                        <a href="./chip-2/onboarding.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                            
-                            
-                                    <!-- Less emphasis “button” (since card is clickable) -->
-                                    <span
-                                        class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-900 mt-2
-                                            transition-colors duration-200
-                                            group-hover:bg-gray-300 group-focus-visible:bg-gray-400 dark:group-hover:bg-gray-700 dark:group-focus-visible:bg-gray-700">
-                                        View Details
-                                    </span>
-                                </div>
-                            </a>
+                                </details>
+
+                                <!-- Attendance & Homepage -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">Attendance & Homepage</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                Day-start that grounds work in place, context, and status.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="Attendance & Homepage preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A role-aware day-start system that makes punch-in a real operational state, not a polite suggestion. Users select where work is happening (facility, village, outreach, VHND, monitoring, meetings), see execution counters and pending governance work, and get a clean “start visit” path without menu hunting.
+                                                        </p>
+                                                        <a href="./chip-2/homepage.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+
+                                <!-- Profile (User & Facility) -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">Profile (User & Facility)</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                Day-start that grounds work in place, context, and status.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="Profile (User & Facility) preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A role-aware day-start system that makes punch-in a real operational state, not a polite suggestion. Users select where work is happening (facility, village, outreach, VHND, monitoring, meetings), see execution counters and pending governance work, and get a clean “start visit” path without menu hunting.
+                                                        </p>
+                                                        <a href="./chip-2/profile.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+
+                                <!-- ABHA -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">ABHA</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                ABHA workflows that hold up in the field.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="ABHA preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A field-ready ABHA flow inside CHIP 2.0 that supports search, verification, creation, and updates using Aadhaar OTP / Mobile OTP, explicit consent capture, and online/offline paths.
+                                                        </p>
+                                                        <a href="./chip-2/abha.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+
+                                <!-- Family Register & DHS -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">Family Register & DHS</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                Geo-scoped Family Register with DHS capture gates.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="Family Register & DHS preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A field-first register that lets frontline workers discover houses and families by area, keep family + member profiles updated, and run DHS-style capture flows with “presence”, GPS, and photo gates. The UI is built to handle daily realities: incomplete data, updates required, duplicates, and interruptions.
+                                                        </p>
+                                                        <a href="./chip-2/family-register.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+
+                                <!-- mDash - DHS Overview -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">mDash - DHS Overview</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                Mobile dashboard for ABHA + DHS progress, across admin levels.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="mDash - DHS Overview preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A drill-down “progress + attention” surface for supervisors to track registration and DHS completion from State → District → Block → PHC/CHC → SHC → Village/Area. It supports time windows (All time / Today / This week / This month), demographic splits, and verification queues so action is obvious without exporting reports.
+                                                        </p>
+                                                        <a href="./chip-2/dhs-overview.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+
+                                <!-- Sickle Cell & IMR/MMR -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">Sickle Cell & IMR/MMR</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                Sickle Cell screening + IMR/MMR household capture, built as governed UI states.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="Sickle Cell & IMR/MMR preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A field-ready set of DHS-adjacent flows that capture: (1) Sickle Cell screening status, DBS sample collection, barcode validation, and follow-up needs, and (2) household-level infant and maternal death event capture with structured, repeatable “individual details” steps. The design treats follow-up and data integrity as primary outcomes, not side effects.
+                                                        </p>
+                                                        <a href="./chip-2/sicklecell-imr-mmr.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+
+                                <!-- Family Planning -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">Family Planning</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                Family Planning that behaves like governance, not a form.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="Family Planning preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A role-aware Family Planning module built around eligible couple tracking, due follow-ups, and event-based status changes (notified → confirmed → closed). It supports frontline realities: low attention, interruptions, mixed connectivity, and strict program rules.
+                                                        </p>
+                                                        <a href="./chip-2/family-planning.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+
+                                <!-- Maternal Health -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">Maternal Health</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                Maternal Health: ANC, risk, tests, and outcomes as one operational loop.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="Maternal Health preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A role-aware maternal health module designed for frontline delivery where due lists, checkup capture, risk flags, lab completion, and pregnancy outcome must stay connected. Instead of treating ANC as “a form”, the UX is built as a predictable state machine that keeps cases moving across ASHA → ANM and facility handoffs.
+                                                        </p>
+                                                        <a href="./chip-2/maternal-health.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+
+                                <!-- GoK Directory -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">GoK Directory</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                GoK Directory: find the right person, at the right level, without calling 5 people first.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="GoK Directory preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A role-aware directory that maps District → Block → PHC → SHC → Village chains, and organizes contacts across health workers, elected members, and committee roles. The UX is designed for field operations: fast calling, clear ownership, and governance-aligned edits.
+                                                        </p>
+                                                        <a href="./chip-2/gok-directory.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+
+                                <!-- Death Notification and Confirmation -->
+                                <details
+                                    class="group border-b border-gray-200/70 dark:border-gray-800/70 transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">Death Notification and Confirmation</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                Death notifications as a governed state change.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="Death Notification and Confirmation preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A role-aware workflow to notify, validate, and confirm a death without turning it into a “one-tap delete.” The module treats death as a high-integrity system event: it is routed for confirmation, classified by age/sex logic, and only then permanently removes a beneficiary from programs.
+                                                        </p>
+                                                        <a href="./chip-2/death.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+
+                                <!-- VHSNC Meeting -->
+                                <details
+                                    class="group transition-colors group-open:bg-gradient-to-r group-open:from-gray-50/80 group-open:to-white/30 dark:group-open:from-gray-950/50 dark:group-open:to-gray-900/10">
+                                    <summary
+                                        class="relative flex cursor-pointer items-center gap-4 px-6 py-5 list-none before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-r before:from-gray-100/70 before:to-transparent before:opacity-0 before:transition-opacity group-open:before:opacity-100 dark:before:from-gray-950/40">
+                                        <div class="min-w-0 flex-1 space-y-1">
+                                            <h3 class="font-heading text-base font-semibold text-gray-900 dark:text-gray-100 md:text-lg">VHSNC Meeting</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                VHSNC Meetings as a governed execution workflow.
+                                            </p>
+                                        </div>
+                                        <span
+                                            class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm transition group-hover:bg-gray-50 group-open:border-gray-300 group-open:bg-gray-50 dark:border-gray-800 dark:bg-gray-950/40 dark:text-gray-200 dark:group-hover:bg-gray-950/60 dark:group-open:bg-gray-900/30">
+                                            <svg class="h-5 w-5 group-open:hidden" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <svg class="h-5 w-5 hidden group-open:block" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <div class="px-6 pb-6" data-accordion-content>
+                                        <div
+                                            class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out group-open:grid-rows-[1fr]">
+                                            <div class="overflow-hidden">
+                                                <div
+                                                    class="space-y-4 opacity-0 transition-opacity duration-300 ease-out group-open:opacity-100">
+                                                    <div class="aspect-video w-full overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 dark:border-gray-800/70 dark:bg-gray-900/40">
+
+                                                        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
+                                                        alt="VHSNC Meeting preview" class="h-full w-full object-cover" />
+
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                                                            A village-level planning, conduct, and verification system where “meeting happened” is treated as a trackable state machine. The UI supports role-based responsibility (ASHA executes, supervisors verify), evidence capture, and scalable rollups across SHC and PHC geographies.
+                                                        </p>
+                                                        <a href="./chip-2/vhsnc-meeting.html"
+                                                            class="inline-flex items-center justify-center rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-semibold text-orange-900 shadow-sm ring-1 ring-orange-200/60 transition hover:border-orange-300 hover:bg-orange-100 hover:ring-orange-300/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:border-amber-400/40 dark:bg-amber-500/20 dark:text-amber-100 dark:ring-amber-400/30 dark:hover:border-amber-300/60 dark:hover:bg-amber-500/30 dark:hover:ring-amber-300/50 dark:focus-visible:ring-amber-400/50 dark:focus-visible:ring-offset-gray-950">
+                                                            View module
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+                                
+                            </div>
                             
                         </div>
                     </section>
@@ -1342,6 +1693,115 @@
 
             sections.forEach((section) => observer.observe(section));
             setActive(sections[0].id);
+        })();
+    </script>
+
+    <script>
+        (() => {
+            const accordion = document.querySelector('[data-accordion="chip-2-modules"]');
+            if (!accordion) return;
+
+            const items = Array.from(accordion.querySelectorAll('details'));
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const duration = prefersReducedMotion ? 0 : 260;
+            const animations = new WeakMap();
+
+            const getHeights = (item) => {
+                const summary = item.querySelector('summary');
+                const content = item.querySelector('[data-accordion-content]');
+                return {
+                    summaryHeight: summary ? summary.offsetHeight : 0,
+                    contentHeight: content ? content.offsetHeight : 0,
+                };
+            };
+
+            const stopAnimation = (item) => {
+                const animation = animations.get(item);
+                if (animation) animation.cancel();
+            };
+
+            const openItem = (item) => {
+                stopAnimation(item);
+                item.open = true;
+                const { summaryHeight, contentHeight } = getHeights(item);
+                const endHeight = summaryHeight + contentHeight;
+                item.style.overflow = 'hidden';
+                item.style.height = `${summaryHeight}px`;
+
+                if (duration === 0) {
+                    item.style.height = '';
+                    item.style.overflow = '';
+                    return;
+                }
+
+                const animation = item.animate(
+                    { height: [`${summaryHeight}px`, `${endHeight}px`] },
+                    { duration, easing: 'ease-in-out' }
+                );
+                animations.set(item, animation);
+                animation.onfinish = () => {
+                    item.style.height = '';
+                    item.style.overflow = '';
+                    animations.delete(item);
+                };
+                animation.oncancel = () => {
+                    item.style.height = '';
+                    item.style.overflow = '';
+                    animations.delete(item);
+                };
+            };
+
+            const closeItem = (item) =>
+                new Promise((resolve) => {
+                    if (!item.open) return resolve();
+                    stopAnimation(item);
+                    const { summaryHeight } = getHeights(item);
+                    const startHeight = item.offsetHeight;
+                    item.style.overflow = 'hidden';
+                    item.style.height = `${startHeight}px`;
+
+                    if (duration === 0) {
+                        item.open = false;
+                        item.style.height = '';
+                        item.style.overflow = '';
+                        return resolve();
+                    }
+
+                    const animation = item.animate(
+                        { height: [`${startHeight}px`, `${summaryHeight}px`] },
+                        { duration, easing: 'ease-in-out' }
+                    );
+                    animations.set(item, animation);
+                    animation.onfinish = () => {
+                        item.open = false;
+                        item.style.height = '';
+                        item.style.overflow = '';
+                        animations.delete(item);
+                        resolve();
+                    };
+                    animation.oncancel = () => {
+                        item.style.height = '';
+                        item.style.overflow = '';
+                        animations.delete(item);
+                        resolve();
+                    };
+                });
+
+            items.forEach((item) => {
+                const summary = item.querySelector('summary');
+                if (!summary) return;
+
+                summary.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    if (item.open) {
+                        closeItem(item);
+                        return;
+                    }
+
+                    const others = items.filter((other) => other !== item && other.open);
+                    Promise.all(others.map(closeItem)).then(() => openItem(item));
+                });
+            });
         })();
     </script>
 
