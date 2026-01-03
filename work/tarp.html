@@ -1,69 +1,811 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TARP</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link href="../src/output.css" rel="stylesheet">
-  <script src="../src/theme.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARP — Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="../../src/output.css" rel="stylesheet">
+    <script src="../../src/theme.js" defer></script>
 </head>
-<body class="mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
-  <header class="flex items-center justify-between">
-    <a href="../index.html" class="text-3xl font-semibold text-gray-900 dark:text-gray-100">sumit.design</a>
-    <nav class="flex items-center gap-4">
-      <a href="./work.html" class="nav-link" aria-current="page">Work</a>
-      <a href="../about.html" class="nav-link">About</a>
-    </nav>
-  </header>
 
-  <main class="min-h-[70vh] py-12 space-y-6">
-    <p class="text-sm uppercase tracking-[0.35em] text-gray-500 dark:text-gray-400">Case study</p>
-    <h1 class="text-5xl font-semibold">TARP</h1>
-    <p class="text-gray-700 dark:text-gray-300">This case study page is being prepared.</p>
-    
-    <a href="mailto:sumit.v.nikhare@gmail.com" class="inline-flex items-center gap-2 link-brand">Request details</a>
-  </main>
+<body
+    class="relative isolate mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
 
-  <footer class="w-full pb-10 pt-6">
-        <div class="grid gap-3 px-4 text-sm text-gray-600 dark:text-gray-300 md:grid-cols-3 md:items-center">
-            <div class="hidden md:block"></div>
+    <!-- Ambient glows -->
+    <div class="pointer-events-none fixed inset-0 -z-10">
+        <div
+            class="absolute -left-32 top-10 w-80 h-80 bg-gradient-to-br from-amber-200 via-white to-gray-100 opacity-60 blur-3xl dark:from-amber-500/20 dark:via-gray-950 dark:to-gray-950 dark:opacity-30">
+        </div>
+        <div
+            class="absolute right-0 -top-24 w-96 h-96 bg-gradient-to-br from-white via-gray-100 to-orange-200 opacity-60 blur-3xl dark:from-gray-950 dark:via-gray-950 dark:to-orange-500/20 dark:opacity-30">
+        </div>
+        <div
+            class="absolute left-1/3 bottom-0 w-96 h-96 bg-gradient-to-br from-orange-200 via-white to-gray-100 opacity-50 blur-3xl dark:from-orange-500/20 dark:via-gray-950 dark:to-gray-950 dark:opacity-30">
+        </div>
+    </div>
 
-            <div class="flex flex-wrap items-center justify-center gap-3">
+    <!-- Floating back control -->
+    <div id="backControl" class="fixed top-4 left-4 z-50 opacity-0 pointer-events-none transition-opacity duration-300"
+        aria-hidden="true">
+        <a href="../work.html" aria-label="Back" class="group relative flex h-16 items-center focus:outline-none">
+            <span aria-hidden="true"
+                class="pointer-events-none absolute -inset-6 -z-10 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-80 group-focus-within:opacity-80">
+                <span
+                    class="absolute left-0 top-1/2 h-20 w-20 -translate-y-1/2 rounded-full bg-amber-200/70 dark:bg-amber-500/20"></span>
+                <span
+                    class="absolute left-10 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full bg-gray-200/80 dark:bg-gray-700/40"></span>
+                <span
+                    class="absolute left-20 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full bg-orange-200/60 dark:bg-orange-500/20"></span>
+            </span>
+
+            <span
+                class="flex h-16 items-center overflow-hidden rounded-full bg-gray-100 dark:bg-gray-900 text-black dark:text-gray-100 shadow-sm transition-all duration-300 max-w-[64px] group-hover:max-w-[220px] group-focus-within:max-w-[220px]">
+                <span class="grid h-16 w-16 place-items-center">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+
+                <span
+                    class="max-w-0 overflow-hidden whitespace-nowrap pr-0 text-sm font-semibold opacity-0 translate-x-0 transition-[max-width,opacity,padding] duration-300 group-hover:max-w-[150px] group-hover:opacity-100 group-hover:pr-6 group-focus-within:max-w-[150px] group-focus-within:opacity-100 group-focus-within:pr-6">
+                    Back to Work
+                </span>
+            </span>
+        </a>
+    </div>
+
+    <!-- Back to top -->
+    <div id="toTopControl"
+        class="fixed bottom-4 right-4 z-50 opacity-0 pointer-events-none translate-y-3 transition-all duration-300"
+        aria-hidden="true">
+        <a href="#hero" aria-label="Back to top" class="group relative flex h-16 items-center focus:outline-none">
+            <span aria-hidden="true"
+                class="pointer-events-none absolute -inset-6 -z-10 hidden opacity-0 blur-2xl transition-opacity duration-300 md:block md:group-hover:opacity-80 md:group-focus-within:opacity-80">
+                <span
+                    class="absolute right-0 top-1/2 h-20 w-20 -translate-y-1/2 rounded-full bg-amber-200/60 dark:bg-amber-500/20"></span>
+                <span
+                    class="absolute right-10 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full bg-gray-200/80 dark:bg-gray-700/40"></span>
+                <span
+                    class="absolute right-20 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full bg-orange-200/55 dark:bg-orange-500/20"></span>
+            </span>
+
+            <span
+                class="flex h-16 items-center overflow-hidden rounded-full bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-sm ring-1 ring-inset ring-gray-200 dark:ring-gray-700 transition-all duration-300 max-w-[64px] md:group-hover:max-w-[160px] md:group-focus-within:max-w-[160px]">
+                <span class="grid h-16 w-16 place-items-center">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 5l-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                        <path d="M12 5l7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                        <path d="M12 5v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                    </svg>
+                </span>
+
+                <span
+                    class="hidden md:inline max-w-0 overflow-hidden whitespace-nowrap pr-0 text-sm font-semibold opacity-0 transition-[max-width,opacity,padding] duration-300 md:group-hover:max-w-[80px] md:group-hover:opacity-100 md:group-hover:pr-6 md:group-focus-within:max-w-[80px] md:group-focus-within:opacity-100 md:group-focus-within:pr-6">
+                    Top
+                </span>
+            </span>
+        </a>
+    </div>
+
+    <!-- Top Bar -->
+    <header class="flex items-center justify-between">
+        <a class="text-3xl font-semibold text-gray-900 dark:text-gray-100" href="../../index.html">sumit.design</a>
+        <nav class="flex items-center gap-4">
+            <a href="../work.html" class="nav-link">Work</a>
+            <a href="../../about.html" class="nav-link">About</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="w-full pt-12 space-y-8">
+        <div class="space-y-4">
+            <p class="text-sm uppercase tracking-[0.35em] text-gray-500 dark:text-gray-400">DESIGN SYSTEM · TARP</p>
+
+            <div class="space-y-6 lg:w-4/5">
+                <h1 class="font-heading text-4xl font-semibold text-gray-900 dark:text-gray-100">
+                    TARP Design System
+                </h1>
+
+                <p class="text-gray-700 dark:text-gray-300">
+                    A unified component library built at Permute Solutions to speed up delivery and keep multiple
+                    products visually consistent. The system uses a grid-first layout approach, reusable components, and
+                    implementation-ready specs so teams can assemble complex workflows without redesigning the basics
+                    every sprint.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 my-2">
+                <span class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Component library</span>
+                <span class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Grid-first layouts</span>
+                <span class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Reusable patterns</span>
+                <span class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Docs + dev handoff</span>
+                <span class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Applied UI screens</span>
+            </div>
+
+            <p class="max-w-3xl text-sm text-gray-600 dark:text-gray-400 pt-2">
+                *Use the images from the original TARP page where available. If you later swap to local exports,
+                keep filenames and dimensions consistent so the layout doesn’t shift.
+            </p>
+        </div>
+
+        <!-- Flow image (replace with your exported asset) -->
+        <div>
+            <img loading="eager" decoding="async" fetchpriority="high"
+                src="https://sumit-nikhare.github.io/portfolio/images/tarp/tarp_cover.png"
+                alt="TARP Design System cover with sample components and navigation"
+                class="w-full rounded-3xl" />
+        </div>
+    </section>
+
+    <hr class="border-t border-gray-300 dark:border-gray-700 my-12" />
+
+    <!-- Content (no sticky side nav) -->
+    <section class="space-y-12">
+
+        <!-- Layout A -->
+        <section id="layout-a" class="scroll-mt-24 space-y-8">
+            <div class="space-y-3">
+                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Project overview</p>
+                <h2 class="text-3xl font-semibold">A shared UI foundation for teams building multiple products in parallel</h2>
+            </div>
+
+            <p class="text-gray-700 dark:text-gray-300">
+                The TARP component library was created at Permute Solutions to support fast, consistent product delivery.
+                Multiple applications were being built with different UI patterns, which meant teams were recreating the
+                same components repeatedly and users were experiencing visual drift across modules.
+            </p>
+
+            <div
+                class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-4 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">What the design system had to solve</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Reusable UI building blocks:</span> a component library teams could ship with, not redesign every time.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Consistent visual language:</span> typography, colors, iconography, and interaction rules aligned to the product brand.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Responsive patterns:</span> components designed to scale across web and different breakpoints.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Implementation clarity:</span> specs and documentation that reduce interpretation and rework.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Faster delivery:</span> reduce build time by standardizing patterns across workflows like CRM, campaigns, analytics, and help centers.</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="border-t border-gray-300 dark:border-gray-700" />
+
+        <!-- Layout B -->
+        <section id="layout-b" class="scroll-mt-24 space-y-8">
+            <div class="space-y-3">
+                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Users</p>
+                <h2 class="text-3xl font-semibold">Designed for product teams first, so end-user UX stays consistent</h2>
+            </div>
+
+            <p class="text-gray-700 dark:text-gray-300">
+                The primary users of a design system are the people assembling product UI under time pressure. The
+                system was structured to help designers and developers move faster while keeping application UI cohesive
+                across modules.
+            </p>
+
+            <div class="grid gap-4 md:grid-cols-2">
+                <div
+                    class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Designers</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Needed modular components, clear constraints, and consistent foundations (grid, spacing,
+                        typography) to design screens without reinventing patterns each time.
+                    </p>
+                </div>
+
+                <div
+                    class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Developers</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Needed reusable UI elements, documentation, and predictable variants so implementation stays
+                        consistent and doesn’t depend on ad-hoc decisions.
+                    </p>
+                </div>
+
+                <div
+                    class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Stakeholders</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Needed brand consistency across products, faster prototyping, and less design drift as teams
+                        built different modules in parallel.
+                    </p>
+                </div>
+
+                <div
+                    class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">End users (indirect)</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Benefit from standardized patterns across workflows, which reduces relearning when moving
+                        between modules like CRM, campaigns, analytics, and knowledge base surfaces.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t border-gray-300 dark:border-gray-700" />
+
+        <!-- Layout C -->
+        <section id="layout-c" class="scroll-mt-24 space-y-8">
+            <div class="space-y-3">
+                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Approach</p>
+                <h2 class="text-3xl font-semibold">Grid-first foundations, then components, then applied screens</h2>
+            </div>
+
+            <p class="text-gray-700 dark:text-gray-300">
+                The system was built to support complex, data-heavy workflows. I anchored the library on a grid system
+                so layout rules stayed predictable, then expanded into core components and patterns that could be reused
+                across screens.
+            </p>
+
+            <div class="grid gap-4 md:grid-cols-4">
+                <div class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 p-4 space-y-2">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Step 01</p>
+                    <p class="font-semibold text-gray-900 dark:text-gray-100">Foundations</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Grid, spacing rules, typography, and color tokens as the base.</p>
+                </div>
+
+                <div class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 p-4 space-y-2">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Step 02</p>
+                    <p class="font-semibold text-gray-900 dark:text-gray-100">Components</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Reusable UI elements designed for consistency and variants.</p>
+                </div>
+
+                <div class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 p-4 space-y-2">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Step 03</p>
+                    <p class="font-semibold text-gray-900 dark:text-gray-100">Patterns</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Common workflows (tables, filters, navigation) standardized.</p>
+                </div>
+
+                <div class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 p-4 space-y-2">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Step 04</p>
+                    <p class="font-semibold text-gray-900 dark:text-gray-100">Applied UI</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">High-fidelity screens to validate the system in real layouts.</p>
+                </div>
+            </div>
+
+            <div class="space-y-3">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Role and responsibilities</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li>Defined the design system architecture: components, patterns, layout rules, spacing, and interaction guidelines.</li>
+                    <li>Built a modular component library in Figma for reusability and responsive behavior.</li>
+                    <li>Established visual language (typography, color, iconography) aligned with the product brand.</li>
+                    <li>Partnered with developers for implementation clarity through specs, documentation, and regular syncs.</li>
+                    <li>Maintained the system through documentation and feedback loops for continuous improvement.</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="border-t border-gray-300 dark:border-gray-700" />
+
+        <!-- Layout D -->
+        <section id="layout-d" class="scroll-mt-24 space-y-8">
+            <div class="space-y-3">
+                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Design decisions</p>
+                <h2 class="text-3xl font-semibold">Decisions that kept the library scalable and implementation-friendly</h2>
+            </div>
+
+            <div class="space-y-6">
+                <div class="space-y-2">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">1) Grid as a constraint, not a suggestion</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Screens were assembled using a consistent grid system so layout doesn’t drift between teams.
+                        Components were designed to snap into predictable column structures.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">2) Data-heavy components treated as first-class</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Tables, metrics, lists, and filters were prioritized because they show up across CRM and analytics
+                        workflows and typically cause the most inconsistency when rebuilt repeatedly.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">3) Variants designed up front</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Components were built with predictable variants (density, states, and common combinations) to
+                        reduce one-off layouts and avoid “special case” UI.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">4) Documentation as part of the deliverable</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        The system included usage guidance and implementation intent so developers could ship consistently
+                        without guessing how a component should behave.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">5) Validate by building real screens</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        High-fidelity screens were used to verify that components held up in real workflows like
+                        knowledge centres, forms, and dashboards.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t border-gray-300 dark:border-gray-700" />
+
+        <!-- Layout E -->
+        <section id="layout-e" class="scroll-mt-24 space-y-8">
+            <div class="space-y-3">
+                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Governance</p>
+                <h2 class="text-3xl font-semibold">A design system only works if changes are controlled</h2>
+            </div>
+
+            <p class="text-gray-700 dark:text-gray-300">
+                To keep the system cohesive as more teams adopted it, the library needed clear ownership and a simple
+                contribution loop. The goal was consistency without blocking delivery.
+            </p>
+
+            <div class="grid gap-4 md:grid-cols-3">
+                <div class="rounded-3xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 p-6 space-y-2 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Boundary 01</p>
+                    <p class="text-xl font-semibold text-gray-900 dark:text-gray-100">Contribute</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">New components and variants follow shared layout rules and naming patterns.</p>
+                </div>
+                <div class="rounded-3xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 p-6 space-y-2 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Boundary 02</p>
+                    <p class="text-xl font-semibold text-gray-900 dark:text-gray-100">Review</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Design rationale and implementation intent are reviewed before library updates.</p>
+                </div>
+                <div class="rounded-3xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 p-6 space-y-2 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Boundary 03</p>
+                    <p class="text-xl font-semibold text-gray-900 dark:text-gray-100">Adopt</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Teams consume stable components and patterns instead of creating parallel UI.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t border-gray-300 dark:border-gray-700" />
+
+        <!-- Layout F -->
+        <section id="layout-f" class="scroll-mt-24 space-y-8">
+            <div class="space-y-3">
+                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Edge cases</p>
+                <h2 class="text-3xl font-semibold">Designed for density, long content, and real-world UI messiness</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">High-density data states</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Tables and metric blocks were designed to stay readable with many columns, tags, and actions.
+                        Spacing and hierarchy were tuned for scan-ability.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Long labels and content overflow</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Components account for long partner names, locations, and multi-value tags so UI doesn’t break
+                        when real data shows up.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Filter complexity without UI clutter</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Filter patterns support multiple control types and clear reset behavior, while keeping the
+                        primary list state easy to scan.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Navigation that scales</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Side navigation patterns support single and multi-level structures so products can grow without
+                        reworking information architecture every release.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t border-gray-300 dark:border-gray-700" />
+
+        <!-- Layout G -->
+        <section id="layout-g" class="scroll-mt-24 space-y-10">
+            <div class="space-y-3">
+                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Screens</p>
+                <h2 class="text-3xl font-semibold">Key components and applied UI screens</h2>
+                <p class="max-w-3xl text-gray-700 dark:text-gray-300">
+                    These examples show how the same foundations and patterns scale from components to full workflows.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Core components</h3>
+                <div class="grid gap-8 md:grid-cols-2">
+                    <figure class="space-y-3">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/metrics.png"
+                            alt="Metrics components" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">Metrics: quantitative summaries designed for scan-ability.</figcaption>
+                    </figure>
+
+                    <figure class="space-y-3">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/tables.png"
+                            alt="Data table components" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">Data tables: dense information with tags, actions, and pagination patterns.</figcaption>
+                    </figure>
+
+                    <figure class="space-y-3">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/Filters.png"
+                            alt="Filter components" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">Filters: multi-control filtering with clear reset behavior.</figcaption>
+                    </figure>
+
+                    <figure class="space-y-3">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/list.png"
+                            alt="List components" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">Lists: identity + status tags designed for fast scanning.</figcaption>
+                    </figure>
+
+                    <figure class="space-y-3">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/promotion.png"
+                            alt="Promotion and helper box components" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">Promotion / helper boxes: support surfaces that don’t interrupt primary tasks.</figcaption>
+                    </figure>
+
+                    <figure class="space-y-3">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/articles.png"
+                            alt="Article listing components" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">Articles: knowledge content cards and lists with tags and hierarchy.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Applied UI screens</h3>
+                <div class="grid gap-8 md:grid-cols-2">
+                    <figure class="space-y-3">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/screen_1.png"
+                            alt="Knowledge Centre screen" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">Knowledge Centre: card-based browsing with a Q&amp;A panel for fast discovery.</figcaption>
+                    </figure>
+
+                    <figure class="space-y-3">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/screen_2.png"
+                            alt="Campaign profile form screen" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">Campaign profile form: multi-section inputs with contextual help access.</figcaption>
+                    </figure>
+
+                    <figure class="space-y-3">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/screen_3.png"
+                            alt="Performance dashboard and scheduled list" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">Performance dashboard: metrics summary paired with a scheduled activity list.</figcaption>
+                    </figure>
+
+                    <figure class="space-y-3">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/screen_4.png"
+                            alt="Finance dashboard and campaign setup" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">Finance dashboard: wallet and budget insights alongside campaign setup workflows.</figcaption>
+                    </figure>
+
+                    <figure class="space-y-3 md:col-span-2">
+                        <img loading="lazy" decoding="async" src="https://sumit-nikhare.github.io/portfolio/images/tarp/screen_5.png"
+                            alt="FAQ explorer and topic navigation" class="w-full rounded-2xl" />
+                        <figcaption class="px-2 text-gray-600 dark:text-gray-400">FAQ explorer: topic navigation paired with an accordion Q&amp;A layout for self-serve support.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t border-gray-300 dark:border-gray-700" />
+
+        <!-- Layout H -->
+        <section id="layout-h" class="scroll-mt-24 space-y-8">
+            <div class="space-y-3">
+                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">System fit</p>
+                <h2 class="text-3xl font-semibold">A shared system that scales across CRM, campaigns, analytics, and support</h2>
+            </div>
+
+            <p class="text-gray-700 dark:text-gray-300">
+                The value of TARP isn’t a prettier UI library. It’s that common workflows can be built once and reused
+                across applications without reinterpreting components every time.
+            </p>
+
+            <div class="grid gap-4 md:grid-cols-2">
+                <div class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Consistency across modules</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Shared components reduce UI drift across modules like campaign management, CRM, FAQs, and
+                        analytics.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Faster prototyping and delivery</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Pre-built UI patterns support rapid iteration while maintaining quality and predictable
+                        implementation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t border-gray-300 dark:border-gray-700" />
+
+        <!-- Layout I -->
+        <section id="layout-i" class="scroll-mt-24 space-y-8">
+            <div class="space-y-3">
+                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Impact</p>
+                <h2 class="text-3xl font-semibold">Less reinvention, more consistency, fewer “but it looked different last week” bugs</h2>
+            </div>
+
+            <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                <li>Reduced duplicated component work by giving teams a shared library to build from.</li>
+                <li>Improved cross-product cohesion by standardizing foundations and interaction patterns.</li>
+                <li>Supported agile delivery by enabling faster prototyping and iteration cycles.</li>
+                <li>Validated system quality through applied screens across dashboards, forms, and knowledge surfaces.</li>
+            </ul>
+
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                Add verified metrics here if you have them (e.g., build time saved per feature, reduction in UI defects,
+                or adoption rate across products).
+            </p>
+        </section>
+
+        <hr class="border-t border-gray-300 dark:border-gray-700" />
+
+        <!-- Layout J -->
+        <section id="layout-j" class="scroll-mt-24 space-y-8">
+            <div class="space-y-3">
+                <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">What’s next</p>
+                <h2 class="text-3xl font-semibold">Strengthen adoption without slowing teams down</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="space-y-2">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Tokenize foundations for easier theming</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Formalize typography, spacing, and color tokens so products can evolve branding without breaking
+                        component consistency.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Tighten documentation and examples</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Expand usage guidance with do/don’t examples for complex components like tables and filters,
+                        where drift tends to creep in.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Create a lightweight feedback loop</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Keep a simple channel for teams to request variants and report gaps, so the system evolves based
+                        on real implementation needs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <hr class="border-t border-gray-300 dark:border-gray-700 my-12" />
+
+    <!-- Footer (correct relative links for /work/tarp.html) -->
+    <footer class="w-full pb-10 space-y-8">
+        <div class="rounded-4xl border border-gray-200 bg-white p-6 md:p-10 dark:border-gray-800 dark:bg-gray-900">
+            <div class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+                <div>
+                    <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">Let’s connect</h2>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
+                        Open to product roles, freelance projects, and collaborations. If you want a walkthrough of any
+                        case study,
+                        I’m happy to share details live.
+                    </p>
+
+                    <a href="mailto:sumit.v.nikhare@gmail.com"
+                        class="mt-6 inline-flex items-center rounded-full border-2 border-gray-900 bg-white px-7 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition duration-300 dark:border-gray-100 dark:bg-gray-900 dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900">
+                        Let's Talk
+                    </a>
+                </div>
+
+                <div class="flex justify-start md:justify-end">
+                    <span class="font-heading text-3xl font-semibold">sumit.design</span>
+                </div>
+            </div>
+
+            <div class="mt-14 grid gap-12 md:grid-cols-3">
+                <div>
+                    <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Navigation</p>
+                    <ul class="mt-5 space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                        <li><a href="../../index.html" class="link-brand">Home</a></li>
+                        <li><a href="../../about.html" class="link-brand">About</a></li>
+                        <li><a href="../work.html" class="link-brand">Work</a></li>
+                        <li><a href="../../resume.html" class="link-brand">Resume</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Case studies</p>
+                    <ul class="mt-5 space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                        <li><a href="../chip-2.html" class="link-brand">CHIP 2.0</a></li>
+                        <li><a href="../samasta.html" class="link-brand">Samasta</a></li>
+                        <li><a href="../cho-soft.html" class="link-brand">CHO Soft</a></li>
+                        <li><a href="../work.html" class="link-brand">View All</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Elsewhere</p>
+                    <div class="mt-5 space-y-2">
+                        <a href="https://www.linkedin.com/in/sumit-nikhare-482058215/" target="_blank" rel="noreferrer"
+                            class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-violet-100 py-2 pl-2 pr-4 dark:bg-violet-900/30">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
+                                    <span class="text-sm font-semibold">in</span>
+                                </div>
+                                <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">LinkedIn</p>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex flex-col space-y-4 items-center">
+            <div class="flex flex-col items-center gap-3">
                 <p class="text-center">© 2025 – sumit.design</p>
 
-                <button
-                  type="button"
-                  data-theme-toggle
-                  aria-pressed="false"
-                  class="group inline-flex items-center gap-3 rounded-full border border-slate-200 bg-white/80 px-3 py-2 text-xs font-semibold text-slate-600 shadow-sm transition hover:bg-white dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-400"
-                >
-                  <span class="text-xs font-semibold text-slate-800/90 dark:text-slate-500">Light</span>
-                  <span class="relative inline-flex h-7 w-14 items-center rounded-full bg-gradient-to-r from-sky-200 via-sky-300 to-sky-500 shadow-inner ring-1 ring-inset ring-white/40 transition-colors duration-300 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 dark:ring-white/10">
-                    <span class="absolute left-1 top-1 h-5 w-5 rounded-full bg-white shadow transition-transform duration-300 dark:translate-x-7 dark:bg-slate-100">
-                      <span class="absolute -right-0.5 top-1 h-3 w-3 rounded-full bg-slate-900 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
+                <button type="button" data-theme-toggle aria-pressed="false"
+                    class="group inline-flex items-center gap-3 rounded-full border border-slate-200 bg-white/80 px-4 py-1 text-xs font-semibold text-slate-600 shadow-sm transition hover:bg-white dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-400">
+                    <span class="text-xs font-semibold text-slate-800/90 dark:text-slate-500">Light</span>
+                    <span
+                        class="relative inline-flex h-7 w-14 items-center rounded-full bg-gradient-to-r from-sky-200 via-sky-300 to-sky-500 shadow-inner ring-1 ring-inset ring-white/40 transition-colors duration-300 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 dark:ring-white/10">
+                        <span
+                            class="absolute left-1 top-1 h-5 w-5 rounded-full bg-white shadow transition-transform duration-300 dark:translate-x-7 dark:bg-slate-100">
+                            <span
+                                class="absolute -right-0.5 top-1 h-3 w-3 rounded-full bg-slate-900 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
+                        </span>
+                        <span
+                            class="absolute right-4 top-2 h-1.5 w-1.5 rounded-full bg-white/90 transition-opacity duration-300 dark:opacity-0"></span>
+                        <span
+                            class="absolute right-2 top-4 h-1 w-1 rounded-full bg-white/80 transition-opacity duration-300 dark:opacity-0"></span>
+                        <span
+                            class="absolute left-3 top-2 h-1 w-1 rounded-full bg-white/80 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
+                        <span
+                            class="absolute left-6 top-4 h-1.5 w-1.5 rounded-full bg-white/70 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
+                        <span
+                            class="absolute left-8 top-1 h-1 w-1 rounded-full bg-white/60 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
                     </span>
-                    <span class="absolute right-4 top-2 h-1.5 w-1.5 rounded-full bg-white/90 transition-opacity duration-300 dark:opacity-0"></span>
-                    <span class="absolute right-2 top-4 h-1 w-1 rounded-full bg-white/80 transition-opacity duration-300 dark:opacity-0"></span>
-                    <span class="absolute left-3 top-2 h-1 w-1 rounded-full bg-white/80 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
-                    <span class="absolute left-6 top-4 h-1.5 w-1.5 rounded-full bg-white/70 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
-                    <span class="absolute left-8 top-1 h-1 w-1 rounded-full bg-white/60 opacity-0 transition-opacity duration-300 dark:opacity-100"></span>
-                  </span>
-                  <span class="text-xs font-semibold text-slate-400 dark:text-slate-100">Dark</span>
-                  <span data-theme-label class="sr-only">Light</span>
-                  <span class="sr-only">Toggle color theme</span>
+                    <span class="text-xs font-semibold text-slate-400 dark:text-slate-100">Dark</span>
+                    <span data-theme-label class="sr-only">Light</span>
+                    <span class="sr-only">Toggle color theme</span>
                 </button>
             </div>
-        
-            <p class="text-center md:text-right">
+
+            <p class="text-sm text-center md:text-right">
                 Implementation notes &amp; source ·
-                <a href="https://github.com/" target="_blank" rel="noreferrer" class="link-brand">
-                    GitHub
-                </a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer" class="link-brand">GitHub</a>
             </p>
         </div>
     </footer>
+
+    <!-- Back Control Button -->
+    <script>
+        (() => {
+            const btn = document.getElementById('backControl');
+            const hero = document.getElementById('hero');
+            if (!btn || !hero) return;
+            const link = btn.querySelector('a');
+
+            let cutoff = 0;
+
+            const calc = () => {
+                const rect = hero.getBoundingClientRect();
+                const heroTop = window.scrollY + rect.top;
+                cutoff = heroTop + hero.offsetHeight - 20;
+            };
+
+            const setVisible = (visible) => {
+                btn.classList.toggle('opacity-0', !visible);
+                btn.classList.toggle('pointer-events-none', !visible);
+                btn.setAttribute('aria-hidden', visible ? 'false' : 'true');
+                if (link) link.tabIndex = visible ? 0 : -1;
+            };
+
+            const tick = () => {
+                const show = window.scrollY > cutoff;
+                setVisible(show);
+            };
+
+            calc();
+            tick();
+            window.addEventListener('resize', () => { calc(); tick(); }, { passive: true });
+            if ('ResizeObserver' in window) {
+                const observer = new ResizeObserver(() => { calc(); tick(); });
+                observer.observe(hero);
+            }
+            window.addEventListener('scroll', () => requestAnimationFrame(tick), { passive: true });
+        })();
+    </script>
+
+    <!-- To Top Control Button -->
+    <script>
+        (() => {
+            const btn = document.getElementById('toTopControl');
+            const hero = document.getElementById('hero');
+            if (!btn || !hero) return;
+            const link = btn.querySelector('a');
+
+            btn.querySelector('a')?.addEventListener('click', (e) => {
+                e.preventDefault();
+                hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                history.replaceState(null, '', '#hero');
+            });
+
+            let cutoff = 0;
+            let lastY = window.scrollY;
+            let ticking = false;
+
+            const calc = () => {
+                const rect = hero.getBoundingClientRect();
+                const heroTop = window.scrollY + rect.top;
+                cutoff = heroTop + hero.offsetHeight - 20;
+            };
+
+            const setVisible = (visible) => {
+                btn.classList.toggle('opacity-0', !visible);
+                btn.classList.toggle('pointer-events-none', !visible);
+                btn.classList.toggle('translate-y-3', !visible);
+                btn.classList.toggle('opacity-100', visible);
+                btn.classList.toggle('translate-y-0', visible);
+                btn.setAttribute('aria-hidden', visible ? 'false' : 'true');
+                if (link) link.tabIndex = visible ? 0 : -1;
+            };
+
+            const update = () => {
+                const y = window.scrollY;
+
+                if (y <= cutoff) {
+                    setVisible(false);
+                    lastY = y;
+                    ticking = false;
+                    return;
+                }
+
+                const delta = y - lastY;
+
+                if (delta > 8) setVisible(false);
+                if (delta < -8) setVisible(true);
+
+                lastY = y;
+                ticking = false;
+            };
+
+            calc();
+            setVisible(false);
+
+            window.addEventListener('resize', () => { calc(); }, { passive: true });
+            if ('ResizeObserver' in window) {
+                const observer = new ResizeObserver(() => { calc(); });
+                observer.observe(hero);
+            }
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    ticking = true;
+                    requestAnimationFrame(update);
+                }
+            }, { passive: true });
+        })();
+    </script>
+
 </body>
+
 </html>
