@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CHIP 2.0 — Day-start (Punch-in, Visit-at)</title>
+    <title>CHIP 2.0 — Profile (User & Facility)</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,7 +41,7 @@
                 <span
                     class="absolute left-0 top-1/2 h-20 w-20 -translate-y-1/2 rounded-full bg-amber-200/70 dark:bg-amber-500/20"></span>
                 <span
-                    class="absolute left-_toggle top-1/2 h-24 w-24 -translate-y-1/2 rounded-full bg-gray-200/80 dark:bg-gray-700/40"></span>
+                    class="absolute left-10 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full bg-gray-200/80 dark:bg-gray-700/40"></span>
                 <span
                     class="absolute left-20 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full bg-orange-200/60 dark:bg-orange-500/20"></span>
             </span>
@@ -112,47 +112,46 @@
 
             <div class="space-y-6 lg:w-4/5">
                 <h1 class="font-heading text-4xl font-semibold text-gray-900 dark:text-gray-100">
-                    Day-start that grounds work in place, context, and status
+                    Profile that makes posting, facility, and scope explicit
                 </h1>
 
                 <p class="text-gray-700 dark:text-gray-300">
-                    A role-aware day-start system that makes punch-in a real operational state, not a polite suggestion.
-                    Users select where work is happening (facility, village, outreach, VHND, monitoring, meetings), see
-                    execution
-                    counters and pending governance work, and get a clean “start visit” path without menu hunting.
+                    Profile is the platform’s source-of-truth surface for who the user is, where they’re posted, and
+                    what
+                    facility and geography they operate within. It consolidates facility metadata, staffing reality
+                    (sanctioned vs posted vs vacant), SHC and village mappings, and ASHA area ownership so downstream
+                    modules route work correctly and governance isn’t hidden in admin backchannels.
                 </p>
             </div>
 
             <div class="flex flex-wrap gap-2 my-2">
                 <span
-                    class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Punch-in
-                    contexts</span>
+                    class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Posting
+                    context</span>
                 <span
-                    class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Visit-at
-                    routing</span>
+                    class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Facility
+                    mapping</span>
                 <span
-                    class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Work
-                    plan</span>
+                    class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Staff
+                    roster</span>
                 <span
-                    class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Role-aware
-                    stats</span>
+                    class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Approval
+                    states</span>
                 <span
-                    class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Sync
-                    + offline</span>
+                    class="rounded-full bg-gray-50 dark:bg-gray-900 px-4 py-2 text-sm text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-200 dark:ring-gray-700">Audit
+                    visibility</span>
             </div>
 
             <p class="max-w-3xl text-sm text-gray-600 dark:text-gray-400 pt-2">
-                *This page is derived from day-start dashboards, punch-in selection, visit-at selection, “more actions”
-                sheet,
-                and role variants (MO, Staff Nurse, Pharmacist/Lab Tech, ANM/CHO), including approval/verification
-                queues.
-                Replace placeholder screenshots with final exports.
+                *This page is derived from facility profile, user profile, staff roster, sanctioned vs posted views,
+                SHC/village associations, ASHA area mapping, and approval/verification states. Replace placeholder
+                screenshots with final exports.
             </p>
         </div>
 
         <div>
             <img loading="eager" decoding="async" fetchpriority="high" src="../../assets/common/demo-img-1920.png"
-                alt="Day-start flow: day dashboard → punch-in context → visit-at selection → start visit with counters and sync state"
+                alt="Profile module: user posting + facility overview → staffing + approvals → SHC/village mapping → ASHA area ownership and assignments"
                 class="w-full rounded-3xl" />
         </div>
     </section>
@@ -166,40 +165,38 @@
         <section id="layout-a" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Problem</p>
-                <h2 class="text-3xl font-semibold">Daily execution breaks when punch-in is optional and context is
-                    ambiguous</h2>
+                <h2 class="text-3xl font-semibold">At scale, wrong posting and weak mappings break every downstream
+                    workflow</h2>
             </div>
 
             <p class="text-gray-700 dark:text-gray-300">
-                In multi-program field operations, “logged in” does not mean “ready to work.” Users need a clear daily
-                state
-                (punched-in vs not), a declared work context (facility, village, outreach, VHND, monitoring, meetings),
-                and a
-                surface that shows what matters today. Without that, the UI turns into a maze of menus and retries, and
-                teams
-                fall back to calling supervisors for direction.
+                In a multi-role public health platform, errors usually start with context. If a user is mapped to the
+                wrong
+                facility, if SHC and village associations are incomplete, or if ASHA areas don’t have clear ownership,
+                the
+                rest of the system behaves “correctly” but produces the wrong outcomes: misrouted work, missing lists,
+                incorrect reporting, and constant supervisor escalation.
             </p>
 
             <div
                 class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-4 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">What day-start must solve at scale
-                </h3>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">What Profile must solve at platform
+                    level</h3>
                 <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Punch-in as state:</span> prevent
-                        “work
-                        without context” and make “no visits” explainable.</li>
-                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Context selection:</span> capture
-                        where work
-                        is happening (PHC/SHC/village/outreach/VHND/meetings) for correct reporting and routing.</li>
-                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Role-specific surfaces:</span> MO
-                        monitoring
-                        isn’t ANM VHND, and a pharmacist shouldn’t wade through irrelevant options.</li>
-                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Governance visibility:</span>
-                        surface
-                        verification/approval queues for supervisory roles as first-class work.</li>
-                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Offline + sync legibility:</span>
-                        make “last
-                        synced” and “pending” states visible so users trust the system under weak connectivity.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Make posting explicit:</span> show
+                        where a
+                        user is officially posted and what that unlocks (and blocks).</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Expose facility truth:</span>
+                        consolidate
+                        facility metadata, staffing reality, and verification state in one place.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Reveal mapping gaps:</span> surface
+                        incomplete SHC/village/ASHA area associations as visible states, not silent nulls.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Turn governance into work:</span>
+                        approvals
+                        and verifications must be actionable, role-gated, and count-based.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Protect auditability:</span>
+                        sensitive
+                        edits need controlled entry points and clear ownership boundaries.</li>
                 </ul>
             </div>
         </section>
@@ -210,17 +207,15 @@
         <section id="layout-b" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Users</p>
-                <h2 class="text-3xl font-semibold">One day-start, multiple job realities</h2>
+                <h2 class="text-3xl font-semibold">The same profile surface, different governance responsibilities</h2>
             </div>
 
             <p class="text-gray-700 dark:text-gray-300">
-                Day-start supports the same underlying loop (punch-in → work → punch-out) but must reflect role
-                realities.
-                A PHC Medical Officer needs supervisory routes and monitoring contexts. ANM/CHO needs SHC and village
-                contexts.
-                Staff nurses need speed and clarity. Pharmacists and lab teams need the same daily state, but with their
-                own
-                operational surfaces and tools.
+                Profile serves everyone, but not equally. Frontline roles need clarity: where am I posted and what can I
+                do
+                today. Supervisory and admin roles need governance controls: approvals, verification states, and the
+                ability
+                to correct mappings without breaking audit integrity.
             </p>
 
             <div class="grid gap-4 md:grid-cols-2">
@@ -228,39 +223,42 @@
                     class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Medical Officer (PHC)</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Starts at PHC, supervises outreach and VHND, monitors SHCs and villages, and runs meetings.
-                        Needs governance
-                        tiles (approvals required) and clear “visit-at” contexts to avoid misreporting.
+                        Needs an authoritative facility view: staffing availability, pending approvals, and SHC/village
+                        coverage. Uses Profile to resolve governance blockers before they cascade into missing work
+                        lists
+                        and incorrect reporting.
                     </p>
                 </div>
 
                 <div
                     class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Staff Nurse</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">CHO / ANM (SHC)</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Needs a fast punch-in for PHC service delivery and support activities (outreach, VHND).
-                        Day-start must keep
-                        the next action obvious and not drown the role in supervisory choices.
+                        Needs clean geography and ownership: which villages and ASHA areas fall under the SHC, which
+                        workers
+                        are linked, and what’s pending verification. Uses Profile to avoid wrong routing in registers
+                        and
+                        follow-ups.
                     </p>
                 </div>
 
                 <div
                     class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">ANM / CHO</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">ASHA</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Punch-in spans SHC visits, outreach activity, VHND sessions, and meetings (e.g., VHSNC). Village
-                        selection
-                        and meeting type must be structured so daily outputs match real work.
+                        Primarily needs “my area” clarity: assigned coverage, linked facility chain, and who to contact
+                        for
+                        corrections. The UI is view-first with guided escalation, not edit-heavy.
                     </p>
                 </div>
 
                 <div
                     class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Pharmacist / Lab Technician</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Block / District admin</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Same day-start loop, different tools. Needs PHC context plus quick access to role work (patient
-                        search,
-                        drug stock/inward-outward, lab test execution) without losing the daily state model.
+                        Uses Profile as a governance console: resolve approvals, validate facility and mapping changes,
+                        and
+                        keep administrative controls limited to what’s necessary for scale and auditability.
                     </p>
                 </div>
             </div>
@@ -272,69 +270,59 @@
         <section id="layout-c" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Flow</p>
-                <h2 class="text-3xl font-semibold">Punch-in → land → start visit: a predictable loop</h2>
+                <h2 class="text-3xl font-semibold">Confirm context → inspect mappings → act on governance</h2>
             </div>
 
             <p class="text-gray-700 dark:text-gray-300">
-                The system separates <span class="font-semibold text-gray-900 dark:text-gray-100">daily state</span>
-                (punch-in /
-                punch-out) from <span class="font-semibold text-gray-900 dark:text-gray-100">work context</span>
-                (visit-at).
-                Users can confirm where they’re working, see status and counters, and start the next action without
-                navigating
-                across programs.
+                Profile is designed as a predictable inspection loop. Users start by confirming posting and scope, then
+                move
+                through facility slices (about, staff, SHCs, villages, ASHA areas) and finally resolve what’s blocking
+                operations: approvals, verifications, or ownership gaps.
             </p>
 
             <div class="grid gap-4 md:grid-cols-4">
                 <div
                     class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 p-4 space-y-2">
                     <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Step 01</p>
-                    <p class="font-semibold text-gray-900 dark:text-gray-100">See day-start dashboard</p>
-                    <p class="text-sm text-gray-700 dark:text-gray-300">Population overview, attention required,
-                        approvals, and
-                        today’s execution counters.</p>
+                    <p class="font-semibold text-gray-900 dark:text-gray-100">Open Profile</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">User identity, role, and posting context in one
+                        glance.</p>
                 </div>
 
                 <div
                     class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 p-4 space-y-2">
                     <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Step 02</p>
-                    <p class="font-semibold text-gray-900 dark:text-gray-100">Choose punch-in context</p>
-                    <p class="text-sm text-gray-700 dark:text-gray-300">My facility, SHC, village, outreach, VHND,
-                        monitoring, or
-                        meetings.</p>
+                    <p class="font-semibold text-gray-900 dark:text-gray-100">Confirm scope</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Facility chain + geography visibility tells
+                        users what should appear elsewhere.</p>
                 </div>
 
                 <div
                     class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 p-4 space-y-2">
                     <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Step 03</p>
-                    <p class="font-semibold text-gray-900 dark:text-gray-100">Confirm + set daily state</p>
-                    <p class="text-sm text-gray-700 dark:text-gray-300">Punch-out, working hours, and sync status are
-                        always
-                        available as a utility surface.</p>
+                    <p class="font-semibold text-gray-900 dark:text-gray-100">Inspect facility slices</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">About, staff roster, SHCs, villages/wards, ASHA
+                        areas, and workers.</p>
                 </div>
 
                 <div
                     class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 p-4 space-y-2">
                     <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Step 04</p>
-                    <p class="font-semibold text-gray-900 dark:text-gray-100">Start visit or activity</p>
-                    <p class="text-sm text-gray-700 dark:text-gray-300">Entry points route into OPD, outreach actions,
-                        monitoring,
-                        registers, or work plan tasks.</p>
+                    <p class="font-semibold text-gray-900 dark:text-gray-100">Resolve blockers</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Approvals, verification states, and ownership
+                        gaps become actionable work.</p>
                 </div>
             </div>
 
             <div class="space-y-3">
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Routing behavior</h3>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Behavior rules</h3>
                 <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Role-based options:</span> punch-in
-                        choices
-                        adapt to posting and role (PHC vs SHC, monitoring vs VHND).</li>
-                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Explain empty states:</span> “No
-                        visits”
-                        becomes a predictable state with a single action: punch-in.</li>
-                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Keep the loop visible:</span>
-                        punch-in time,
-                        working hours, and sync states are accessible without leaving the work surface.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Counts guide attention:</span>
+                        totals vs pending states help users triage without scanning long lists.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">Role-gated actions:</span> edit and
+                        approval controls appear only when the user can legally act.</li>
+                    <li><span class="font-semibold text-gray-900 dark:text-gray-100">No silent gaps:</span> unassigned
+                        areas and incomplete mappings are visible, named states.</li>
                 </ul>
             </div>
         </section>
@@ -345,56 +333,57 @@
         <section id="layout-d" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Design decisions</p>
-                <h2 class="text-3xl font-semibold">Designed day-start as a state machine, not a home screen</h2>
+                <h2 class="text-3xl font-semibold">Designed Profile as a governed system surface, not a settings page
+                </h2>
             </div>
 
             <div class="space-y-6">
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">1) Punch-in gate before work</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">1) Tabs for stable context</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        “No visits” is a common reality, not an error. Punch-in establishes daily state so execution and
-                        reporting
-                        are consistent before users enter tasks.
+                        Facility information is sliced into predictable tabs (about, staff, SHC, villages, ASHA areas)
+                        so users
+                        can move across governance details without losing where they are.
                     </p>
                 </div>
 
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">2) Context cards with
-                        plain-language descriptions</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">2) Counts as operational anchors
+                    </h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Punch-in options are framed as job contexts (PHC care, outreach, VHND, monitoring, meetings)
-                        with
-                        descriptions, reducing wrong selections and training load.
+                        Counts (total vs pending, linked vs unlinked) act as attention signals. This keeps the UI
+                        scannable on
+                        mobile and makes backlogs visible.
                     </p>
                 </div>
 
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">3) Separate “Visit at” from
-                        “Punch-in”</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">3) Staffing truth: sanctioned vs
+                        posted</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Punch-in sets state. Visit-at sets where work is happening. Keeping them distinct prevents “I
-                        punched in so
-                        why can’t I start visit?” confusion and preserves reporting integrity.
+                        The module separates official staffing structure from actual posting. Vacancy is treated as a
+                        real
+                        operating constraint, not hidden admin metadata.
                     </p>
                 </div>
 
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">4) Show execution counters
-                        upfront</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">4) Guided ownership assignment
+                    </h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        OPD, vitals, labs, medicines, ABHA, and activity summaries appear as first-glance throughput
-                        signals so
-                        teams can self-correct without supervisor calls.
+                        Linking an ASHA area or assigning a worker is structured as a guided sequence with confirm steps
+                        to
+                        prevent accidental coverage changes.
                     </p>
                 </div>
 
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">5) Surface governance counts for
-                        supervisory roles</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">5) Destructive actions are
+                        protected</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Verification and approval queues are treated as work, not admin clutter. Putting counts on
-                        day-start makes
-                        governance visible and routable.
+                        High-impact edits (deletes, reassignments) are constrained by confirmation patterns and
+                        role-gated entry
+                        points to support auditability.
                     </p>
                 </div>
             </div>
@@ -406,44 +395,41 @@
         <section id="layout-e" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">RBAC as UX</p>
-                <h2 class="text-3xl font-semibold">Posting, role, and geography shape what “start my day” even means
-                </h2>
+                <h2 class="text-3xl font-semibold">Same surface, different controls: visibility and action boundaries
+                    are role-shaped</h2>
             </div>
 
             <p class="text-gray-700 dark:text-gray-300">
-                Day-start is where RBAC becomes tangible. Punch-in options, visit-at choices, and shortcuts are shaped
-                by where
-                a user is posted and what they’re accountable for. Supervisory roles see governance actions and
-                monitoring
-                contexts; frontline roles see fewer, clearer choices.
+                Profile is where RBAC becomes tangible. The UI reduces confusion by showing what’s editable, what’s
+                view-only,
+                and what needs escalation. Supervisory roles get approval controls and verification queues; frontline
+                roles get
+                clarity and guided next steps.
             </p>
 
             <div class="grid gap-4 md:grid-cols-3">
                 <div
                     class="rounded-3xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 p-6 space-y-2 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
                     <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Boundary 01</p>
-                    <p class="text-xl font-semibold text-gray-900 dark:text-gray-100">Module visibility & shortcuts</p>
-                    <p class="text-sm text-gray-700 dark:text-gray-300">Role surfaces show only what the user can act on
-                        today,
-                        reducing clutter and misclicks.</p>
+                    <p class="text-xl font-semibold text-gray-900 dark:text-gray-100">Edit permissions</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Only roles with authority see edit and assign
+                        controls. Others see read-only fields plus escalation paths.</p>
                 </div>
 
                 <div
                     class="rounded-3xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 p-6 space-y-2 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
                     <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Boundary 02</p>
-                    <p class="text-xl font-semibold text-gray-900 dark:text-gray-100">Geography + facility mapping</p>
-                    <p class="text-sm text-gray-700 dark:text-gray-300">PHC/SHC/village context drives punch-in and
-                        visit-at
-                        choices so reporting stays correct.</p>
+                    <p class="text-xl font-semibold text-gray-900 dark:text-gray-100">Entity visibility</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">SHCs, villages, and areas shown are scoped by
+                        posting and geography so users don’t see irrelevant or unsafe admin breadth.</p>
                 </div>
 
                 <div
                     class="rounded-3xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 p-6 space-y-2 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
                     <p class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400">Boundary 03</p>
-                    <p class="text-xl font-semibold text-gray-900 dark:text-gray-100">Governance tiles</p>
-                    <p class="text-sm text-gray-700 dark:text-gray-300">Approvals and verifications surface as
-                        actionable counts
-                        for supervisory roles, not hidden admin pages.</p>
+                    <p class="text-xl font-semibold text-gray-900 dark:text-gray-100">Approval controls</p>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Approval and verification states surface as
+                        counts and are routable actions for supervisory roles, not buried admin pages.</p>
                 </div>
             </div>
         </section>
@@ -454,51 +440,48 @@
         <section id="layout-f" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Edge cases</p>
-                <h2 class="text-3xl font-semibold">Built for real conditions: no visits, wrong location, pending sync
-                </h2>
+                <h2 class="text-3xl font-semibold">Built for real conditions: vacancies, unassigned areas, and partial
+                    mappings</h2>
             </div>
 
             <div class="space-y-4">
                 <div
                     class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">No Visits is a valid state</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Posting mismatch</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Instead of showing an empty dashboard that feels broken, day-start explains why work is blocked
-                        and routes
-                        to punch-in with one clear action.
+                        When users are mapped to the wrong facility, the UI must make it obvious and provide a governed
+                        correction
+                        route instead of letting the error leak into every module.
                     </p>
                 </div>
 
                 <div
                     class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Sync pending is made explicit
-                    </h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Vacancy is operational truth</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        “Last synced” and “pending” states sit in the utility layer (more actions), reducing duplicate
-                        submissions
-                        and support calls under weak networks.
+                        Sanctioned vs posted makes capacity constraints visible so missing follow-ups aren’t framed as
+                        user failure
+                        when staffing reality is the limiter.
                     </p>
                 </div>
 
                 <div
                     class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Other facility / village
-                        selection</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Unassigned ASHA areas</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Switching between “my facility” and “other” contexts prevents wrong reporting when staff cover
-                        multiple SHCs
-                        or villages.
+                        Areas without ownership are surfaced as explicit states. Assignment and replacement flows are
+                        guided and
+                        confirm-based to prevent accidental coverage changes.
                     </p>
                 </div>
 
                 <div
                     class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Meeting types captured as
-                        structured context</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Partial mapping</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Meetings are not one blob. Types like VHSNC, sector, block, and PHC meetings are captured to
-                        preserve
-                        operational meaning and downstream reporting.
+                        SHCs can exist without complete village linking. The UI stays navigable while making “not
+                        verified /
+                        incomplete” visible so governance work is trackable.
                     </p>
                 </div>
             </div>
@@ -510,7 +493,7 @@
         <section id="layout-g" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Screens</p>
-                <h2 class="text-3xl font-semibold">Key surfaces in day-start</h2>
+                <h2 class="text-3xl font-semibold">Key surfaces in Profile</h2>
                 <p class="max-w-3xl text-gray-700 dark:text-gray-300">
                     Replace placeholders with your final screenshots (from your Figma exports).
                 </p>
@@ -519,40 +502,37 @@
             <div class="grid gap-8 md:grid-cols-2">
                 <figure class="space-y-3">
                     <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Day-start dashboard with registered population, attention required, approvals required, and activity counters"
+                        alt="Facility profile overview showing facility details, verification state, and key counts"
                         class="w-full rounded-2xl" />
                     <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Day-start dashboard with population overview, attention required, approvals required, and
-                        execution counters.
+                        Facility overview: verification state, key identifiers, and operational counts.
                     </figcaption>
                 </figure>
 
                 <figure class="space-y-3">
                     <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Punch-in selection cards with descriptions for facility, outreach, VHND, monitoring, and meetings"
+                        alt="Staff roster with sanctioned vs posted context and approval states"
                         class="w-full rounded-2xl" />
                     <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Punch-in selection cards with plain-language descriptions to reduce wrong context selection.
+                        Staff roster: sanctioned vs posted visibility, plus approval states for governance.
                     </figcaption>
                 </figure>
 
                 <figure class="space-y-3">
                     <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Visit-at selection showing facility visits, outreach activities, assessments, and monitoring"
+                        alt="SHC and village associations list view with totals and incomplete states"
                         class="w-full rounded-2xl" />
                     <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Visit-at selection separates “where work happens” from punch-in state to preserve reporting
-                        clarity.
+                        SHC and village associations: totals, search, and “not verified / incomplete” states.
                     </figcaption>
                 </figure>
 
                 <figure class="space-y-3">
                     <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="More actions sheet showing punch out, working hours, sync status and last synced time"
+                        alt="ASHA area ownership view showing assignments and unassigned states"
                         class="w-full rounded-2xl" />
                     <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Utility surface for punch-out, working hours, and sync status to support offline and
-                        low-connectivity use.
+                        ASHA area ownership: assigned vs unassigned areas and guided assignment flows.
                     </figcaption>
                 </figure>
             </div>
@@ -564,35 +544,36 @@
         <section id="layout-h" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">System fit</p>
-                <h2 class="text-3xl font-semibold">Day-start connects governance, planning, and registers</h2>
+                <h2 class="text-3xl font-semibold">Profile powers routing, ownership, and reporting integrity across
+                    modules</h2>
             </div>
 
             <p class="text-gray-700 dark:text-gray-300">
-                Day-start is the bridge between “the system has data” and “a team can execute today.” Work plan and
-                registers
-                provide starting points for field work, while approvals and verifications keep governance visible for
-                supervisory loops.
+                Profile is upstream of everything. The facility and geography chain determines what cases appear, who
+                owns
+                follow-ups, which lists are in-scope, and how dashboards aggregate outcomes. Making this context
+                inspectable
+                reduces silent failures across the platform.
             </p>
 
             <div class="grid gap-4 md:grid-cols-2">
                 <div
                     class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Work plan and registers</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Routing & task ownership</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Work plan surfaces “what to do next,” and registers provide direct entry points for day-to-day
-                        operations
-                        without hunting across program menus.
+                        Village and ASHA area ownership shapes what appears in registers, follow-ups, and case lists.
+                        Clean
+                        mappings reduce wrong assignments and missing beneficiaries.
                     </p>
                 </div>
 
                 <div
                     class="p-5 rounded-2xl bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur border border-white/40 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60 dark:border-gray-800/60">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Approvals required as operational
-                        work</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Governance & reporting</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Health facility, village/ward, and new user verification counts appear as tiles so supervisory
-                        roles can
-                        resolve governance before downstream work is impacted.
+                        Verification and approval states prevent polluted aggregation. Supervisory roles can resolve
+                        backlogs
+                        before they distort program dashboards.
                     </p>
                 </div>
             </div>
@@ -604,25 +585,22 @@
         <section id="layout-i" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Impact</p>
-                <h2 class="text-3xl font-semibold">A clearer start reduces retries and improves throughput visibility
-                </h2>
+                <h2 class="text-3xl font-semibold">Making context visible reduces support loops and prevents downstream
+                    “missing data” failures</h2>
             </div>
 
             <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                <li>Punch-in makes daily state explicit so “no visits” becomes explainable instead of confusing.</li>
-                <li>Context selection reduces wrong reporting and helps users route into the right work surface faster.
-                </li>
-                <li>Role-aware counters make execution visible without manual follow-ups and constant supervisor
-                    coordination.</li>
-                <li>Governance tiles keep approvals and verifications from becoming invisible backlog.</li>
+                <li>Posting and scope clarity reduces misrouted work and incorrect facility reporting.</li>
+                <li>Visible mapping states make governance backlogs trackable instead of invisible blockers.</li>
+                <li>Sanctioned vs posted makes capacity constraints explicit for operational planning.</li>
+                <li>Role-gated edits protect auditability while keeping corrections possible at scale.</li>
             </ul>
 
             <p class="text-sm text-gray-600 dark:text-gray-400">
-                Example counters shown in the UI: Registered population 12,54,872; Attention required 1,462;
-                Verifications /
-                Approvals required: 08 Health Facilities, 12 Villages/Wards, 05 New Users; OPD Registration 21; Vitals
-                Taken 18;
-                Medicines Dispensed 75; Lab Tests Conducted 62; ABHA Linked 21; ABHA Created 18.
+                Example facility snapshot surfaced in Profile UI: Targeted population 21,000; Houses 6,000; Sub-Health
+                Centres
+                15; Villages/Wards 20; Registered staff 6; Facility staff total 8 with 4 approved and 4 pending
+                approval.
             </p>
         </section>
 
@@ -632,37 +610,37 @@
         <section id="layout-j" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">What’s next</p>
-                <h2 class="text-3xl font-semibold">What’s next: reduce friction without hiding control</h2>
+                <h2 class="text-3xl font-semibold">What’s next: faster corrections without expanding permission scope
+                </h2>
             </div>
 
             <div class="space-y-4">
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Role-based defaults for punch-in
-                        contexts</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Correction requests with routing
+                    </h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Keep the full set available, but preselect and prioritize the most common contexts per role and
-                        posting to
-                        speed up day-start without reducing governance integrity.
+                        Let frontline roles raise structured correction requests (posting, mapping, ownership) that
+                        route to the
+                        right authority, instead of informal calls and WhatsApp chains.
                     </p>
                 </div>
 
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Better offline cues and safe
-                        recovery paths</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Bulk approvals with safeguards
+                    </h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Strengthen sync state explanations and add clearer “what happens when offline” messaging so
-                        users trust the
-                        system under weak connectivity.
+                        For supervisory roles, add batch approval tools with clear filters and confirmation steps to
+                        reduce
+                        backlog without increasing error risk.
                     </p>
                 </div>
 
                 <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Lightweight audit trail for
-                        supervisor corrections</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Lightweight change cues</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        When supervisors correct facility/village mappings or approvals, show small “what changed” cues
-                        to reduce
-                        back-and-forth and speed up resolution.
+                        When facility mappings or assignments change, show small “what changed” cues so teams don’t
+                        re-verify the
+                        world through phone calls.
                     </p>
                 </div>
             </div>
@@ -672,7 +650,7 @@
 
     <hr class="border-t border-gray-300 dark:border-gray-700 my-12" />
 
-    <!-- Footer (correct relative links for /work/chip-2/day-start.html) -->
+    <!-- Footer (correct relative links for /work/chip-2/profile.html) -->
     <footer class="w-full pb-10 space-y-8">
         <div class="rounded-4xl border border-gray-200 bg-white p-6 md:p-10 dark:border-gray-800 dark:bg-gray-900">
             <div class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
