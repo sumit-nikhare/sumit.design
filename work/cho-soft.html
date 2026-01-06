@@ -244,7 +244,7 @@
         </div>
 
         <div>
-            <img loading="eager" decoding="async" fetchpriority="high" src="../assets/chip-2/demo-img.png"
+            <img loading="eager" decoding="async" fetchpriority="high" src="../assets/cho-soft/project-hero.png"
                 alt="CHO Soft overview image" class="w-full rounded-3xl border border-gray-300 dark:border-gray-700 shadow-lg">
         </div>
     </section>
@@ -670,128 +670,46 @@
                             <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Key UIs</p>
                             <h2 class="text-3xl font-semibold">Core screens across the monthly incentive cycle</h2>
                         </div>
-                        <p class="text-gray-700 dark:text-gray-300">
-                            Below are the primary UI surfaces that represent the end-to-end incentive workflow. Screens are placeholders for now and will be replaced with final visuals.
-                        </p>
-                        <div class="space-y-4">
+                        <p class="text-gray-700 dark:text-gray-300">Below are the core UI surfaces that represent the monthly incentive cycle across roles. Mobile supports CHO entry and proof capture, MO/MOIC verification happens in a review-only mode with policy context, and the dashboard enables BCMO approval and irreversible payment initiation. Each surface is state-driven so ownership, deadlines, and audit trails stay unambiguous.</p>
 
-  <!-- Key UI placeholders (single section) -->
-  <div class="grid gap-4 md:grid-cols-2">
+                        <div class="space-y-8">
 
-    <!-- CHO: Claim entry (Mobile) -->
-    <div class="group relative block overflow-hidden rounded-2xl
-                bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur p-5 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60
-                border border-white/40 dark:border-gray-800/60">
+                            <figure class="space-y-3">
+                                <img loading="lazy" decoding="async" src="../assets/cho-soft/screen-display-1.png"
+                                    alt="Monthly claim home using status buckets to navigate Draft, Submitted, Rejected, Verified, and Approved incentive states"
+                                    class="w-full rounded-2xl" />
+                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">The month starts as a state-driven task list, not a set of scattered forms. Status buckets help CHOs quickly see what’s editable, what’s awaiting review, and what needs correction. This reduces hunting, supports deadline-driven work, and keeps the claim lifecycle legible even when users open the app only a few times per month.</figcaption>
+                            </figure>
 
-      <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
-                    group-hover:opacity-100">
-        <span class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
-        <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
-        <span class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
-      </div>
+                            <figure class="space-y-3">
+                                <img loading="lazy" decoding="async" src="../assets/cho-soft/screen-display-2.png"
+                                    alt="Activity list showing Target, Achieved, Expected amount, Claimed amount, and proof-completeness indicators per activity"
+                                    class="w-full rounded-2xl" />
+                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">Activities are presented as policy-legible cards so users understand payouts without a PDF open on the side. Each row exposes the minimum context: target, achieved, expected, and claimed, plus proof completion. Submission readiness becomes visible at the activity level, preventing late-cycle surprises and reducing verifier back-and-forth caused by missing evidence.</figcaption>
+                            </figure>
 
-      <div class="relative z-10 space-y-4">
-        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
-          alt="CHO claim entry placeholder"
-          class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800" />
+                            <figure class="space-y-3">
+                                <img loading="lazy" decoding="async" src="../assets/cho-soft/screen-display-3.png"
+                                    alt="Activity detail entry with structured fields, mandatory proof upload states, and policy threshold or mismatch warnings"
+                                    class="w-full rounded-2xl" />
+                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">Entry is structured around compliance: required fields are obvious, proofs are enforced by activity rules, and upload feedback is explicit for low-end devices and unstable networks. Policy thresholds and mismatch cues are surfaced in-context, so users can correct before submission. When an activity is rejected, only that activity re-enters edit mode to protect audit continuity.</figcaption>
+                            </figure>
 
-        <div class="space-y-2">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">CHO: Claim entry + proof upload (Mobile)</h3>
-          <p class="text-gray-700 dark:text-gray-300">Activity-wise entry where every activity must be updated before submission. Proofs are mandatory where required, and amounts remain policy-legible (target/achieved/expected/claimed).</p>
-        </div>
+                            <figure class="space-y-3">
+                                <img loading="lazy" decoding="async" src="../assets/cho-soft/screen-display-4.png"
+                                    alt="MO/MOIC verification view showing evidence preview, policy context, and verify or reject actions with reason capture"
+                                    class="w-full rounded-2xl" />
+                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">Verification is designed as review, not re-entry. MO/MOIC users see a read-only claim with proofs upfront, consistent metadata, and clear actions to verify or reject with reasons. This keeps authority boundaries clean, reduces accidental edits, and makes rejections actionable for CHOs. The same structure also improves consistency across different reviewers and facilities.</figcaption>
+                            </figure>
 
-        <span class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-900 mt-2">
-          Placeholder
-        </span>
-      </div>
-    </div>
+                            <figure class="space-y-3">
+                                <img loading="lazy" decoding="async" src="../assets/cho-soft/screen-display-5.png"
+                                    alt="BCMO dashboard for bulk approval and payment initiation with geography filters, claim status overview, and irreversible confirmation"
+                                    class="w-full rounded-2xl" />
+                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">BCMO work is high-volume and risk-heavy, so the dashboard prioritizes filters, status visibility, and safe batch review. Approvals are separated from payment initiation, and the final initiation step is guarded as irreversible to match treasury workflows. This reduces operational mistakes, supports audit readiness, and lets approvals scale across districts without turning into spreadsheet chaos.</figcaption>
+                            </figure>
 
-    <!-- MO/MOIC: Verification (Mobile) -->
-    <div class="group relative block overflow-hidden rounded-2xl
-                bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur p-5 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60
-                border border-white/40 dark:border-gray-800/60">
-
-      <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
-                    group-hover:opacity-100">
-        <span class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
-        <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
-        <span class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
-      </div>
-
-      <div class="relative z-10 space-y-4">
-        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
-          alt="MO verification placeholder"
-          class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800" />
-
-        <div class="space-y-2">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">MO/MOIC: Verify or reject (Mobile)</h3>
-          <p class="text-gray-700 dark:text-gray-300">Review submitted claims against evidence and policy thresholds. Actions are guarded by confirmations, with structured rejection reasons to keep resubmissions actionable.</p>
-        </div>
-
-        <span class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-900 mt-2">
-          Placeholder
-        </span>
-      </div>
-    </div>
-
-    <!-- BCMO: Approval + payment initiation (Dashboard) -->
-    <div class="group relative block overflow-hidden rounded-2xl
-                bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur p-5 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60
-                border border-white/40 dark:border-gray-800/60">
-
-      <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
-                    group-hover:opacity-100">
-        <span class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
-        <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
-        <span class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
-      </div>
-
-      <div class="relative z-10 space-y-4">
-        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
-          alt="BCMO approval dashboard placeholder"
-          class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800" />
-
-        <div class="space-y-2">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">BCMO: Final approval + payment initiation (Dashboard)</h3>
-          <p class="text-gray-700 dark:text-gray-300">Geography-scoped review with status visibility, deadlines, and an explicit irreversible payment initiation step that generates the treasury/bank payment file.</p>
-        </div>
-
-        <span class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-900 mt-2">
-          Placeholder
-        </span>
-      </div>
-    </div>
-
-    <!-- Target population + village verification (Mobile) -->
-    <div class="group relative block overflow-hidden rounded-2xl
-                bg-white/80 md:bg-white/60 backdrop-blur-0 md:backdrop-blur p-5 space-y-3 dark:bg-gray-900/80 md:dark:bg-gray-900/60
-                border border-white/40 dark:border-gray-800/60">
-
-      <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300
-                    group-hover:opacity-100">
-        <span class="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-amber-200/50 blur-2xl dark:bg-amber-500/15"></span>
-        <span class="absolute right-10 top-6 h-44 w-44 rounded-full bg-gray-200/70 blur-2xl dark:bg-gray-700/40"></span>
-        <span class="absolute -right-16 -bottom-16 h-48 w-48 rounded-full bg-orange-200/45 blur-2xl dark:bg-orange-500/15"></span>
-      </div>
-
-      <div class="relative z-10 space-y-4">
-        <img loading="lazy" decoding="async" src="../assets/chip-2/demo-img.png"
-          alt="Target population verification placeholder"
-          class="w-full h-auto object-cover rounded-xl border border-orange-100/70 bg-gray-200 dark:border-orange-400/20 dark:bg-gray-800" />
-
-        <div class="space-y-2">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Target population + village verification (Mobile)</h3>
-          <p class="text-gray-700 dark:text-gray-300">Target population is required before verification. Ownership sits with CHO by default, with a fallback path for MO when CHO is not present.</p>
-        </div>
-
-        <span class="inline-flex items-center justify-center px-3 py-1.5 rounded-lg text-xs font-semibold text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-900 mt-2">
-          Placeholder
-        </span>
-      </div>
-    </div>
-
-  </div>
-</div>
+                        </div>
                     </section>
 
                     <!-- Divider -->
