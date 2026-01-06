@@ -18,6 +18,19 @@
 
 <body
     class="relative isolate mx-4 lg:w-3/5 lg:mx-auto bg-gray-100 pt-4 space-y-6 text-gray-900 transition-colors duration-200 dark:bg-gray-950 dark:text-gray-100">
+    <!-- Ambient glassy glows -->
+    <div class="pointer-events-none fixed inset-0 -z-10">
+        <div
+            class="absolute -left-32 top-10 w-80 h-80 bg-gradient-to-br from-amber-200 via-white to-gray-100 opacity-60 blur-3xl dark:from-amber-400/60 dark:via-orange-400/15 dark:to-transparent dark:opacity-60">
+        </div>
+        <div
+            class="absolute right-0 -top-24 w-96 h-96 bg-gradient-to-br from-white via-gray-100 to-orange-200 opacity-60 blur-3xl dark:from-gray-900/80 dark:via-orange-400/15 dark:to-orange-400/45 dark:opacity-60">
+        </div>
+        <div
+            class="absolute left-1/3 bottom-0 w-96 h-96 bg-gradient-to-br from-orange-200 via-white to-gray-100 opacity-50 blur-3xl dark:from-orange-400/55 dark:via-amber-400/15 dark:to-transparent dark:opacity-60">
+        </div>
+    </div>
+
 
     <!-- Ambient glows -->
     <div class="pointer-events-none fixed inset-0 -z-10">
@@ -650,18 +663,19 @@
 
     </section>
 
-    <hr class="border-t border-gray-300 dark:border-gray-700 my-12" />
+    <!-- divider -->
+    <hr class="border-t border-gray-300 dark:border-gray-700 my-12">
 
-    <!-- Footer (correct relative links for /work/chip-2/profile.html) -->
+    <!-- Footer -->
     <footer class="w-full pb-10 space-y-8">
         <div class="rounded-4xl border border-gray-200 bg-white p-6 md:p-10 dark:border-gray-800 dark:bg-gray-900">
+            <!-- Top row -->
             <div class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
                 <div>
                     <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">Let’s connect</h2>
                     <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
-                        Open to product roles, freelance projects, and collaborations. If you want a walkthrough of any
-                        case study,
-                        I’m happy to share details live.
+                        Open to product roles, freelance projects, and collaborations. If you want a walkthrough of any case
+                        study, I’m happy to share details live.
                     </p>
 
                     <a href="mailto:sumit.v.nikhare@gmail.com"
@@ -670,46 +684,79 @@
                     </a>
                 </div>
 
+                <!-- Logo -->
                 <div class="flex justify-start md:justify-end">
                     <span class="font-heading text-3xl font-semibold">sumit.design</span>
                 </div>
             </div>
 
+            <!-- Bottom grid -->
             <div class="mt-14 grid gap-12 md:grid-cols-3">
+
+                <!-- Navigation -->
                 <div>
                     <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Navigation</p>
                     <ul class="mt-5 space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                        <li><a href="../../index.html" class="link-brand">Home</a></li>
+                        <li><a href="../../index.html" class="underline underline-offset-4">Home</a></li>
                         <li><a href="../../about.html" class="link-brand">About</a></li>
-                        <li><a href="../work.html" class="link-brand">Work</a></li>
+                        <li><a href="../../work.html" class="link-brand">Work</a></li>
                         <li><a href="../../resume.html" class="link-brand">Resume</a></li>
                     </ul>
                 </div>
 
+                <!-- Case studies -->
                 <div>
                     <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Case studies</p>
                     <ul class="mt-5 space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                        <li><a href="../chip-2.html" class="link-brand">CHIP 2.0</a></li>
-                        <li><a href="../samasta.html" class="link-brand">Samasta</a></li>
-                        <li><a href="../cho-soft.html" class="link-brand">CHO Soft</a></li>
-                        <li><a href="../work.html" class="link-brand">View All</a></li>
+                        <li><a href="../../work/chip-2.html" class="link-brand">CHIP 2.0</a></li>
+                        <li><a href="../../work/samasta.html" class="link-brand">Samasta</a></li>
+                        <li><a href="../../work/cho-soft.html" class="link-brand">CHO Soft</a></li>
+                        <li><a href="../../work.html" class="link-brand">View All</a></li>
                     </ul>
                 </div>
 
+                <!-- Elsewhere -->
                 <div>
                     <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Elsewhere</p>
+
                     <div class="mt-5 space-y-2">
+
+                        <!-- Card -->
                         <a href="https://www.linkedin.com/in/sumit-nikhare-482058215/" target="_blank" rel="noreferrer"
                             class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-violet-100 py-2 pl-2 pr-4 dark:bg-violet-900/30">
                             <div class="flex items-center gap-4">
-                                <div
-                                    class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
+                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
                                     <span class="text-sm font-semibold">in</span>
                                 </div>
                                 <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">LinkedIn</p>
                             </div>
                             <span class="text-gray-700 dark:text-gray-300">↗</span>
                         </a>
+
+                        <!-- Card -->
+                        <!-- <a href="mailto:sumit.v.nikhare@gmail.com"
+                            class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-emerald-100 py-2 pl-2 pr-4 dark:bg-emerald-900/30">
+                            <div class="flex items-center gap-4">
+                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
+                                    <span class="text-sm font-semibold">G</span>
+                                </div>
+                                <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Email</p>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">↗</span>
+                        </a> -->
+
+                        <!-- Card -->
+                        <!-- <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"
+                            class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-rose-100 py-2 pl-2 pr-4 dark:bg-rose-900/30">
+                            <div class="flex items-center gap-4">
+                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
+                                    <span class="text-sm font-semibold">in</span>
+                                </div>
+                                <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">Instagram</p>
+                            </div>
+                            <span class="text-gray-700 dark:text-gray-300">↗</span>
+                        </a> -->
+
                     </div>
                 </div>
 
@@ -717,6 +764,8 @@
         </div>
 
         <div class="flex flex-col space-y-4 items-center">
+
+
             <div class="flex flex-col items-center gap-3">
                 <p class="text-center">© 2025 – sumit.design</p>
 
@@ -749,7 +798,9 @@
 
             <p class="text-sm text-center md:text-right">
                 Implementation notes &amp; source ·
-                <a href="https://github.com/" target="_blank" rel="noreferrer" class="link-brand">GitHub</a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer" class="link-brand">
+                    GitHub
+                </a>
             </p>
         </div>
     </footer>
