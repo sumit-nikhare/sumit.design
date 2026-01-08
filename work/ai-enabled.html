@@ -867,86 +867,94 @@
                               <!-- Divider -->
                               <div class="border-t border-gray-300 dark:border-gray-700"></div>
 
-                              <!-- Layout H: Modules -->
-                              <section id="layout-modules" data-section class="space-y-8 scroll-mt-24">
+                              <!-- Screens/UIs -->
+                              <section id="layout-modules" class="scroll-mt-24 space-y-8">
                                     <div class="space-y-3">
-                                          <p
-                                                class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">
-                                                Key UIs</p>
-                                          <h2 class="text-3xl font-semibold">Core screens across monitoring, analysis,
-                                                and action</h2>
+                                          <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Screens</p>
+                                          <h2 class="text-3xl font-semibold">Key surfaces in the Onboarding module</h2>
+                                          <p class="max-w-3xl text-gray-700 dark:text-gray-300">These screens show onboarding as a governance flow:
+                                                identity verification, posting scope selection, and a visible approval state before access. The UI
+                                                makes “pending approval” a first-class experience, prevents duplicate registrations, and routes
+                                                approved users directly into day-start so work begins without hunting through navigation.</p>
                                     </div>
-                                    <p class="text-gray-700 dark:text-gray-300">
-                                          Below are the core UI surfaces that represent the monitoring-to-action
-                                          workflow. The platform starts with an overview and ranking layer, supports
-                                          indicator exploration and trend validation, and enables governed follow-ups
-                                          through letters and communication tools. The AI copilot sits alongside these
-                                          views as a scoped analysis aid, not a separate universe.
-                                    </p>
-
+                              
                                     <div class="space-y-8">
-
                                           <figure class="space-y-3">
-                                                <img loading="lazy" decoding="async"
-                                                      src="../assets/ai-enabled/screen-display-1.png"
-                                                      alt="Overview dashboard showing state scorecards, rankings, and top/bottom performance views by geography"
+                                                <img loading="lazy" decoding="async" src="../assets/ai-enabled/screen-display-1.png"
+                                                      alt="Entry screen offering credential login and OTP-based registration as two distinct onboarding paths"
                                                       class="w-full rounded-2xl" />
-                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">The overview
-                                                      is built for review meetings: a small set of scorecards and
-                                                      rankings that quickly surface where performance is drifting.
-                                                      Top/bottom views reduce scanning and help leadership start with
-                                                      priorities instead of debating what to look at first.</figcaption>
+                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">The first screen separates intent:
+                                                      credential login for already-provisioned staff, and OTP registration for new field users.
+                                                      Splitting paths early reduces confusion and repeat attempts, and makes support resolution
+                                                      clearer when something fails. It also keeps onboarding fast for approved users who just need to
+                                                      start their day.</figcaption>
                                           </figure>
-
+                              
                                           <figure class="space-y-3">
-                                                <img loading="lazy" decoding="async"
-                                                      src="../assets/ai-enabled/screen-display-2.png"
-                                                      alt="Explore view for selecting domains and indicators with geography drilldowns from district to block, including ABP cohort filters"
+                                                <img loading="lazy" decoding="async" src="../assets/ai-enabled/screen-display-2.png"
+                                                      alt="OTP registration flow capturing identity details and posting selection (district, block, facility)"
                                                       class="w-full rounded-2xl" />
-                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">Explore is a
-                                                      controlled drilldown, not a sandbox. Users pick an indicator,
-                                                      apply a time window, and move through consistent geography levels.
-                                                      ABP blocks appear as a first-class cohort so aspirational
-                                                      monitoring can happen inside the same product patterns.
+                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">Registration focuses on the minimum identity
+                                                      and employment details needed to bind a user to a posting scope. District, block, and facility
+                                                      mapping is treated as a required step because it drives module visibility and record access. The
+                                                      UI uses short, mobile-friendly steps so onboarding remains feasible under weak connectivity and
+                                                      shared devices.</figcaption>
+                                          </figure>
+                              
+                                          <figure class="space-y-3">
+                                                <img loading="lazy" decoding="async" src="../assets/ai-enabled/screen-display-3.png"
+                                                      alt="Pending approval state showing request ID, status messaging, and a clear next step to view details or contact supervisor"
+                                                      class="w-full rounded-2xl" />
+                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">“Pending approval” is designed as a
+                                                      legitimate system state, not a dead end. The request ID, status messaging, and a clear details
+                                                      action reduce re-submission and panic taps. This also creates an audit-friendly handoff to
+                                                      supervisors, who can validate role/posting before approval without users guessing what happened.
+                                                </figcaption>
+                                          </figure>
+                              
+                                          <figure class="space-y-3">
+                                                <img loading="lazy" decoding="async" src="../assets/ai-enabled/screen-display-4.png"
+                                                      alt="Pending approval state showing request ID, status messaging, and a clear next step to view details or contact supervisor"
+                                                      class="w-full rounded-2xl" />
+                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">“Pending approval” is designed as a
+                                                      legitimate system state, not a dead end. The request ID, status messaging, and a clear details
+                                                      action reduce re-submission and panic taps. This also creates an audit-friendly handoff to
+                                                      supervisors, who can validate role/posting before approval without users guessing what happened.
+                                                </figcaption>
+                                          </figure>
+                              
+                                          <figure class="space-y-3">
+                                                <img loading="lazy" decoding="async" src="../assets/ai-enabled/screen-display-5.png"
+                                                      alt="Pending approval state showing request ID, status messaging, and a clear next step to view details or contact supervisor"
+                                                      class="w-full rounded-2xl" />
+                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">“Pending approval” is designed as a
+                                                      legitimate system state, not a dead end. The request ID, status messaging, and a clear details
+                                                      action reduce re-submission and panic taps. This also creates an audit-friendly handoff to
+                                                      supervisors, who can validate role/posting before approval without users guessing what happened.
+                                                </figcaption>
+                                          </figure>
+                              
+                                          <figure class="space-y-3">
+                                                <img loading="lazy" decoding="async" src="../assets/ai-enabled/screen-display-6.png"
+                                                      alt="Pending approval state showing request ID, status messaging, and a clear next step to view details or contact supervisor"
+                                                      class="w-full rounded-2xl" />
+                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">“Pending approval” is designed as a
+                                                      legitimate system state, not a dead end. The request ID, status messaging, and a clear details
+                                                      action reduce re-submission and panic taps. This also creates an audit-friendly handoff to
+                                                      supervisors, who can validate role/posting before approval without users guessing what happened.
                                                 </figcaption>
                                           </figure>
 
                                           <figure class="space-y-3">
-                                                <img loading="lazy" decoding="async"
-                                                      src="../assets/ai-enabled/screen-display-3.png"
-                                                      alt="Analytics view with time-series trends and period filters for validating improvement or decline before escalation"
+                                                <img loading="lazy" decoding="async" src="../assets/ai-enabled/screen-display-7.png"
+                                                      alt="Pending approval state showing request ID, status messaging, and a clear next step to view details or contact supervisor"
                                                       class="w-full rounded-2xl" />
-                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">Analytics
-                                                      prioritizes trend validation. Period filters and charts help users
-                                                      confirm whether a dip is temporary, structural, or seasonal before
-                                                      escalating. This reduces reactive follow-ups based on single
-                                                      snapshots.</figcaption>
+                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">“Pending approval” is designed as a
+                                                      legitimate system state, not a dead end. The request ID, status messaging, and a clear details
+                                                      action reduce re-submission and panic taps. This also creates an audit-friendly handoff to
+                                                      supervisors, who can validate role/posting before approval without users guessing what happened.
+                                                </figcaption>
                                           </figure>
-
-                                          <figure class="space-y-3">
-                                                <img loading="lazy" decoding="async"
-                                                      src="../assets/ai-enabled/screen-display-4.png"
-                                                      alt="Action workflow for generating and sending letters or WhatsApp/push messages with recipient scoping, previews, and confirmations"
-                                                      class="w-full rounded-2xl" />
-                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">Actions are
-                                                      structured to be governable. The platform ties every letter or
-                                                      message to the selected indicator and geography, scopes recipients
-                                                      based on role, and provides previews and confirmation steps to
-                                                      prevent accidental or unauthorized outreach.</figcaption>
-                                          </figure>
-
-                                          <figure class="space-y-3">
-                                                <img loading="lazy" decoding="async"
-                                                      src="../assets/ai-enabled/screen-display-5.png"
-                                                      alt="LLM copilot chat for asking scoped questions about health indicators and receiving ranked results with verifiable context"
-                                                      class="w-full rounded-2xl" />
-                                                <figcaption class="px-2 text-gray-600 dark:text-gray-400">The AI copilot
-                                                      supports quick queries (top/bottom districts, comparisons, counts)
-                                                      without turning users into SQL translators. The UX is scoped to
-                                                      the same permissions and datasets as the dashboard, keeping
-                                                      answers useful and safe.</figcaption>
-                                          </figure>
-
                                     </div>
                               </section>
 
