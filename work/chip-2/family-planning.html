@@ -31,20 +31,6 @@
         </div>
     </div>
 
-
-    <!-- Ambient glows -->
-    <div class="pointer-events-none fixed inset-0 -z-10">
-        <div
-            class="absolute -left-32 top-10 w-80 h-80 bg-gradient-to-br from-amber-100 via-white to-gray-100 opacity-70 blur-3xl dark:from-amber-500/15 dark:via-gray-950 dark:to-gray-950 dark:opacity-30">
-        </div>
-        <div
-            class="absolute right-0 -top-24 w-96 h-96 bg-gradient-to-br from-white via-gray-100 to-orange-100 opacity-70 blur-3xl dark:from-gray-950 dark:via-gray-950 dark:to-orange-500/15 dark:opacity-30">
-        </div>
-        <div
-            class="absolute left-1/3 bottom-0 w-96 h-96 bg-gradient-to-br from-orange-100 via-white to-gray-100 opacity-60 blur-3xl dark:from-orange-500/15 dark:via-gray-950 dark:to-gray-950 dark:opacity-30">
-        </div>
-    </div>
-
     <!-- Floating back control -->
     <div id="backControl" class="fixed top-4 left-4 z-50 opacity-0 pointer-events-none transition-opacity duration-300"
         aria-hidden="true">
@@ -166,9 +152,9 @@
             </p>
         </div>
 
-        <!-- Hero image (replace with your exported asset) -->
+        <!-- Hero image -->
         <div>
-            <img loading="eager" decoding="async" fetchpriority="high" src="../../assets/common/demo-img-1920.png"
+            <img loading="eager" decoding="async" fetchpriority="high" src="../../assets/chip-2/family-planning/module-hero.png"
                 alt="Family Planning module overview and key flows" class="w-full rounded-3xl" />
         </div>
     </section>
@@ -513,51 +499,51 @@
 
         <hr class="border-t border-gray-300 dark:border-gray-700" />
 
-        <!-- Layout G -->
+        <!-- Screens/UIs -->
         <section id="layout-g" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Screens</p>
-                <h2 class="text-3xl font-semibold">Key surfaces in the Family Planning module</h2>
-                <p class="max-w-3xl text-gray-700 dark:text-gray-300">
-                    Replace placeholders with your final screenshots (Figma exports).
-                </p>
+                <h2 class="text-3xl font-semibold">Key surfaces in the Onboarding module</h2>
+                <p class="max-w-3xl text-gray-700 dark:text-gray-300">These screens show onboarding as a governance flow: identity verification, posting scope selection, and a visible approval state before access. The UI makes “pending approval” a first-class experience, prevents duplicate registrations, and routes approved users directly into day-start so work begins without hunting through navigation.</p>
             </div>
 
-            <div class="grid gap-8 md:grid-cols-2">
+            <div class="space-y-8">
                 <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Due-work overview and summary cards" class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Due-work overview: follow-up due, EC survey pending, routine follow-ups, and referred-method
-                        breakdown.
-                    </figcaption>
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-planning/screen-display-1.png"
+                        alt="Entry screen offering credential login and OTP-based registration as two distinct onboarding paths"
+                        class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">The first screen separates intent: credential login for already-provisioned staff, and OTP registration for new field users. Splitting paths early reduces confusion and repeat attempts, and makes support resolution clearer when something fails. It also keeps onboarding fast for approved users who just need to start their day.</figcaption>
+                </figure>
+            
+                <figure class="space-y-3">
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-planning/screen-display-2.png"
+                        alt="OTP registration flow capturing identity details and posting selection (district, block, facility)"
+                        class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">Registration focuses on the minimum identity and employment details needed to bind a user to a posting scope. District, block, and facility mapping is treated as a required step because it drives module visibility and record access. The UI uses short, mobile-friendly steps so onboarding remains feasible under weak connectivity and shared devices.</figcaption>
+                </figure>
+            
+                <figure class="space-y-3">
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-planning/screen-display-3.png"
+                        alt="Pending approval state showing request ID, status messaging, and a clear next step to view details or contact supervisor" class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">“Pending approval” is designed as a legitimate system state, not a dead end. The request ID, status messaging, and a clear details action reduce re-submission and panic taps. This also creates an audit-friendly handoff to supervisors, who can validate role/posting before approval without users guessing what happened.</figcaption>
                 </figure>
 
                 <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Eligible couple profile and follow-up history" class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Eligible couple profile with last follow-up status, follow-up history timeline, and edit prompts
-                        for IDs/bank details.
-                    </figcaption>
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-planning/screen-display-4.png"
+                        alt="Pending approval state showing request ID, status messaging, and a clear next step to view details or contact supervisor" class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">“Pending approval” is designed as a legitimate system state, not a dead end. The request ID, status messaging, and a clear details action reduce re-submission and panic taps. This also creates an audit-friendly handoff to supervisors, who can validate role/posting before approval without users guessing what happened.</figcaption>
                 </figure>
 
                 <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Method follow-up wizard" class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Method follow-up wizard: confirm current method, capture dates/quantity, issues, satisfaction,
-                        and fertility intent.
-                    </figcaption>
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-planning/screen-display-5.png"
+                        alt="Pending approval state showing request ID, status messaging, and a clear next step to view details or contact supervisor" class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">“Pending approval” is designed as a legitimate system state, not a dead end. The request ID, status messaging, and a clear details action reduce re-submission and panic taps. This also creates an audit-friendly handoff to supervisors, who can validate role/posting before approval without users guessing what happened.</figcaption>
                 </figure>
 
                 <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Notified and referred cases with filters" class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Notified and referred cases: category/status selection + geography filters for operational
-                        slicing.
-                    </figcaption>
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-planning/screen-display-6.png"
+                        alt="Pending approval state showing request ID, status messaging, and a clear next step to view details or contact supervisor" class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">“Pending approval” is designed as a legitimate system state, not a dead end. The request ID, status messaging, and a clear details action reduce re-submission and panic taps. This also creates an audit-friendly handoff to supervisors, who can validate role/posting before approval without users guessing what happened.</figcaption>
                 </figure>
             </div>
         </section>
@@ -688,7 +674,8 @@
                 <div>
                     <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">Let’s connect</h2>
                     <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
-                        Open to product roles, freelance projects, and collaborations. If you want a walkthrough of any case
+                        Open to product roles, freelance projects, and collaborations. If you want a walkthrough of any
+                        case
                         study, I’m happy to share details live.
                     </p>
 
@@ -739,7 +726,8 @@
                         <a href="https://www.linkedin.com/in/sumit-nikhare-482058215/" target="_blank" rel="noreferrer"
                             class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-violet-100 py-2 pl-2 pr-4 dark:bg-violet-900/30">
                             <div class="flex items-center gap-4">
-                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
+                                <div
+                                    class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
                                     <span class="text-sm font-semibold">in</span>
                                 </div>
                                 <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">LinkedIn</p>

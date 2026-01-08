@@ -133,7 +133,7 @@
             </div>
 
             <p class="max-w-3xl text-sm text-gray-600 dark:text-gray-400 pt-2">
-                *This pge is derived from onboarding, approval, user-details, and day-start screens. Replace placeholder screenshots with final exports.
+                *This page is derived from onboarding, approval, user-details, and day-start screens. Replace placeholder screenshots with final exports.
             </p>
         </div>
 
@@ -403,47 +403,39 @@
 
         <hr class="border-t border-gray-300 dark:border-gray-700" />
 
-        <!-- Layout G -->
+        <!-- Layout G - Screens/UIs -->
         <section id="layout-g" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Screens</p>
-                <h2 class="text-3xl font-semibold">Key surfaces in onboarding and day-start</h2>
-                <p class="max-w-3xl text-gray-700 dark:text-gray-300">
-                    Replace placeholders with your final screenshots (from your Figma exports).
-                </p>
+                <h2 class="text-3xl font-semibold">Key surfaces in the Onboarding module</h2>
+                <p class="max-w-3xl text-gray-700 dark:text-gray-300">These screens show onboarding as a governance flow: identity verification, posting scope selection, and a visible approval state before access. The UI makes “pending approval” a first-class experience, prevents duplicate registrations, and routes approved users directly into day-start so work begins without hunting through navigation.</p>
             </div>
 
-            <div class="grid gap-8 md:grid-cols-2">
+            <div class="space-y-8">
                 <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Credentials login screen" class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Credentials login for already-approved users.
-                    </figcaption>
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/login-register/screen-display-1.png"
+                        alt="Entry screen offering credential login and OTP-based registration as two distinct onboarding paths"
+                        class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">The first screen separates intent: credential login for already-provisioned staff, and OTP registration for new field users. Splitting paths early reduces confusion and repeat attempts, and makes support resolution clearer when something fails. It also keeps onboarding fast for approved users who just need to start their day.</figcaption>
+                </figure>
+            
+                <figure class="space-y-3">
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/login-register/screen-display-2.png"
+                        alt="OTP registration flow capturing identity details and posting selection (district, block, facility)"
+                        class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">Registration focuses on the minimum identity and employment details needed to bind a user to a posting scope. District, block, and facility mapping is treated as a required step because it drives module visibility and record access. The UI uses short, mobile-friendly steps so onboarding remains feasible under weak connectivity and shared devices.</figcaption>
+                </figure>
+            
+                <figure class="space-y-3">
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/login-register/screen-display-3.png"
+                        alt="Pending approval state showing request ID, status messaging, and a clear next step to view details or contact supervisor" class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">“Pending approval” is designed as a legitimate system state, not a dead end. The request ID, status messaging, and a clear details action reduce re-submission and panic taps. This also creates an audit-friendly handoff to supervisors, who can validate role/posting before approval without users guessing what happened.</figcaption>
                 </figure>
 
                 <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="OTP registration and verification" class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Mobile OTP registration with resend behavior for low connectivity.
-                    </figcaption>
-                </figure>
-
-                <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Pending approval and user details view" class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Approval state with Request ID and details view showing correctable fields before approval.
-                    </figcaption>
-                </figure>
-
-                <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Day-start punch-in and work plan" class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Punch-in gate + work plan surface to start work without hunting through menus.
-                    </figcaption>
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/login-register/screen-display-4.png"
+                        alt="Day-start landing after approval with punch-in gate and a focused set of next actions to begin daily work" class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">Once approved, users land on day-start instead of a generic home. Punch-in acts as a work gate, and the surface prioritizes “what do I do now?” through a small set of role-appropriate actions and counts. This reduces menu hunting, supports daily execution rhythms, and ensures users begin work within the correct scope and permissions.</figcaption>
                 </figure>
             </div>
         </section>

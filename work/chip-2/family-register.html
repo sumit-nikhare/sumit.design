@@ -31,20 +31,6 @@
         </div>
     </div>
 
-
-    <!-- Ambient glows -->
-    <div class="pointer-events-none fixed inset-0 -z-10">
-        <div
-            class="absolute -left-32 top-10 w-80 h-80 bg-gradient-to-br from-amber-200 via-white to-gray-100 opacity-60 blur-3xl dark:from-amber-500/20 dark:via-gray-950 dark:to-gray-950 dark:opacity-30">
-        </div>
-        <div
-            class="absolute right-0 -top-24 w-96 h-96 bg-gradient-to-br from-white via-gray-100 to-orange-200 opacity-60 blur-3xl dark:from-gray-950 dark:via-gray-950 dark:to-orange-500/20 dark:opacity-30">
-        </div>
-        <div
-            class="absolute left-1/3 bottom-0 w-96 h-96 bg-gradient-to-br from-orange-200 via-white to-gray-100 opacity-50 blur-3xl dark:from-orange-500/20 dark:via-gray-950 dark:to-gray-950 dark:opacity-30">
-        </div>
-    </div>
-
     <!-- Floating back control -->
     <div id="backControl" class="fixed top-4 left-4 z-50 opacity-0 pointer-events-none transition-opacity duration-300"
         aria-hidden="true">
@@ -166,7 +152,7 @@
         </div>
 
         <div>
-            <img loading="eager" decoding="async" fetchpriority="high" src="../../assets/common/demo-img-1920.png"
+            <img loading="eager" decoding="async" fetchpriority="high" src="../../assets/chip-2/family-register/module-thumbnail.png"
                 alt="Family Register module: geo filters, house list, family list, member profile, and DHS capture gates"
                 class="w-full rounded-3xl" />
         </div>
@@ -509,53 +495,51 @@
 
         <hr class="border-t border-gray-300 dark:border-gray-700" />
 
-        <!-- Layout G -->
+        <!-- Layout G - Screens/UIs -->
         <section id="layout-g" class="scroll-mt-24 space-y-8">
             <div class="space-y-3">
                 <p class="text-sm uppercase tracking-[0.16em] text-gray-600 dark:text-gray-300">Screens</p>
-                <h2 class="text-3xl font-semibold">Key surfaces in Family Register + DHS</h2>
-                <p class="max-w-3xl text-gray-700 dark:text-gray-300">
-                    Replace placeholders with your final screenshots (from your Figma exports).
-                </p>
+                <h2 class="text-3xl font-semibold">Key surfaces in the OPD module</h2>
+                <p class="max-w-3xl text-gray-700 dark:text-gray-300">These screens illustrate OPD as a routed, multi-role encounter instead of a single clinician form. Each surface is anchored to a “work due” state (vitals, consultation, labs, dispensing) so handoffs are explicit, resumable, and permission-safe across Nurse, MO, Lab Technician, and Pharmacist.</p>
             </div>
 
-            <div class="grid gap-8 md:grid-cols-2">
+            <div class="space-y-8">
                 <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Family register list with geo filters, house numbers, HoF names, and survey pending/update required statuses"
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-register/screen-display-1.png"
+                        alt="OPD role home showing queue counts and filters for OPD waiting, vitals due, lab due, and medicines due"
                         class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Geo-scoped discovery: house/family lists with “survey pending” and “update required” states.
-                    </figcaption>
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">Role homes start with queues, not patient charts. Counts and filters surface what is due now (OPD waiting, vitals due, lab due, medicines due) so each role can pull work without coordination calls. This makes responsibility visible and reduces drop-offs when a patient moves across stations.</figcaption>
+                </figure>
+            
+                <figure class="space-y-3">
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-register/screen-display-2.png"
+                        alt="Vitals capture screen with structured fields, units, and save/complete actions for nurse-led intake"
+                        class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">Vitals are treated as a discrete task owned by nursing staff. Fields are unit-labelled and structured for speed, with clear save/complete actions that advance encounter state. By separating vitals from MO steps, the module prevents consultation work from stalling and avoids mixed accountability on shared devices.</figcaption>
+                </figure>
+            
+                <figure class="space-y-3">
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-register/screen-display-3.png"
+                        alt="Medical Officer encounter view with chief concern selection, history modules, diagnosis, and prescription entry" class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">The MO surface is an encounter checklist: complaint capture, history modules, diagnosis, and prescription, all resumable in order. Search + common lists keep input fast, while modular history reduces repeat questioning across visits. High-authority actions stay MO-gated, keeping clinical decision-making separate from capture-heavy tasks.</figcaption>
                 </figure>
 
                 <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Family profile with category, housing structure, sanitation, facilities, and schemes"
-                        class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Family profile: category, housing accessibility, toilet, water/fuel, and government schemes.
-                    </figcaption>
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-register/screen-display-4.png"
+                        alt="Lab investigations workflow showing test selection, pending lab queue, and value entry with units" class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">Investigations are routed to lab staff through a dedicated queue and task view. Test selection and value entry are constrained with units and expected formats, reducing errors during busy hours. Results return into the same encounter timeline, so the MO sees updates without re-entering data or chasing paper slips.</figcaption>
                 </figure>
 
                 <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="Member profile and health conditions including behaviours and diagnosed diseases"
-                        class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        Member profile + conditions: personal details, guardians, behaviours, diagnosed diseases, and
-                        disability flags.
-                    </figcaption>
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-register/screen-display-5.png"
+                        alt="Pharmacy dispensing screen showing prescription items, stock availability, dispense status, and partial issue handling" class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">Dispensing is handled as a pharmacy-owned step with a clear “medicine pending” state. Prescription items are reviewable, dispensing status is recorded per line item, and stock cues support real-world constraints. This prevents encounters being marked complete when medicines were not issued, and keeps inventory-aware decisions close to the pharmacist.</figcaption>
                 </figure>
 
                 <figure class="space-y-3">
-                    <img loading="lazy" decoding="async" src="../../assets/common/demo-img-1920.png"
-                        alt="DHS instruction flow with presence prompt and capture house location and house photo gates"
-                        class="w-full rounded-2xl" />
-                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">
-                        DHS capture gates: instructions → “Are you present?” → house location + photo → proceed to
-                        survey.
-                    </figcaption>
+                    <img loading="lazy" decoding="async" src="../../assets/chip-2/family-register/screen-display-6.png"
+                        alt="Encounter summary showing completion status, referral and follow-up actions, and share/print-ready prescription output" class="w-full rounded-2xl" />
+                    <figcaption class="px-2 text-gray-600 dark:text-gray-400">Closure is designed as a deliberate finish, not a back button. The summary confirms step completion, captures referral and follow-up decisions, and produces a shareable prescription output for the patient. Completion remains permission-gated and stateful, so unfinished lab/dispense tasks cannot be silently skipped in the name of speed.</figcaption>
                 </figure>
             </div>
         </section>
@@ -676,7 +660,8 @@
                 <div>
                     <h2 class="text-4xl font-semibold text-gray-900 dark:text-gray-100">Let’s connect</h2>
                     <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">
-                        Open to product roles, freelance projects, and collaborations. If you want a walkthrough of any case
+                        Open to product roles, freelance projects, and collaborations. If you want a walkthrough of any
+                        case
                         study, I’m happy to share details live.
                     </p>
 
@@ -727,7 +712,8 @@
                         <a href="https://www.linkedin.com/in/sumit-nikhare-482058215/" target="_blank" rel="noreferrer"
                             class="flex items-center justify-between rounded-2xl bg-gradient-to-r bg-violet-100 py-2 pl-2 pr-4 dark:bg-violet-900/30">
                             <div class="flex items-center gap-4">
-                                <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
+                                <div
+                                    class="grid h-12 w-12 place-items-center rounded-2xl bg-white/70 dark:bg-gray-900/60">
                                     <span class="text-sm font-semibold">in</span>
                                 </div>
                                 <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">LinkedIn</p>
