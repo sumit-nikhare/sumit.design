@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Sumit Designs favicon SD hexagon">
+  <defs>
+    <linearGradient id="borderGrad" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00C2FF"/>
+      <stop offset="0.5" stop-color="#7B61FF"/>
+      <stop offset="1" stop-color="#FF4D8D"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <path d="M256 48 L420 144 L420 368 L256 464 L92 368 L92 144 Z"
+    fill="none" stroke="url(#borderGrad)" stroke-width="28" stroke-linejoin="round" filter="url(#shadow)"/>
+  <path d="M256 78 L395 158 L395 354 L256 434 L117 354 L117 158 Z" fill="#1F2A44"/>
+  <text x="256" y="310" text-anchor="middle"
+    font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+    font-size="190" font-weight="800" letter-spacing="-10" fill="#FFFFFF">SD</text>
+</svg>
